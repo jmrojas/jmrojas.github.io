@@ -1,0 +1,251 @@
+<script languaje="javascript"><!--
+    function enablecontext(cb) {
+        var cbees = document.getElementsByName('input');
+        var len = cbees.length;
+        var disable = true;
+        for(var x=0;x<len;x++){
+            var checkBox = cbees[x];
+            if(checkBox.type=="checkbox" && checkBox.checked){  // is checbox and is checked
+                disable = false;
+            }
+        }
+        if(disable){
+            document.getElementsByName('context_info')[0].disabled = true;
+        }
+        if(cb.checked==true ){
+            document.getElementsByName('context_info')[0].disabled = false;      }
+    }
+    --></script>
+<?php
+//$base_path    = "../../../..";
+    define("BASE_PATH","../../../../");
+//$examples     = "$base_path/examples";
+    define("EXAMPLES",BASE_PATH."examples/");
+//$path_editions= "$base_path/api";
+    define("PATH_EDITIONS",BASE_PATH."api/");
+    define("PET_SHELL","../../shell/pet");
+//$java_path="/usr/bin/javac";
+    define("JAVA_PATH","/usr/bin/javac");
+    define("TMP_PET","/tmp/pet/");
+    define("TMP_WEB",TMP_PET."web/");
+    define("PET_WEB_EXEC","pet_web.sh");
+
+//$valid_ext_file = array("class", "jar","java");
+//$method_me='commandAction(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V';
+//$method_me_start='startApp()V';
+//$method_se='main([Ljava/lang/String;)V';
+?>
+
+<!-- file_put_contents for php5 -->
+
+<?php
+if (!function_exists('file_put_contents')) {
+    function file_put_contents($filename, $data, $respect_lock = true)
+    {
+        // Open the file for writing
+        $fh = @fopen($filename, 'w');
+        if ($fh === false) {
+            return false;
+        }
+
+        // Check to see if we want to make sure the file is locked before we write to it
+        if ($respect_lock === true && !flock($fh, LOCK_EX)) {
+            fclose($fh);
+            return false;
+        }
+
+        // Convert the data to an acceptable string format
+        if (is_array($data)) {
+            $data = implode('', $data);
+        } else {
+            $data = (string) $data;
+        }
+
+        // Write the data to the file and close it
+        $bytes = fwrite($fh, $data);
+
+        // This will implicitly unlock the file if it's locked
+        fclose($fh);
+
+        return $bytes;
+    }
+}
+
+function parse_dot_settings($fileName) {
+    $define_settings=array('-deps','-c','-d','-g','-v','-l','-td','-al','-tr','-j','pet_stats');
+    $count_settings=count($define_settings);
+    //-deps dependencies
+    //-c|cov_crit = bck(2)
+    //-d|data_domain = none|[RMin,RMax]
+    //-g|generator = yes|no
+    //-v|verbosity = 0|1|2
+    //-l|labeling_strat = leftmost|ff|ffc|min|max
+    //-td|td_num_or_constraint = num|constraint
+    //-al|ref_aliasing = yes|no
+    //-tr|tracing = no|blocks|statements
+    //-j|junit_test = yes|no
+    //pet_stats = yes|no
+    $settingsFile=$fileName.".settings";
+    $flags=array();
+    $values_settings=array();
+    if (file_exists($settingsFile)) {
+        $settings=file_get_contents($settingsFile);  
+        $setting_line=explode("\n",rtrim($settings)); 
+        for($i=0;$i<count($setting_line);$i++) {
+            $part_settings=explode(" ",$setting_line[$i]);
+            for($j=0;$j<$count_settings;$j++) {
+                if ($part_settings[0]==$define_settings[$j]) {
+                    switch($j) {
+		        case "0":  for($d=1;$d<count($part_settings);$d++){$dependencies=$dependencies.$part_settings[$d]." ";};
+                        break;
+		        case "1":  $cov_crit=$part_settings[1]." ".$part_settings[2]; 
+                        break;   
+		        case "2":  for($d=1;$d<count($part_settings);$d++){$data_domain=$data_domain.$part_settings[$d]." ";};
+                        break;                              
+                        case "3":  $generator=$part_settings[1];
+                        break;              
+                        case "4":  $verbosity=$part_settings[1]; 
+                        break;
+                        case "5":  $labeling_strat=$part_settings[1];
+                        break;
+                        case "6":  $td_num_or_constraint=$part_settings[1];
+                        break;   
+			case "7":  $ref_aliasing=$part_settings[1];
+                        break;   
+			case "8":  $tracing=$part_settings[1];
+                        break;   
+			case "9":  $junit_test=$part_settings[1];
+                        break;   
+			case "10": $pet_stats=$part_settings[1];
+                        break;   
+                    }
+                }
+            }
+            if(substr_count($part_settings[1],'value=')==1) {           
+                array_push($flags, $settings[$i]);
+            }
+        }
+        array_push($values_settings,$dependencies);  
+        array_push($values_settings,$cov_crit); 
+        array_push($values_settings,$data_domain);
+        array_push($values_settings,$generator); 
+        array_push($values_settings,$verbosity);
+        array_push($values_settings,$labeling_strat);
+        array_push($values_settings,$td_num_or_constraint);
+        array_push($values_settings,$ref_aliasing);
+        array_push($values_settings,$tracing);
+        array_push($values_settings,$junit_test);
+        array_push($values_settings,$pet_stats);
+    }
+    return $values_settings;
+}
+
+
+function remove_extension($strName)
+{
+    $ext = strrchr($strName, '.');
+
+    if($ext !== false)
+    {
+        $strName = substr($strName, 0, -strlen($ext));
+    }
+    return $strName;
+}
+
+function getClassInfo($path) {
+    $path = remove_extension($path);
+    $cmd = "javap -s ".basename($path,".class")." -classpath ".dirname($path)." 2>&1 ";
+    $lines = explode("\n", shell_exec($cmd));
+    $i = 0;
+    $count = count($lines);
+    $answer = array();
+    $matches = array();
+    $signature = array();
+    $visibility = "[public|protected|private|]";
+    $static = "static";
+    $returnType = "[\w\.]*\w[\[\]]*";
+    $method = "\w+";
+    $args = "\(.*\)";
+
+    if(!preg_match("/($visibility |)class (?<name>.*) extends .*/i", $lines[1],$className))
+        preg_match("/($visibility |)class (?<name>.*) extends .*/i", $lines[0],$className);
+    $className = $className[name];
+    
+    $i = 2;
+    while($i < $count) {
+        //if we don't found a method or constructor, continue
+        if(!preg_match("/($visibility |)($static |)(?<return>$returnType)( (?<name>$method)|)$args/i", $lines[$i],$matches    )) {
+            $i++;
+            continue;
+        }
+        $i++;
+        if(!$matches[name]) //is a constructor
+            $matches[name] = "<init>";
+            
+
+        //we found a method. Next line is the signature
+        if(!preg_match("/^.*Signature: \((?<args>.*)\)(?<answer>.*)/", $lines[$i],$signature)) {
+            $i++;
+            continue;
+        }
+        $i++;
+        array_push($answer, (array("name" => $matches[name], "args" => $signature[args], "answer" => $signature[answer])));
+    }
+    return array("className" => $className, "methods" => $answer);
+}
+
+?>
+<script languaje="javascript"><!--
+
+    function selectall(name, value) {
+
+            var frm = document.getElementById('costmodel');
+
+        var inputs = frm.getElementsByTagName('input');
+        for (var i=0; i< inputs.length;i++) {
+            //if the name matches, set the value to match the calling element
+            if (inputs[i].name == name) {
+                inputs[i].checked = value;
+            }
+        }
+    }
+
+
+    function enablebox(form){
+        if (form.data_domain[1].checked==true){
+            form.range_min.disabled=false;
+            form.range_max.disabled=false;
+        }else {
+            form.range_min.disabled=true;
+            form.range_max.disabled=true;
+        }
+        if(form.cov_crit[0].checked==true) {
+	    form.block_k_value.disabled = false;
+            form.depth_k_value.disabled = true;
+        }
+        else {
+	    form.block_k_value.disabled = true;
+            form.depth_k_value.disabled = false;
+        }
+    }
+    function enableub(form){
+        if (form.checker[0].checked==true){
+            form.upper_bound.disabled=true;
+            }else
+            if (form.checker[1].checked==true ){
+                form.upper_bound.disabled=false;
+                }
+    }
+    function jar(form){
+            form.action="costmodeljar.php";
+    }
+    function setuser(form){
+        if (form.user[0].checked==true){
+            form.action="automatic.php";
+        }
+        if (form.user[1].checked==true){
+            form.action="manual.php"
+        }
+    }
+    --></script>
+

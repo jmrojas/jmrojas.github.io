@@ -1,0 +1,40 @@
+<script language="javascript">
+    <!--
+    function validate() {
+
+    }
+    -->
+</script>
+<?php
+    /**
+     * Print a form that allow select the class which will be tested.
+     * @param realFile The path of the jar file.
+     * @param jarFile The name of the jar file.
+     */
+    function makeJarForm($realName, $jarFile) {
+        echo "Jar file uploaded : $jarFile <br><br>";
+        echo '<form name="jarForm" id="jarForm" action="step1.php" method="POST" enctype="multipart/form-data" >';
+        echo "<input type='hidden' name='file_upload' value='$jarFile'>";
+        $files=shell_exec("jar -tf $realName"); // obtain the list of files in the jar and  write it to a variable
+        $files=explode("\n",$files);
+        if (count($files)==0){
+            die("$jarFile is an empty or invalid jar file.");
+        }
+        echo "<b> Select the class name you want to test</b><br>";
+        
+        $first = false;
+        foreach($files as $file) {
+            if (substr_count($file,".class")==1 ){// only files with .class extension
+                shell_exec("cd ".TMP_WEB."; jar -xf $realName $file 2>1; chmod 777 $file");
+                echo "<input type=radio name=class value=$file";
+                if($first) {
+                    echo "checked";
+                    $first = false;
+                }
+                echo "> $file <br>";
+            }
+        }
+        echo "<input type='submit' name='submittmp' value='Next' onclick='validate()' > ";
+        echo "</form>";
+    }
+?>

@@ -1,0 +1,86 @@
+<?php
+class ResultReader {
+
+    public function readLine($line) {
+        //M;[0,0];H;1;ok;H;[];[]
+        $array = array();
+        $array = explode('||', $line);
+
+        if(count($array) < 8)
+            die ("The line '$line' is invalid");
+        array_splice($array, 8);
+
+        for($i = 0; $i < 8; $i++) {
+            $param = $array[$i];
+            //if is an array...
+            if($param[0] == '[' && $param[strlen($param)-1] == ']') {
+                $newParam = array();
+                $tmp = '';
+                $ignore = 0;
+                $length = strlen($param)-1; //we don't read the final ']'
+                if($length <= 1)
+                    $tmp = '&nbsp;';
+                for($j = 1; $j < $length; $j++) {
+                    if($ignore > 0)
+                        switch($param[$j]) {
+                            case ')':
+                                $ignore--;
+                                $tmp .= $param[$j];
+                                break;
+                            case '(':
+                                $ignore++;
+                                $tmp .= $param[$j];
+                                break;
+                            default:
+                                $tmp .= $param[$j];
+                        }
+                    else {
+                        switch($param[$j]) {
+                            case ',': 
+				if ($i < 6) {
+				   //input args are separated into different cells
+				   array_push($newParam,$tmp);
+				   $tmp = '';
+				}		
+				else {
+				     //Constraints and trace columns
+				     $tmp .= "<br>";
+				     }
+                                break;
+                            case '(':
+                                $ignore++;
+                                $tmp .= $param[$j];
+                                break;
+                            default:
+                                $tmp .= $param[$j];
+                                break;
+                        }
+                    }
+                }
+                array_push($newParam,$tmp);
+                $array[$i] = $newParam;
+            }
+        }
+
+        return $array;
+    }
+
+    public function readString($string) {
+        $lines = split("\n",$string);
+
+        $lines = array_filter($lines);
+
+        for($i = 0; $i < count($lines); $i++) {
+            $lines[$i] = $this->readLine($lines[$i]);
+        }
+
+        return $lines;
+    }
+
+    public function readFile($file) {
+        $str = file_get_contents($file);
+        return $this->readString($str);
+    }
+
+}
+?>

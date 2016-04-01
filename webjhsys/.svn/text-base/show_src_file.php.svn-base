@@ -1,0 +1,26 @@
+<?php include 'config.php' ?>
+<html>
+    <?php include 'head.php' ?>
+    <body>
+        <?php include 'header.php' ?>
+        <?php include 'banner.php' ?>
+        <div class="content">
+            <pre>
+                <?php
+                    $path = $_GET["path"];
+                    if (!$path)
+                        echo "Illegal path";
+                    else {
+                        if(!$file_contents = @file_get_contents("$path.java"))
+                            $result = "File $path.java not found.";
+                        else
+                            $result=htmlentities($file_contents);
+                        echo $result;
+                    }
+                ?>
+            </pre>
+        </div>
+        <?php include 'banner.php' ?>
+        <?php include 'footer.php' ?>
+    </body>
+</html>

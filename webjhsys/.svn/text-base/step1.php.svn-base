@@ -1,0 +1,104 @@
+<?php include 'config.php' ?>
+<html>
+    <?php include 'head.php' ?>
+    <body>
+        <?php include 'header.php' ?>
+        <?php include 'banner.php' ?>
+        <?php include_once 'classForm.php'?>
+        <?php include_once 'jarForm.php'?>
+        <div class="content">
+            <?php
+            $extension; //java, class, jar
+            $completeName; //Arithmetic.java, Main.class, etc
+            $fileName; //Arithmetic, Main, etc
+            $realName; ///tmp/pet/web/Arithmetic.class
+            if ( $_GET["name"] && $_GET["dir"]) { //check if choose an example
+                $completeName = $_GET["name"];
+                $realName = $_GET["dir"].$completeName;
+                $upload = false;
+            }
+            elseif ( $_FILES['upload']['tmp_name'] != "" ) {
+                $completeName = $_FILES['upload']['name'];
+                $realName = $_FILES['upload']['tmp_name'];
+                $upload = true;
+            }
+            elseif($_POST["class"]) { //check if choose an jar
+                $completeName = $_POST['class'];
+                $realName = TMP_WEB.$completeName;
+                $jarFile = $_POST["jarFile"];
+                $pwd = shell_exec('pwd');
+                shell_exec("cd ".TMP_WEB."; jar -xf $jarFile $completeName; chmod 777 $completeName; cd $pwd");
+                $upload = false;
+            }
+            else
+                die("There is not a program file");
+        
+            $extension = strrpos($completeName,".");
+            if($extension)
+                $extension = substr($completeName,$extension+1);
+        
+
+            if(!file_exists(TMP_PET))
+                mkdir(TMP_PET);
+            if(!file_exists(TMP_WEB))
+                mkdir(TMP_WEB);
+            $fileName = remove_extension($completeName);
+            if ($extension == 'java' || $extension == 'class'){
+                if($extension == 'java') {
+                    shell_exec('chmod -R 777 '.TMP_WEB.'; rm -rf '.TMP_WEB.'.*');
+                    $target = TMP_WEB . basename($completeName);
+                    if($upload) {
+                        if(!move_uploaded_file($_FILES['upload']['tmp_name'], $target))
+                            die("The $completeName coudn't be uploaded, try again!");
+                        else
+                            shell_exec('chmod -R 777 '.TMP_WEB);
+                    }
+                    else {
+                        if(!copy($_GET["dir"].$_GET["name"], $target))
+                            die("The $completeName coudn't be copy, try again!");
+                        else
+                            shell_exec('chmod 777 '.$target);
+                    }
+
+                    $classFile = TMP_WEB."$fileName.class";
+                    $compile = JAVA_PATH." -source 1.4 -target 1.4 $target 2>&1";
+                    $error = shell_exec($compile);
+                    shell_exec("chmod 777 $classFile");
+                    if(!file_exists($classFile))
+                        die("The $completeName coudn't be compiled, try again!<br />
+                            <b>Trace:</b>: <br> <pre>$error</pre>");
+                    else {
+                        $realName = $classFile;
+                    }
+                }
+                elseif($extension == "class") {
+                    if($upload) {
+                        if(move_uploaded_file($realName, TMP_WEB."$fileName.class")) {
+                            $realName = TMP_WEB."$fileName.class";
+                        }
+                        else
+                            echo "ERROR: Is impossible to move uploaded file.<br>";
+                    }
+                }
+                
+                makeClassForm($realName, $fileName);
+            }
+            elseif($extension == 'jar') {
+                if($upload) {
+                    if(move_uploaded_file($realName, TMP_WEB."$fileName.jar")) {
+                        $realName = TMP_WEB."$fileName.jar";
+                    }
+                    else
+                        echo "ERROR: Is impossible to move uploaded file.<br>";
+                }
+                makeJarForm($realName, $fileName);
+            }
+            else
+                die("$completeName is an invalid file type ! <br /> Must be a java, class or jar file.");
+
+            ?>
+            <?php include 'banner.php' ?>
+            <?php include 'footer.php' ?>
+        </div>
+    </body>
+</html>

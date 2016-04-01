@@ -1,0 +1,35 @@
+<?php include 'config.php' ?>
+
+<html>
+
+    <?php
+    include 'head.php';
+    include 'HeapReader.php';
+
+    ?>
+
+
+    <body>
+
+        <?php include 'header.php' ?>
+        <?php include 'banner.php' ?>
+
+        <div class="content">
+            <?php
+
+            $str = 'heap([ (B, object(K, [field(a:[Lheap/Foo;,  ref(D))|E])), (D, array(L, 1, [G|H]))|I], M)';
+            $reader = new HeapReader();
+            $reader->readString($str);
+
+            ?>
+
+
+        </div>
+
+        <?php include 'banner.php' ?>
+        <?php include 'footer.php' ?>
+
+
+    </body>
+
+</html>

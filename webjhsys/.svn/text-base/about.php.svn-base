@@ -1,0 +1,279 @@
+<html>
+
+<?php include 'head.php' ?>
+
+<body>
+
+
+<?php include 'header.php' ?>
+<?php include 'banner.php' ?>
+
+<div class="content">
+    <?php
+        function linkToContributor($who,$short) {
+            switch($who) {
+                case "albert":
+                    echo '<a href="http://www.clip.dia.fi.upm.es/~elvira">';
+                    if($short)
+                        echo "E. Albert";
+                    else
+                        echo "Elvira Albert";
+                    echo '</a>';
+                    break;
+                case "gomez":
+                    echo '<a href="http://www.clip.dia.fi.upm.es/~mzamalloa">';
+                    if($short)
+                        echo "M. G&oacute;mez-Zamalloa";
+                    else
+                        echo "Miguel G&oacute;mez-Zamalloa";
+                    echo '</a>';
+                    break;
+                case "puebla":
+                    echo '<a href="http://www.clip.dia.fi.upm.es/~german">';
+                    if($short)
+                        echo "G. Puebla";
+                    else
+                        echo "Germ&aacute;n Puebla";
+                    echo '</a>';
+                    break;
+                case "gallagher":
+                    echo '<a href="http://akira.ruc.dk/~jpg/">';
+                    if($short)
+                        echo "J. Gallagher";
+                    else
+                        echo "John Gallagher";
+                    echo '</a>';
+                    break;
+                case "hubert":
+                    echo '<a href="http://www.trebuh.net/">';
+                    if($short)
+                        echo "L. Hubert";
+                    else
+                        echo "Laurent Hubert";
+                    echo '</a>';
+                    break;
+                case "ortiz":
+                    if($short)
+                        echo "G. Ortiz";
+                    else
+                        echo "Gonzalo Ortiz";
+                    break;
+                default:
+                    echo $who;
+            }
+        }
+
+        function publication($authors,$name,$link,$extra) {
+            $sizeAuthors = count($authors);
+            switch($sizeAuthors) {
+                case 0:
+                    break;
+                case 1:
+                    linkToContributor($authors[0],true);
+                    echo '.';
+                    break;
+                default:
+                    $sizeAuthors--; //index of de last author
+                    for($i = 0; $i < $sizeAuthors; $i++) { //[0..$sizeAuthors-1]
+                        linkToContributor($authors[$i],true);
+                        echo ', ';
+                    }
+                    echo ' and ';
+                    linkToContributor($authors[$sizeAuthors],true);//the last
+                    echo '.';
+            }
+            if($extra)
+                $extra = ". $extra.";
+            if($link)
+                echo " <a href=$link><em>$name</em></a>$extra";
+            else
+                echo "<em> $name</em>$extra";
+        }
+    ?>
+    <table>
+        <tr>
+            <td> The <b>PET</b> system is a collaborative effort of a
+            number of people, including: </td>
+        </tr>
+        <tr>
+            <td>
+                <b> Core Contributors</b>:
+                <?php
+                    linkToContributor('albert',0);
+                    echo ', ';
+                    linkToContributor('gomez',0);
+                    echo ' and ';
+                    linkToContributor('puebla',0);
+                ?>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b> Other Contributors</b>:
+                <?php
+                    linkToContributor('gallagher',0);
+                    echo ', ';
+                    linkToContributor('hubert',0);
+                    echo ' and ';
+                    linkToContributor('ortiz', 0);
+                    echo '<br />';
+                ?>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td><b>Supporting Research Projects</b></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    The work in the <b>PET</b> system is funded in part by the
+                    <A HREF="http://www.cordis.lu/ist">IST</A> program of the European Commission,
+                    Future and Emerging Technologies under the IST-15905
+                    <A HREF="http://mobius.inria.fr"><em>MOBIUS</em> </A> and IST-231620
+                    <A HREF="http://www.hats-project.eu"><em>HATS</em></A> projects, by the Spanish
+                    Ministry of Education <A HREF="http://www.mec.es/">(MEC)</A> under the
+                    TIN-2005-09207 <A href="http://clip.dia.fi.upm.es/Projects/MERIT/merit.html">
+                    <em>MERIT</em></A> and TIN-2008-05624
+                    <A href="http://clip.dia.fi.upm.es/Projects/DOVES/doves.html"><em>DOVES</em></A>
+                     projects, and the Madrid Regional Government under the S-0505/TIC/0407
+                    <a href="http://www.promesas-cm.org"><em>PROMESAS</em></a> project.<br />
+                    <br />
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td><b> Journal Publications </b> :<br />
+            <ol>
+                <li>
+                    <p>
+                        <?php
+                            publication(
+                                array('gomez','albert','puebla'),
+                                'Decompilation of Java Bytecode to Prolog by Partial Evaluation.'
+                                    .' Journal of Information and Software Technology',
+                                'http://clip.dia.fi.upm.es/papers/mod-decomp-jist09.pdf',
+                                'Vol. 51, pages 1409-1427, Elsevier, October 2009'
+                            );
+                        ?>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <?php
+                            publication(
+                                array('albert','gallagher','gomez','puebla'),
+                                'Type-based Homeomorphic Embedding for Online Termination',
+                                'http://clip.dia.fi.upm.es/papers/tbhe-ipl09.pdf',
+                                'Information Processing Letters, Vol. 109, pages 879-886, Elsevier,'
+                                    .' July 2009'
+                            );
+                        ?>
+                    </p>
+                </li>
+            </ol>
+        </td>
+    </tr>
+        <tr>
+            <td> <b> Conference Publications </b> :
+            <ol>
+                <li>
+                    <p>
+                        <?php
+                            publication(
+                                array('albert','gomez','puebla'),
+                                'Test Data Generation of Bytecode by CLP Partial Evaluation',
+                                'http://clip.dia.fi.upm.es/papers/tdg-lopstr08.pdf',
+                                '18th International Symposium on Logic-based Program Synthesis and'
+                                    .' Transformation (LOPSTR\'08), LNCS, Num. 5438, pages 4-23,'
+                                    .' Springer-Verlag, March 2009'
+                            );
+                        ?>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <?php
+                            publication(
+                                array('albert','gallagher','gomez','puebla'),
+                                'Type-based Homeomorphic Embedding and its Applications to Online'
+                                    .' Partial Evaluation',
+                                'http://clip.dia.fi.upm.es/papers/tbhe-lopstr07.pdf',
+                                '7th International Symposium on Logic-based Program Synthesis and'
+                                    .' Transformation (LOPSTR\'07), LNCS, Vol. 4915, pages 23-42,'
+                                    .' Springer-Verlag, February 2008'
+                            );
+                        ?>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <?php
+                            publication(
+                                array('gomez','albert','puebla'),
+                                'Modular Decompilation of Low-Level Code by Partial Evaluation',
+                                'http://clip.dia.fi.upm.es/papers/mod-decomp-scam08.pdf',
+                                '8th IEEE International Working Conference on Source Code Analysis and'
+                                    .' Manipulation (SCAM\'08), pages 239-248, IEEE Computer Society,'
+                                    .' September 2008');
+                        ?>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <?php
+                            publication(
+                                array('albert','gomez','hubert','puebla'),
+                                'Verification of Java Bytecode using Analysis and Transformation of '
+                                    .'Logic Programs',
+                                'http://clip.dia.fi.upm.es/papers/jvm-pe-padl07.pdf',
+                                'Ninth International Symposium on Practical Aspects of Declarative '
+                                    .' Languages, LNCS, Num. 4354, pages 124-139, Springer-Verlag, '
+                                    .' January 2007.');
+                        ?>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <?php
+                            publication(
+                                array('albert','gomez','puebla'),
+                                'PET: A Partial Evaluation-based Test Case '
+                                    .'Generation Tool for Java Bytecode',
+                                '',
+                                'ACM SIGPLAN Workshop on Partial Evaluation and '
+                                    .'Semantics-based Program Manipulation (PEPM), '
+                                    .'ACM Press, January 2010.');
+                        ?>
+                    </p>
+                </li>
+            </ol>
+        </tr>
+        <tr>
+            <td><b> Workshop Publications </b> :<br />
+            <ol>
+                <li>
+                    <p>
+                        <?php
+                            publication(
+                                array('gomez','albert','puebla'),
+                                'On the Generation of Test Data for Prolog by Partial Evaluation',
+                                'http://clip.dia.fi.upm.es/papers/tdg-prolog-wlpe08.pdf',
+                                'Workshop on Logic-based methods in Programming Environments (WLPE\'08),'
+                                    .'pages 26-43, 2008. Report number: WLPE/2008/06');
+                        ?>
+                    </p>
+                </li>
+            </ol>
+        </tr>
+    </table>
+</div>
+<?php
+?>
+<?php include 'banner.php' ?>
+<?php include 'footer.php' ?>
+
+
+</body>
+
+</html>

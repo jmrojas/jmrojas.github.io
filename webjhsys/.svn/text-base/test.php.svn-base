@@ -1,0 +1,115 @@
+<?php include 'config.php' ?>
+
+<html>
+
+    <?php include 'head.php' ?>
+
+    <body>
+
+        <?php
+        include 'header.php';
+        include 'banner.php';
+        include 'PetTable.php';
+        include 'ResultReader.php';
+        ?>
+
+        <div class="content">
+            <?php
+	    
+            $cmd = "./".PET_WEB_EXEC." ";
+	    $class = str_replace(".", "/", $_POST[className]);
+	    for($i=0;$i<count($_POST[methods]);$i++){
+		$cmd .= "\"".$class.".".$_POST[methods][$i]."\" ";
+	    }
+	    echo "</pre>";
+
+            if(isset ($_POST[dependencies])) {
+                $cmd .= " -deps ".$_POST[dependencies];
+            }
+
+            if($_POST[cov_crit]) {
+                $i;
+                if(isset ($_POST[depth_k_value]))
+                    $i = $_POST[depth_k_value];
+                else
+                    $i = $_POST[block_k_value];
+                $cmd .= " -cov_crit bck ".$i;
+            }
+
+            if($_POST[td]){
+                $cmd .= " -td ".$_POST[td];
+            }
+
+            switch($_POST[data_domain]){
+                case "none":
+                    $cmd .= " -d none";
+                    break;
+                case "range":
+                    $cmd .= " -data_domain $_POST[range_min] $_POST[range_max]";
+                    break;
+            }
+
+
+            if($_POST[labeling_strat]){
+                $cmd .= " -labeling_strat ".$_POST[labeling_strat];
+            }
+
+            if($_POST[ref_aliasing]){
+                $cmd .= " -ref_aliasing ".$_POST[ref_aliasing];
+            }
+
+            if($_POST[verbosity]){
+                $cmd .= " -verbosity ".$_POST[verbosity];
+            }
+
+            if($_POST[tracing]){
+                $cmd .= " -tr ".$_POST[tracing];
+            }
+	
+ 	    if($_POST[junit_test]){
+                $cmd .= " -junit_test ".$_POST[junit_test];
+            }
+
+ 	    if($_POST[generator]){
+                $cmd .= " -generator ".$_POST[generator];
+            }
+            
+            $cmd .= " -o html 2>&1";
+
+            echo "<b>Shell command:</b><br /><pre>".htmlentities($cmd)."</pre>";
+	    
+	    $timeout = "CPU time limit exceeded";
+	    echo "<b>Output:</b><br />";
+	    $result = shell_exec($cmd);
+	    if(strncmp($result, $timeout, strlen($timeout)) == 0){
+	    	echo "<pre>Sorry! ".$timeout.".</pre><br />";
+	    } else {
+            	echo "<pre>".$result."</pre>";
+		
+		    $method=$_POST[methods][0];
+		    $pos = strpos($method,'(');
+		    if(is_bool($pos))
+		        die("Fatal error.");
+            	    $method = substr($method, 0, $pos);
+            	    $file = strrpos($_POST["fileName"], '/');
+            	    $file = substr($_POST['fileName'], $file);
+            	    $file = BASE_PATH.'src/tmp/testcases_'.$file.'_'.$method.'.pl';
+            	    $resultReader = new ResultReader();
+            	    $table = new PetTable();
+            	    foreach($resultReader->readFile($file) as $row) {
+           	        $table->addRow($row);
+		    }
+            	    echo "{$table->getTable()}<br>";
+	    }
+            ?>
+
+
+        </div>
+
+        <?php include 'banner.php' ?>
+        <?php include 'footer.php' ?>
+
+
+    </body>
+
+</html>

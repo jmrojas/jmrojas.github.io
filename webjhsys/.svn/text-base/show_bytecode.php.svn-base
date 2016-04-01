@@ -1,0 +1,32 @@
+<?php include 'config.php' ?>
+<html>
+    <?php include 'head.php' ?>
+    <body>
+        <?php include 'header.php' ?>
+        <?php include 'banner.php' ?>
+        <div class="content">
+            <pre>
+                <?php
+                    $path = $_GET["path"];
+                    if ( $path == "" )
+                        echo "Illegal path";
+                    else {
+                        $bytecode= "javap -c ".basename($path,".class")." -classpath ".dirname($path)." 2>&1 ";
+                        echo "<small>";
+                        /*
+                        if(!system($bytecode))
+                            echo "No se ha podido leer el bytecode de $fileName";
+                        */
+                        $text = shell_exec($bytecode);
+                        if($text) {
+                            echo "<pre>$text<pre>";
+                        }
+                        echo "</small>";
+                    }
+                ?>
+            </pre>
+        </div>
+        <?php include 'banner.php' ?>
+        <?php include 'footer.php' ?>
+    </body>
+</html>

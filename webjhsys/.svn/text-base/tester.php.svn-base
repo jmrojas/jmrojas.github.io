@@ -1,0 +1,42 @@
+<?php include 'config.php' ?>
+
+<html>
+
+<?php include 'head.php' ?>
+
+<body>
+
+<?php include 'header.php' ?>
+<?php include 'banner.php' ?>
+
+<div class="content">
+
+    <p> <b>Step 1. Select a directory from the list  or Provide a <em>class, a java or a .jar file</em>. </b><br>
+    </p>
+    <form name="cost" action="step1.php" method="POST" enctype="multipart/form-data">
+        <br>
+        Provide File<input type="file" name="upload" accept="file/class" onclick="next(this.form)" >
+        <input type="submit" name="action"  value="upload">
+        <h3>List of directories in PET</h3>
+        <?php
+            echo "<ul>";
+
+            $get_dirs=file_get_contents(EXAMPLES.'Showdirs'); // examples
+            $dirs=split("\n",chop($get_dirs));
+
+            foreach ($dirs as $dir) {
+                echo "<li><a href=\"examples.php?dir=".EXAMPLES."&folder=$dir\">$dir</a>";
+            }
+
+            echo "</ul>";
+        ?>
+
+    </form>
+
+<?php include 'banner.php' ?>
+<?php include 'footer.php' ?>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<?php include 'config.php' ?>
+<html>
+    <?php include 'head.php' ?>
+    <body>
+        <?php include 'header.php' ?>
+        <?php include 'banner.php' ?>
+        <div class="content">
+            <p>
+                Current version (0.2 of 2010/02/18):
+                <ol>
+                    <li>
+                        <a href = "./pet-0.2.tar.gz">pet-0.2.tar.gz</a>:
+			Tared, gzipped complete sources for
+			compilation under several Un*x flavors. 
+			<!-- (Linux, SunOS, Solaris, Mac OS X, IRIX, ...).--> 
+			Please read the <a href =
+			"README">README</a> file for installation instructions.
+                    </li>
+                </ol>
+
+            </p>
+
+            <?php include 'banner.php' ?>
+            <?php include 'footer.php' ?>
+        </div>
+    </body>
+</html>

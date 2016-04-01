@@ -1,0 +1,54 @@
+<html>
+
+<?php include 'head.php' ?>
+
+<body>
+
+<?php include 'header.php' ?>
+<?php include 'banner.php' ?>
+
+<div class="content">
+
+<p>
+
+In order to start using it straight away, please go to the Tester
+section and follow the instructions there provided.
+<br>
+<br>
+PET is a research prototype which aims at automatically generating
+test cases from Java bytecode programs by relying on the technique of
+partial evaluation. The system receives as input a bytecode program
+and a set of optional parameters, including a description of a
+<em>coverage criterion</em>; and yields as output a set of test cases
+which guarantee that the selected coverage criterion is achieved and,
+optionally, a <em>test case generator</em>.
+<br>
+<br>
+The test case generation process consists of two phases. (1) The
+decompilation of bytecode into a Constraint Logic Program (CLP).  The
+advantage of decompiling to CLP is that it handles most of the
+required constraints for free. (2) The generation of test-case
+generators from CLP decompiled bytecode. To carry out this phase, PET
+integrates a CLP partial evaluator which is able to solve the
+constraint system, in much the same way as a symbolic abstract machine
+would do.  A unique feature of PET is that the test case generators it
+produces are CLP programs whose execution in CLP returns further
+test-cases on demand without the need to start the process from
+scratch.  Another important feature of PET is that by using different
+control strategies of the partial evaluator which can obtain different
+degrees of coverage.
+<br>
+<br>
+The PET web interface allows users to try out the system on a set of
+representative examples, and also to upload their own bytecode
+programs.
+</p>
+</div>
+
+<?php include 'banner.php' ?>
+<?php include 'footer.php' ?>
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+body {
+   background-color:  #FFFFFF;
+   color:             #000000;
+   font-family:       "Trebuchet MS", Arial, Verdana, sans-serif;
+   font-size:         12pt
+}
+
+/* The Banner */
+
+div.banner {
+   border: none;
+   margin-left:   0px;
+   margin-right:  0px;
+   text-align:    center;
+   font-weight:   bold;
+}
+
+div.banner, div.banner a:link,
+            div.banner a:visited,
+            div.banner a:hover,
+            div.banner a:active {
+
+   background-color: #006699;
+   color:        #FFFFFF;
+   text-decoration:  none;
+}
+
+/** content **/
+
+div.content {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+/** The Header **/
+
+div.header {
+   font-size:         150%;
+}
+
+/** The Footer **/
+
+div.footer {
+   font-size:         6pt;
+   font-weight:       bold;
+   color:         #AADD44;
+}
+
+
+/** Error **/
+
+.error {
+    color:        #FF0033;
+    background-color: #FFFF99;
+    font-weight:      bold;
+        width:            100%;
+}

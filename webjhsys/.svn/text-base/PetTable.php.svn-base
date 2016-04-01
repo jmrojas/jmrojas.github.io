@@ -1,0 +1,154 @@
+<?php
+
+class PetTable {
+    private $method = array();
+    private $inArgs = array();
+    private $heapIn = array();
+    private $ret = array();
+    private $excFlag = array();
+    private $hOut = array();
+    private $constraints = array();
+    private $trace = array();
+    private $colCount = array(1,1,1,1,1,1,1,1);
+
+    private $table;
+    private $tableTabled;
+
+    public function getTable() {
+        if(!$this->table)
+            $this->makeTable();
+        return $this->table;
+    }
+
+    public function getTableTabled() {
+        if(!$this->tableTabled)
+            $this->makeTableTabled();
+        return $this->tableTabled;
+    }
+
+    public function removeTable() {
+        $this->table = null;
+        $this->tableTabled = null;
+    }
+
+    public function addRow($row) {
+        if(!is_array($row))
+           return false;
+	
+        if(count($row) < 7)
+            return false;
+
+	if($row[0] == ' ')
+            $row[0] = '&nbsp;';
+        if(!is_array($row[0]))
+            $row[0]= array($row[0]);
+        array_push($this->method, $row[0]);
+        $this->colCount[0] =
+            max(array($this->colCount[0],count($row[0])));
+
+	if($row[1] == ' ')
+            $row[1] = '&nbsp;';
+        if(!is_array($row[1]))
+            $row[1] = array($row[1]);
+        array_push($this->inArgs, $row[1]);
+        $this->colCount[1] = max(array($this->colCount[1],count($row[1])));
+
+        if($row[2] == ' ')
+            $row[2] = '&nbsp;';
+        if(!is_array($row[2]))
+            $row[2] = array($row[2]);
+        array_push($this->heapIn, $row[2]);
+        $this->colCount[2] = max(array($this->colCount[2],count($row[2])));
+
+        if($row[3] == ' ')
+            $row[3] = '&nbsp;';
+        if(!is_array($row[3]))
+            $row[3] = array($row[3]);
+        array_push($this->ret, $row[3]);
+        $this->colCount[3] = max(array($this->colCount[3],count($row[3])));
+
+        if($row[4] == ' ')
+            $row[4] = '&nbsp;';
+        if(!is_array($row[4]))
+            $row[4] = array($row[4]);
+        array_push($this->excFlag, $row[4]);
+        $this->colCount[4] = max(array($this->colCount[4],count($row[4])));
+
+        if($row[5] == ' ')
+            $row[5] = '&nbsp;';
+        if(!is_array($row[5]))
+            $row[5] = array($row[5]);
+        array_push($this->hOut, $row[5]);
+        $this->colCount[5] = max(array($this->colCount[5],count($row[5])));
+
+        if($row[6] == ' ')
+            $row[6] = '&nbsp;';
+        if(!is_array($row[6]))
+            $row[6] = array($row[6]);
+        array_push($this->constraints, $row[6]);
+        $this->colCount[6] = max(array($this->colCount[6],count($row[6])));
+
+        if($row[7] == ' ')
+            $row[7] = '&nbsp;';
+        if(!is_array($row[7]))
+            $row[7] = array($row[7]);
+        array_push($this->trace, $row[7]);
+        $this->colCount[7] = max(array($this->colCount[7],count($row[7])));
+
+
+        $this->removeTable();
+        return true;
+    }
+
+    private function makeSubRow($array,$cols) {
+        $row = "";
+        $aux = count($array)-1;
+        for($i = 0; $i < $aux; $i++) {
+            $row .= "<td>$array[$i]</td>";
+        }
+        $aux = $cols - count($array) +1;
+        $row .= "<td colspan='$aux'>$array[$i]</td>";
+        
+        return $row;
+    }
+
+    private function makeTable() {
+        $i = $this->colCount[1] + $this->colCount[2];
+        $o = $this->colCount[3] + $this->colCount[4] + $this->colCount[5];
+        $table = "
+            <table center border>
+                <tr bgcolor = '#dddddd' >
+                    <th rowspan = 2 colspan = '{$this->colCount[0]}'> Method </th>
+                    <th colspan = '$i'> In </th>
+                    <th colspan = '$o'> Out </th>
+                    <th rowspan = 2 colspan = '{$this->colCount[6]}'> Constraints </th>
+                    <th rowspan = 2 colspan = '{$this->colCount[7]}'> Trace </th>
+                </tr>
+                <tr bgcolor = '#dddddd' >
+                    <th colspan = '{$this->colCount[1]}'> Input args </th>
+                    <th colspan = '{$this->colCount[2]}'> Input heap </th>
+                    <th colspan = '{$this->colCount[3]}'> Ret </th>
+                    <th colspan = '{$this->colCount[4]}'> Exc flag </th>
+                    <th colspan = '{$this->colCount[5]}'> Ouput heap </th>"
+
+                    //<th colspan = '{$this->colCount[7]}'> constraints </th>
+                ."</tr>";
+	
+        for($i = 0; $i < count($this->inArgs); $i++) {
+            $table .= "<tr VALIGN=TOP>"
+	    	.$this->makeSubRow($this->method[$i], $this->colCount[0])
+                .$this->makeSubRow($this->inArgs[$i], $this->colCount[1])
+                .$this->makeSubRow($this->heapIn[$i], $this->colCount[2])
+                .$this->makeSubRow($this->ret[$i], $this->colCount[3])
+                .$this->makeSubRow($this->excFlag[$i], $this->colCount[4])
+                .$this->makeSubRow($this->hOut[$i], $this->colCount[5])
+                .$this->makeSubRow($this->constraints[$i], $this->colCount[6])
+                .$this->makeSubRow($this->trace[$i], $this->colCount[7])
+                ."</tr>";
+        }
+        $table .= "</table>";
+        $this->table = $table;
+    }
+
+}
+?>

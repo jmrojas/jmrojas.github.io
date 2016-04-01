@@ -1,0 +1,217 @@
+<?php
+
+    function makeClassForm($realName, $fileName) {
+        echo '<form name="costmodel" id="costmodel" action="test.php" method="POST" enctype="multipart/form-data" >';
+        echo "\n<b>Step 1.</b>   <br>";
+        echo "\n<input type='hidden' name='completeName' value=$realName >";
+        echo "Class File";
+        echo "<input type='text' name='fileName' value=$fileName readonly > <br>";
+
+        $extension = substr(strrchr($realName, "."),1);
+        $fileWithPath = array_shift(explode(".".$extension,$realName));
+	//$path = realpath(array_shift(explode($fileName,$fileWithPath)));
+	$path = array_shift(explode($fileName,$fileWithPath));
+	$values_settings=array();
+    	$values_settings=parse_dot_settings($fileWithPath);
+	
+    	echo "<input type='hidden' name='path' value=$path >";
+    	for($v=0; $v<count($values_settings); $v++){      
+     	    switch($v){
+	        case "0": $dependencies=$values_settings[$v]; break;
+		case "1": $cov_crit=$values_settings[$v]; break;
+       		case "2": $data_domain=$values_settings[$v]; break;
+       		case "3": $generator=$values_settings[$v]; break; 
+       		case "4": $verbosity=$values_settings[$v]; break;
+       		case "5": $labeling_strat=$values_settings[$v]; break;
+       		case "6": $td_num_or_constraint=$values_settings[$v]; break;
+       		case "7": $ref_aliasing=$values_settings[$v]; break;
+       		case "8": $tracing=$values_settings[$v]; break;
+       		case "9": $junit_test=$values_settings[$v]; break;
+       		case "10": $pet_stats=$values_settings[$v]; break;
+     	    }
+    	}
+
+    	// Dependencies
+	echo "\nDependencies";
+        echo "\n<input type='text' name='dependencies' value = '$dependencies'> <br />";
+
+	// Methods
+        echo "\n<p>";
+	echo "<b>Step 2. <br />";
+        echo "a) Choose the method to generate test-cases for:</b><br />";
+        $info = getClassInfo($realName);
+        echo "<input type='hidden' name = 'className' value = $info[className]>";
+
+        $first = true;
+        foreach($info[methods] as $method) {
+            $value = "$method[name]($method[args])$method[answer]";
+            echo "<input type='checkbox' name='methods[]' value='". $value. "'";
+            if($first) {
+                echo "checked";
+                $first = false;
+            }
+            echo "/> ".htmlentities($value)."<br>";
+        }
+        echo "</p>";
+
+	// Coverage Criterion
+
+	$str_bck_checked = "checked";
+	$str_bck_value_disabled = "";
+	$str_lck_checked = "";
+	$str_lck_value_disabled = "disabled";
+	$str_cov_value = "2";
+	if (isset($cov_crit)) {
+	    $cov_crit_array = explode(" ",trim($cov_crit));
+	    if (count($cov_crit_array) > 0) {
+ 	        $str_bck_checked = ($cov_crit_array[0] == "bck") ? "checked" : "";
+		$str_lck_checked = ($cov_crit_array[0] == "lck") ? "checked" : "";
+		$str_bck_value_disabled = ($cov_crit_array[0] == "bck") ? "" : "disabled";
+		$str_lck_value_disabled = ($cov_crit_array[0] == "lck") ? "" : "disabled";
+		$str_cov_value = (isset($cov_crit_array[1]) AND is_numeric($cov_crit_array[1])) ? $cov_crit_array[1] : "2";
+	    }
+	}
+	echo "\n<p>";
+        echo "<b> b) Coverage criterion:</b><br>";
+        echo "<input type='radio' name='cov_crit'
+        value='block_k' onclick='enablebox(this.form)' ".$str_bck_checked."> Block-k: ";
+	echo "<input type='text' name='block_k_value' value='".$str_cov_value."'".$str_bck_value_disabled."><br>";
+        echo "<input type='radio' name='cov_crit'
+        value='depth_k' onclick='enablebox(this.form)' ".$str_lck_checked.">
+        Depth-k: <input type='text' name='depth_k_value' value='".$str_cov_value."' ".$str_lck_value_disabled."><br>";
+        echo "</p>";
+	
+	// td_num_or_constraint
+	$str_td_num = "checked";
+	$str_td_constraint = "";
+	if (isset($td_num_or_constraint)) {
+	    $str_td_num = ($td_num_or_constraint == "num") ? "checked" : "";
+	    $str_td_constraint = ($td_num_or_constraint == "constraint") ? "checked" : "";
+	}
+        echo "\n<p>";
+        echo "<b> c) Get numeric test-cases or path-constraints: </b><br>";
+        echo "<input type='radio' name='td' value='num' ".$str_td_num."> Numeric (In this case a range must be especified in step d)) <br>";
+	echo "<input type='radio' name='td' value='constraint' ".$str_td_constraint."> Path-constraints<br>";
+        echo "</p>";
+
+	// data_domain
+	$str_dd_range_checked = "checked";
+	$str_dd_none_checked = "";
+	$min = -10; 
+	$max = 10;
+	if (isset($data_domain))
+	$data_domain_array=explode(" ",trim($data_domain));
+	if ($data_domain_array[0] == 'none') { 
+	    $str_dd_none_checked = "checked"; 
+	}elseif (count($data_domain_array)>1) {
+            if (is_numeric($data_domain_array[0]) AND ($data_domain_array[1]))
+	    {
+	        $min = (int)$data_domain_array[0];
+	        $max = (int)$data_domain_array[1];
+		$str_dd_range_checked = "checked";
+	    }
+	}
+        echo "\n<p>";
+        echo "<b> d) Specify the range of integers to take data from:</b><br>";
+        echo "<input type='radio' name='data_domain' onclick='enablebox(this.form)' value='none' ".$str_dd_none_checked."> None <br>";
+        echo "<input type='radio' name='data_domain' onclick='enablebox(this.form)' value='range' ".$str_dd_range_checked."> Range: ";
+	echo "<input type='text' name='range_min' value='".$min."'> .. <input type='text' name='range_max' value='".$max."'><br>";
+        echo "</p>";
+
+	// labeling_strat
+	$str_ls_ff = "checked";
+	$str_ls_leftmost = "";
+	$str_ls_min = "";
+	$str_ls_max = "";
+	if (isset($labeling_strat)) {
+	    $str_ls_ff = ($labeling_strat == "ff") ? "checked" : "";
+	    $str_ls_leftmost = ($labeling_strat == "leftmost") ? "checked" : "";
+	    $str_ls_min = ($labeling_strat == "min") ? "checked" : "";
+	    $str_ls_max = ($labeling_strat == "max") ? "checked" : "";
+	}
+        echo "\n<p>";
+        echo "<b> e) Labeling strategy: </b>";
+        echo '<a href = "http:www.swi-prolog.org//man/clpfd.html">(see the SWI-Prolog CLPFD library)</a> <br>';
+        echo "<input type='radio' name='labeling_strat' value='ff' ".$str_ls_ff."> ff &nbsp&nbsp";
+        echo "<input type='radio' name='labeling_strat' value='leftmost' ".$str_ls_leftmost."> leftmost &nbsp&nbsp";
+        echo "<input type='radio' name='labeling_strat' value='min' ".$str_ls_min."> min &nbsp&nbsp";
+        echo "<input type='radio' name='labeling_strat' value='max' ".$str_ls_max."> max";
+        echo "</p>";
+
+	// ref_aliasing
+	$str_ra_no = "checked";
+	$str_ra_yes = "";
+	if (isset($ref_aliasing)) {
+	  $str_ra_no = ($ref_aliasing == 'no') ? "checked" : "";
+	  $str_ra_yes = ($ref_aliasing == 'yes') ? "checked" : "";
+	}
+	echo "\n<p>";
+        echo "<b> f) References aliasing: </b><br />";
+        echo "<input type='radio' name='ref_aliasing' value='no' ".$str_ra_no."> don't alias &nbsp&nbsp";
+        echo "<input type='radio' name='ref_aliasing' value=' ' ".$str_ra_yes."> might alias <br>";
+        echo "</p>";
+
+	// verbosity
+	$str_v_0 = "";
+	$str_v_1 = "checked";
+	$str_v_2 = "";
+	if (isset($verbosity)) {
+	  $str_v_0 = ($verbosity == '0') ? "checked" : "";
+	  $str_v_1 = ($verbosity == '1') ? "checked" : "";
+	  $str_v_2 = ($verbosity == '2') ? "checked" : "";
+	}
+        echo "\n<p>";
+        echo "<b> g) Verbosity level: </b><br />";
+        echo "<input type='radio' name='verbosity' value='0' ".$str_v_0."> 1&nbsp&nbsp";
+        echo "<input type='radio' name='verbosity' value='1' ".$str_v_1."> 2&nbsp&nbsp";
+        echo "<input type='radio' name='verbosity' value='2' ".$str_v_2."> 3";
+        echo "</p>";
+
+	// junit_test
+/* 	$str_jt_no = "checked"; */
+/* 	$str_jt_yes = ""; */
+/* 	if (isset($junit_test)) { */
+/* 	   $str_jt_no = ($junit_test == 'no') ? "checked" : ""; */
+/* 	   $str_jt_yes = ($junit_test == 'yes') ? "checked" : ""; */
+/* 	} */
+/* 	echo "\n<p>"; */
+/*         echo "<b> h) Generate JUnit Test: </b><br />"; */
+/*         echo "<input type='radio' name='junit_test' value='no' ".$str_jt_no."> no&nbsp&nbsp"; */
+/*         echo "<input type='radio' name='junit_test' value=' ' ".$str_jt_yes."> yes"; */
+/*         echo "</p>"; */
+
+	// tracing
+	$str_tr_no = "checked";
+	$str_tr_statements = "";
+	$str_tr_blocks = "";
+	if (isset($tracing)) {
+	    $str_tr_no = ($tracing == 'no') ? "checked" : "";
+	    $str_tr_statements = ($tracing == 'statements') ? "checked" : "";
+	    $str_tr_blocks = ($tracing == 'blocks') ? "checked" : "";
+	}
+        echo "\n<p>";
+        echo "<b> i) Tracing: </b><br />";
+        echo "<input type='radio' name='tracing' value='no' ".$str_tr_no."> no&nbsp&nbsp";
+        echo "<input type='radio' name='tracing' value='statements' ".$str_tr_statements."> statements&nbsp&nbsp";
+        echo "<input type='radio' name='tracing' value='blocks' ".$str_tr_blocks."> blocks<br>";
+        echo "</p>";
+
+	// generator
+	$str_gen_no = "checked";
+	$str_gen_yes = "";
+	if (isset($generator)) {
+	    $str_gen_no = ($generator == 'no') ? "checked" : ""; 
+	    $str_gen_yes = ($generator == 'yes') ? "checked" : ""; 
+	}
+	echo "\n<p>";
+        echo "<b> j) Generate Test Case Generator: </b><br />";
+        echo "<input type='radio' name='generator' value=' ' ".$str_gen_no."> no&nbsp&nbsp";
+        echo "<input type='radio' name='generator' value='yes' ".$str_gen_yes."> yes";
+        echo "</p>";
+
+        echo "<p>";
+
+        echo "<input type='submit' name='submit' value='Generate'";
+        echo "</form>";
+    }
+?>
