@@ -1,4 +1,40 @@
 
+<h3> PhD Thesis </h3>
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="JMRojasPhD">1</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>.
+ <em>Test Case Generation in Object-Oriented Programming</em>.
+ PhD thesis, Universidad Polit&eacute;cnica de Madrid (Technical
+  University of Madrid), December 2013.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('JMRojasPhD_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('JMRojasPhD_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://oa.upm.es/22751/">DOI</a>&nbsp;| 
+<a href="http://oa.upm.es/22751/">http</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="JMRojasPhD_bib" >
+<pre>@phdthesis{JMRojasPhD,
+  author = {Jos\'e Miguel Rojas},
+  title = {Test {C}ase {G}eneration in {O}bject-{O}riented
+               {P}rogramming},
+  url = {http://oa.upm.es/22751/},
+  school = {{U}niversidad {P}olit\'ecnica de {M}adrid ({T}echnical
+               {U}niversity of {M}adrid)},
+  month = dec,
+  year = {2013}
+}
+
+</pre></div>
+
+</td>
+</tr>
+</table>
+
 <h3> International Journals </h3>
 
 
@@ -6,24 +42,128 @@
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="AlbertGGZRS13">1</a>]
+[<a name="STVR_seeding">1</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a>, and Andrea Arcuri.
+ Seeding strategies in search-based unit test generation.
+ <em>STVR (Software Testing, Verification and Reliability)</em>, pages
+  n/a-n/a, 2016.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('STVR_seeding_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('STVR_seeding_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1002/stvr.1601">DOI</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1002/stvr.1601">http</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="STVR_seeding_bib" >
+<pre>@article{STVR_seeding,
+  author = {Jos\'e Miguel Rojas and <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a> and Andrea Arcuri},
+  title = {Seeding strategies in search-based unit test
+               generation},
+  journal = {STVR (Software Testing, Verification and Reliability)},
+  issn = {1099-1689},
+  url = {http://dx.doi.org/10.1002/stvr.1601},
+  doi = {10.1002/stvr.1601},
+  pages = {n/a--n/a},
+  keywords = {test case generation, search-based testing, testing
+               classes, search-based software engineering, JUnit,
+               Java},
+  year = {2016}
+}
+
+</pre></div>
+<blockquote><font size="-1">
+Keywords: test case generation, search-based testing, testing
+               classes, search-based software engineering, JUnit,
+               Java
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="emse16_effectiveness">2</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, Mattia Vivanti, Andrea Arcuri, and <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a>.
+ A detailed investigation of the effectiveness of whole test suite
+  generation.
+ <em>EMSE (Empirical Software Engineering)</em>, pages 1-42, 2016.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('emse16_effectiveness_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('emse16_effectiveness_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1007/s10664-015-9424-2">DOI</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1007/s10664-015-9424-2">http</a>&nbsp;]
+<div style="display: none" id="emse16_effectiveness_abs" >
+<blockquote><font size="-1">
+A common application of search-based software testing
+               is to generate test cases for all goals defined by a
+               coverage criterion (e.g., lines, branches,
+               mutants). Rather than generating one test case at a
+               time for each of these goals individually, whole test
+               suite generation optimizes entire test suites towards
+               satisfying all goals at the same time. There is
+               evidence that the overall coverage achieved with this
+               approach is superior to that of targeting individual
+               coverage goals. Nevertheless, there remains some
+               uncertainty on (a) whether the results generalize
+               beyond branch coverage, (b) whether the whole test
+               suite approach might be inferior to a more focused
+               search for some particular coverage goals, and (c)
+               whether generating whole test suites could be optimized
+               by only targeting coverage goals not already
+               covered. In this paper, we perform an in-depth analysis
+               to study these questions. An empirical study on 100
+               Java classes using three different coverage criteria
+               reveals that indeed there are some testing goals that
+               are only covered by the traditional approach, although
+               their number is only very small in comparison with
+               those which are exclusively covered by the whole test
+               suite approach. We find that keeping an archive of
+               already covered goals along with the tests covering
+               them and focusing the search on uncovered goals
+               overcomes this small drawback on larger classes,
+               leading to an improved overall effectiveness of whole
+               test suite generation.
+</font></blockquote>
+</div>
+<div style="background: #FFFFEE; display: none" id="emse16_effectiveness_bib" >
+<pre>@article{emse16_effectiveness,
+  author = {Jos\'e Miguel Rojas and Mattia Vivanti and Andrea Arcuri and <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a>},
+  title = {A detailed investigation of the effectiveness of whole
+               test suite generation},
+  journal = {EMSE (Empirical Software Engineering)},
+  year = {2016},
+  pages = {1--42},
+  issn = {1573-7616},
+  doi = {10.1007/s10664-015-9424-2},
+  url = {http://dx.doi.org/10.1007/s10664-015-9424-2}
+}
+
+</pre></div>
+<p>
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="AlbertGGZRS13">3</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, <a href="http://www.csse.monash.edu.au/~mbanda">Mar&iacute;a Garc&iacute;a de la Banda</a>, <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>,
-  <a href="http://costa.ls.fi.upm.es/~jmrojas">Jos&eacute; Miguel Rojas</a>, and <a href="http://ww2.cs.mu.oz.au/~pjs">Peter J. Stuckey</a>.
-<strong>A CLP Heap Solver for Test Case Generation.</strong>
- <em>Theory and Practice of Logic Programming</em>, 13(4-5):721-735,
-  July 2013.
+  <a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, and <a href="http://ww2.cs.mu.oz.au/~pjs">Peter J. Stuckey</a>.
+ A CLP Heap Solver for Test Case Generation.
+ <em>TPLP (Theory and Practice of Logic Programming), ICLP 2013 SI.</em>,
+  13(4-5):721-735, 2013.
 [&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('AlbertGGZRS13_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
 <a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('AlbertGGZRS13_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1017/S1471068413000458">DOI</a>&nbsp;| 
-<a href="http://costa.ls.fi.upm.es/papers/costa/AlbertGGZRS13.pdf">PDF</a>&nbsp;| 
-<a href="http://journals.cambridge.org/article_S1471068413000458">http</a>&nbsp;]
+<a href="http://costa.ls.fi.upm.es/papers/costa/AlbertGGZRS13.pdf">PDF</a>&nbsp;]
 <div style="display: none" id="AlbertGGZRS13_abs" >
 <blockquote><font size="-1">
 One of the main challenges to software testing today is
                   to efficiently handle heap-manipulating
-                  programs. Thexse programs often build complex,
+                  programs. These programs often build complex,
                   dynamically allocated data structures during
                   execution and, to ensure reliability, the testing
                   process needs to consider all possible shapes these
@@ -44,24 +184,14 @@ One of the main challenges to software testing today is
 </div>
 <div style="background: #FFFFEE; display: none" id="AlbertGGZRS13_bib" >
 <pre>@article{AlbertGGZRS13,
-  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and Mar{\'i}a Garc{\'i}a de la Banda and Miguel G\'{o}mez-Zamalloa and Jos\'{e} Miguel Rojas and <a href="http://ww2.cs.mu.oz.au/~pjs">Peter J. Stuckey</a>},
+  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and Mar{\'i}a Garc{\'i}a de la Banda and Miguel G\'{o}mez-Zamalloa and Jos\'e Miguel Rojas and <a href="http://ww2.cs.mu.oz.au/~pjs">Peter J. Stuckey</a>},
   title = {{A} {CLP} {H}eap {S}olver for {T}est {C}ase {G}eneration},
-  journal = {Theory and Practice of Logic Programming},
+  journal = {TPLP (Theory and Practice of Logic Programming), ICLP 2013 SI.},
   year = {2013},
-  month = jul,
   publisher = {Cambridge U. Press},
   volume = {13},
   number = {4-5},
-  pages = {721--735},
-  issn = {1475-3081},
-  doi = {10.1017/S1471068413000458},
-  url = {http://journals.cambridge.org/article_S1471068413000458},
-  rank:jcr:impact = {1.087},
-  rank:jcr:position = {91/100},
-  rank:jcr:note = {The impact was computed as the mean of 2003-2012},
-  rank:jcr:category = {Computer Science, Theory and Methods},
-  rank:ms:position = {11/20},
-  rank:ms:category = {Programming Languages}
+  pages = {721--735}
 }
 
 </pre></div>
@@ -77,138 +207,149 @@ One of the main challenges to software testing today is
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="ShamshiriRFMcM15">1</a>]
+[<a name="ShamshiriJRFMA2015">1</a>]
 </td>
 <td class="bibtexitem">
-Sina Shamshiri, <a href="http://costa.ls.fi.upm.es/~jmrojas">Jos&eacute; Miguel Rojas</a>, Gordon Fraser, and Phil McMinn.
-<strong>Random or GA Search for OO Test Suite Generation? Actually, Random Is
-  Usually Good Enough.</strong>
- In <em>Genetic and Evolutionary Computation Conference, GECCO'15</em>.
-  ACM, 2015.
- To appear.
-[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('ShamshiriRFMcM15_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
-<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('ShamshiriRFMcM15_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;]
-<div style="display: none" id="ShamshiriRFMcM15_abs" >
-<blockquote><font size="-1">
-Achieving high structural coverage is an important aim
-               in software testing. Several search-based techniques
-               have proved successful at automatically generating
-               tests that achieve high coverage. However, despite the
-               well-established arguments behind using evolutionary
-               search algorithms (e.g., genetic algorithms) in
-               preference to random search, it remains an open
-               question whether the benefits can actually be observed
-               in practice when generating unit test suites for
-               object-oriented classes. In this paper, we report an
-               empirical study on the effects of using a genetic
-               algorithm (GA) over random search, by applying the
-               EvoSuite unit test suite generator to 1,000 classes
-               randomly selected from the SF110 corpus of open source
-               projects. Surprisingly, the results show little
-               difference between the coverage achieved by test suites
-               generated with evolutionary search compared to those
-               generated using random search. A detailed analysis
-               reveals that the genetic algorithm covers more branches
-               of the type where standard fitness functions provide
-               guidance. In practice, however, we observed that the
-               vast majority of branches in the analyzed projects
-               provide no such guidance.
-</font></blockquote>
-</div>
-<div style="background: #FFFFEE; display: none" id="ShamshiriRFMcM15_bib" >
-<pre>@inproceedings{ShamshiriRFMcM15,
-  author = {Sina Shamshiri and Jos\'e Miguel Rojas and Gordon Fraser and Phil McMinn},
-  title = {Random or GA Search for OO Test Suite Generation? Actually, Random Is Usually Good Enough},
-  booktitle = {Genetic and Evolutionary Computation Conference, {GECCO}'15},
+Sina Shamshiri, Ren&eacute; Just, <a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a>, Phil McMinn,
+  and Andrea Arcuri.
+ Do Automatically Generated Unit Tests Find Real Faults? An Empirical
+  Study of Effectiveness and Challenges.
+ In <em>ASE 2015</em>, pages 201-211. ACM, 2015.
+ ACM SIGSOFT Distinguished Paper Award.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('ShamshiriJRFMA2015_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('ShamshiriJRFMA2015_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="ShamshiriJRFMA2015_bib" >
+<pre>@inproceedings{ShamshiriJRFMA2015,
+  author = {Sina Shamshiri and Ren{\'e} Just and Jos\'e Miguel Rojas
+               and <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a> and Phil McMinn and Andrea Arcuri},
+  title = {Do Automatically Generated Unit Tests Find Real Faults?
+               An Empirical Study of Effectiveness and Challenges},
+  booktitle = {ASE 2015},
   publisher = {{ACM}},
+  pages = {201--211},
   year = {2015},
-  rank:core:class = {A},
-  rank:ms:position = {13/361},
-  rank:ms:category = {Artificial Intelligence},
-  note = {To appear}
+  note = {ACM SIGSOFT Distinguished Paper Award}
 }
 
 </pre></div>
-<p>
+
 </td>
 </tr>
 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="RojasFA15">2</a>]
+[<a name="ShamshiriRFM15">2</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.ls.fi.upm.es/~jmrojas">Jos&eacute; Miguel Rojas</a>, Gordon Fraser, and Andrea Arcuri.
-<strong>Automated Unit Test Generation during Software Development: A
-  Controlled Experiment and Think-Aloud Observations.</strong>
- In <em>International Symposium on Software Testing and Analysis,
-  ISSTA'15</em>. ACM, 2015.
- To appear.
+Sina Shamshiri, <a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a>, and Phil McMinn.
+ Random or Genetic Algorithm Search for Object-Oriented Test Suite
+  Generation?
+ In <em>GECCO 2015</em>, pages 1367-1374. ACM, 2015.
+ Best Paper Award (SBSE-SS Track).
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('ShamshiriRFM15_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('ShamshiriRFM15_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1145/2739480.2754696">DOI</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="ShamshiriRFM15_bib" >
+<pre>@inproceedings{ShamshiriRFM15,
+  author = {Sina Shamshiri and Jos\'e Miguel Rojas and <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a> and Phil McMinn},
+  title = {Random or Genetic Algorithm Search for Object-Oriented
+               Test Suite Generation?},
+  booktitle = {GECCO 2015},
+  pages = {1367--1374},
+  doi = {10.1145/2739480.2754696},
+  publisher = {{ACM}},
+  year = {2015},
+  isbn = {978-1-4503-3472-3},
+  note = {Best Paper Award (SBSE-SS Track)}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="RojasFA15">3</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a>, and Andrea Arcuri.
+ Automated unit test generation during software development: a
+  controlled experiment and think-aloud observations.
+ In <em>ISSTA 2015</em>, pages 338-349. ACM, 2015.
 [&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('RojasFA15_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
-<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('RojasFA15_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;]
-<div style="display: none" id="RojasFA15_abs" >
-<blockquote><font size="-1">
-Automated unit test generation tools can produce tests
-               that are superior to manually written ones in terms of
-               code coverage, but are these tests helpful to
-               developers while they are writing code? A developer
-               would first need to know when and how to apply such a
-               tool, and would then need to understand the resulting
-               tests in order to provide test oracles and to diagnose
-               and fix any faults that the tests reveal. Considering
-               all this, does automatically generating unit tests
-               provide any benefit over simply writing unit tests
-               manually?  We empirically investigated the effects of
-               using an automated unit test generation tool (EVOSUITE)
-               during development. A controlled experiment with 41
-               students shows that using EVOSUITE leads to an average
-               branch coverage increase of +13%, and 36% less time
-               is spent on testing compared to writing unit tests
-               manually. However, there is no clear effect on the
-               quality of the implementations, as it depends on how
-               the test generation tool and the generated tests are
-               used. In-depth analysis, using five think-aloud
-               observations with professional programmers, confirms
-               the necessity to increase the usability of automated
-               unit test generation tools, to integrate them better
-               during software development, and to educate software
-               developers on how to best use those tools.
-</font></blockquote>
-</div>
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('RojasFA15_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1145/2771783.2771801">DOI</a>&nbsp;]
 <div style="background: #FFFFEE; display: none" id="RojasFA15_bib" >
 <pre>@inproceedings{RojasFA15,
-  author = {Jos\'e Miguel Rojas and Gordon Fraser and Andrea
+  author = {Jos\'e Miguel Rojas and <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a> and Andrea
                Arcuri},
-  title = {Automated Unit Test Generation during Software
-               Development: A Controlled Experiment and Think-Aloud
-               Observations},
-  booktitle = {International Symposium on Software Testing and
-               Analysis, {ISSTA}'15},
+  title = {Automated unit test generation during software
+               development: a controlled experiment and think-aloud
+               observations},
+  booktitle = {ISSTA 2015},
+  pages = {338--349},
+  doi = {10.1145/2771783.2771801},
   publisher = {{ACM}},
   year = {2015},
-  rank:core:class = {A},
-  rank:ms:position = {24/285},
-  rank:ms:category = {Software Engineering},
-  note = {To appear}
+  isbn = {978-1-4503-3620-8}
 }
 
 </pre></div>
-<p>
+
 </td>
 </tr>
 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="RojasG-Z12">3</a>]
+[<a name="RojasCVFA15">4</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.ls.fi.upm.es/~jmrojas">Jos&eacute; Miguel Rojas</a> and <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>.
-<strong>A Framework for Guided Test Case Generation in Constraint
-  Logic Programming.</strong>
- In <em>LOPSTR 2012</em>, volume 7844 of <em>Lecture Notes in Computer
-  Science</em>, pages 176-193. Springer, 2013.
+<a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, Jos&eacute; Campos, Mattia Vivanti, <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a>, and
+  Andrea Arcuri.
+ Combining Multiple Coverage Criteria in Search-Based Unit Test
+  Generation.
+ In <em>SSBSE 2015</em>, volume 9275 of <em>LNCS</em>, pages 93-108.
+  Springer, 2015.
+ Best Paper Award (Industry-relevant SBSE results).
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('RojasCVFA15_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('RojasCVFA15_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1007/978-3-319-22183-0_7">DOI</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="RojasCVFA15_bib" >
+<pre>@inproceedings{RojasCVFA15,
+  author = {Jos\'e Miguel Rojas and Jos{\'{e}} Campos and
+               Mattia Vivanti and <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a> and Andrea Arcuri},
+  title = {Combining Multiple Coverage Criteria in Search-Based
+               Unit Test Generation},
+  booktitle = {SSBSE 2015},
+  pages = {93--108},
+  doi = {10.1007/978-3-319-22183-0_7},
+  series = {LNCS},
+  volume = {9275},
+  publisher = {Springer},
+  year = {2015},
+  isbn = {978-3-319-22182-3},
+  note = {Best Paper Award (Industry-relevant SBSE results)}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="RojasG-Z12">5</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a> and <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>.
+ A Framework for Guided Test Case Generation in Constraint
+  Logic Programming.
+ In <em>LOPSTR 2012</em>, volume 7844, pages 176-193. Springer, 2013.
 [&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('RojasG-Z12_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
 <a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('RojasG-Z12_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-642-38197-3_12">DOI</a>&nbsp;| 
@@ -239,7 +380,7 @@ Automated unit test generation tools can produce tests
   title = {A {F}ramework for {G}uided {T}est {C}ase {G}eneration in {C}onstraint {L}ogic {P}rogramming},
   booktitle = {LOPSTR 2012},
   publisher = {Springer},
-  series = {Lecture Notes in Computer Science},
+  series = lncs,
   volume = {7844},
   pages = {176--193},
   year = {2013},
@@ -247,7 +388,7 @@ Automated unit test generation tools can produce tests
   doi = {10.1007/978-3-642-38197-3_12},
   rank:core:class = {B},
   rank:ms:position = {32/168},
-  rank:ms:category = {Programming Languages},
+  rank:ms:category = mscatpl,
   rank:acceptrate:curr = {13/27}
 }
 
@@ -259,192 +400,199 @@ Automated unit test generation tools can produce tests
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="AlbertGR11">4</a>]
+[<a name="2013-guided">6</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, and <a href="http://costa.ls.fi.upm.es/~jmrojas">Jos&eacute; Miguel Rojas</a>.
-<strong> Resource-driven CLP-based Test Case Generation.</strong>
- In <em>LOPSTR 2011 Revised Selected Papers</em>, volume 7225 of <em>
-  Lecture Notes in Computer Science</em>, pages 25-41. Springer, July 2012.
-[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('AlbertGR11_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
-<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('AlbertGR11_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
-<a href="http://costa.ls.fi.upm.es/papers/costa/AlbertGR11.pdf">PDF</a>&nbsp;| 
-<a href="http://dx.doi.org/10.1007/978-3-642-32211-2_3">http</a>&nbsp;]
-<div style="display: none" id="AlbertGR11_abs" >
-<blockquote><font size="-1">
- Test Data Generation (TDG) aims at automatically
-                  obtaining <em>test inputs</em> which can then be used
-                  by a software testing tool to validate the
-                  functional behaviour of the program. In this paper,
-                  we propose <em>resource-aware</em> TDG, whose purpose
-                  is to generate test cases (from which the test
-                  inputs are obtained) with associated <em>resource
-                  consumption</em>s. The framework is parametric w.r.t.                   the notion of resource (it can measure memory,
-                  steps, etc.) and allows using software testing to
-                  detect bugs related to non-functional aspects of the
-                  program. As a further step, we introduce
-                  <em>resource-driven</em> TDG whose purpose is to guide
-                  the TDG process by taking resource consumption into
-                  account.  Interestingly, given a <em>resource
-                  policy</em>, TDG is guided to generate test cases that
-                  adhere to the policy and avoid the generation of
-                  test cases which violate it.
-</font></blockquote>
-</div>
-<div style="background: #FFFFEE; display: none" id="AlbertGR11_bib" >
-<pre>@inproceedings{AlbertGR11,
-  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and Miguel G\'{o}mez-Zamalloa and Jos\'{e} Miguel Rojas},
-  title = {{R}esource-driven {CLP}-based {T}est {C}ase {G}eneration},
-  booktitle = {LOPSTR 2011 Revised Selected Papers},
-  series = {Lecture Notes in Computer Science},
+<a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a> and <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>.
+ A Framework for Guided Test Case Generation in Constraint
+  Logic Programming.
+ In <em>LOPSTR 2012</em> [<a href="#RojasG-Z12">5</a>], pages 176-193.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('2013-guided_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('2013-guided_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="2013-guided_bib" >
+<pre>@inproceedings{2013-guided,
+  crossref = {RojasG-Z12}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="2012-ResourceTDG">7</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, and <a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>.
+ Resource-driven CLP-based Test Case Generation.
+ In <em>LOPSTR 2011</em>, volume 7225 of <em>LNCS</em>, pages 25-41.
+  Springer, 2012.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('2012-ResourceTDG_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('2012-ResourceTDG_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="2012-ResourceTDG_bib" >
+<pre>@inproceedings{2012-ResourceTDG,
+  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and Miguel G\'{o}mez-Zamalloa and
+               Jos\'e Miguel Rojas},
+  title = {Resource-driven CLP-based Test Case Generation},
+  booktitle = {LOPSTR 2011},
+  series = {LNCS},
   volume = {7225},
   pages = {25--41},
-  npages = {17},
   publisher = {Springer},
-  month = jul,
-  year = {2012},
-  isbn = {978-3-642-32210-5},
-  url = {http://dx.doi.org/10.1007/978-3-642-32211-2_3},
-  rank:core:class = {B},
-  rank:ms:position = {32/168},
-  rank:ms:category = {Programming Languages},
-  rank:acceptrate:curr = {14/28}
+  year = {2012}
 }
 
 </pre></div>
-<p>
+
 </td>
 </tr>
 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="AlbertOR12">5</a>]
+[<a name="2011-NEPSonClusters">8</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, <a href="http://www.nr.no/~bjarte/">Bjarte M. &Oslash;stvold</a>, and <a href="http://costa.ls.fi.upm.es/~jmrojas">Jos&eacute; Miguel Rojas</a>.
- <strong>Automated Extraction of Abstract Behavioural Models from
-  JMS Applications.</strong>
- In <em>Formal Methods for Industrial Critical Systems (FMICS'12)</em>,
-  volume 7437 of <em>Lecture Notes in Computer Science</em>, pages 16-31.
-  Springer, 2012.
-[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('AlbertOR12_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
-<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('AlbertOR12_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
-<a href="http://costa.ls.fi.upm.es/papers/costa/AlbertOR12.pdf">PDF</a>&nbsp;]
-<div style="display: none" id="AlbertOR12_abs" >
-<blockquote><font size="-1">
- Distributed systems are hard to program, understand and
-                  analyze. Two key sources of complexity are the many
-                  possible behaviors of a system, arising from the
-                  parallel execution of its distributed nodes, and the
-                  handling of asynchronous messages exchanged between
-                  nodes. We show how to systematically construct
-                  executable models of publish/subscribe systems based
-                  on the Java Messaging Service (JMS). These models,
-                  written in the executable Abstract Behavioural
-                  Specification (ABS) language, capture the essential
-                  parts of the messaging behavior of the original Java
-                  systems, and eliminate details not related to
-                  distribution and messages. We report on JMS2ABS, a
-                  tool that automatically extracts ABS models from the
-                  bytecode of JMS systems. Since the extracted models
-                  are formal and executable, they allow us to reason
-                  about the modeled JMS systems by means of tools
-                  built specifically for the modeling language. For
-                  example, we have succeeded to apply simulation,
-                  termination and resource analysis tools developed
-                  for ABS to, respectively, execute, prove termination
-                  and infer the resource consumption of the original
-                  JMS applications.  
-</font></blockquote>
-</div>
-<div style="background: #FFFFEE; display: none" id="AlbertOR12_bib" >
-<pre>@inproceedings{AlbertOR12,
-  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and Bjarte M. {\O}stvold and Jos\'{e} Miguel Rojas},
-  title = {{A}utomated {E}xtraction of {A}bstract {B}ehavioural {M}odels from {JMS} {A}pplications},
-  booktitle = {Formal Methods for Industrial Critical Systems (FMICS'12)},
-  publisher = {Springer},
-  series = {Lecture Notes in Computer Science},
-  volume = {7437},
-  pages = {16--31},
-  isbn = {978-3-642-32468-0},
-  year = {2012},
-  rank:core:class = {C},
-  rank:ms:position = {118/285},
-  rank:ms:category = {Software Engineering},
-  rank:acceptrate:curr = {14/37}
+Carmen Navarrete, Marina de&nbsp;la Cruz, Eloy Anguiano, Alfonso Ortega, and
+  <a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>.
+ Parallel Simulation of NEPs on Clusters.
+ In <em>WI-IAT 2011</em>, pages 171-174. IEEE Computer Society, 2011.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('2011-NEPSonClusters_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('2011-NEPSonClusters_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1109/WI-IAT.2011.131">DOI</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="2011-NEPSonClusters_bib" >
+<pre>@inproceedings{2011-NEPSonClusters,
+  author = {Carmen Navarrete and Marina de la Cruz and Eloy Anguiano and Alfonso Ortega and Jos\'e Miguel Rojas},
+  booktitle = {WI-IAT 2011},
+  title = {Parallel Simulation of {NEP}s on Clusters},
+  pages = {171--174},
+  keywords = {computer cluster;multicore desktop
+               computer;multithreaded Java simulator;networks of
+               evolutionary processors;parallel
+               simulation;multi-threading;multiprocessing
+               systems;parallel processing;},
+  doi = {http://dx.doi.org/10.1109/WI-IAT.2011.131},
+  publisher = {{IEEE} Computer Society},
+  year = {2011}
 }
 
 </pre></div>
-<p>
+<blockquote><font size="-1">
+Keywords: computer cluster;multicore desktop
+               computer;multithreaded Java simulator;networks of
+               evolutionary processors;parallel
+               simulation;multi-threading;multiprocessing
+               systems;parallel processing;
+</font></blockquote>
+
 </td>
 </tr>
 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="AlbertGRP10">6</a>]
+[<a name="2011-CompTDG">9</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, <a href="http://costa.ls.fi.upm.es/~jmrojas">Jos&eacute; Miguel Rojas</a>, and <a href="http://costa.ls.fi.upm.es/~german">Germ&aacute;n Puebla</a>.
-<strong>Compositional CLP-based Test Data Generation for Imperative
-  Languages.</strong>
- In Mar&iacute;a Alpuente, editor, <em>LOPSTR 2010 Revised Selected
-  Papers</em>, volume 6564 of <em>Lecture Notes in Computer Science</em>, pages
-  99-116. Springer-Verlag, 2011.
-[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('AlbertGRP10_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
-<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('AlbertGRP10_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
-<a href="http://dx.doi.org/10.1007/978-3-642-20551-4_7">DOI</a>&nbsp;| 
-<a href="http://costa.ls.fi.upm.es/papers/costa/AlbertGRP10.pdf">PDF</a>&nbsp;]
-<div style="display: none" id="AlbertGRP10_abs" >
-<blockquote><font size="-1">
-Glass-box test data generation (TDG) is the process of
-                  automatically generating test input data for a
-                  program by considering its internal structure. This
-                  is generally accomplished by performing symbolic
-                  execution of the program where the contents of
-                  variables are expressions rather than concrete
-                  values. The main idea in CLP-based TDG is to
-                  translate imperative programs into equivalent CLP
-                  ones and then rely on the standard evaluation
-                  mechanism of CLP to symbolically execute the
-                  imperative program. Performing symbolic execution on
-                  large programs becomes quickly expensive due to the
-                  large number and the size of paths that need to be
-                  explored. In this paper, we propose compositional
-                  reasoning in CLP-based TDG where large programs can
-                  be handled by testing parts (such as components,
-                  modules, libraries, methods, etc.) separately and
-                  then by composing the test cases obtained for these
-                  parts to get the required information on the whole
-                  program. Importantly, compositional reasoning also
-                  gives us a practical solution to handle native code,
-                  which may be unavailable or written in a different
-                  programming language. Namely, we can model the
-                  behavior of a native method by means of test cases
-                  and compositional reasoning is able to use them.
-</font></blockquote>
-</div>
-<div style="background: #FFFFEE; display: none" id="AlbertGRP10_bib" >
-<pre>@inproceedings{AlbertGRP10,
-  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and Miguel G\'{o}mez-Zamalloa and Jos{\'e} Miguel Rojas and Germ{\'a}n Puebla},
-  title = {Compositional {CLP}-based {T}est {D}ata {G}eneration for {I}mperative {L}anguages},
-  booktitle = {LOPSTR 2010 Revised Selected Papers},
-  publisher = {Springer-Verlag},
-  series = {Lecture Notes in Computer Science},
-  editor = {Mar\'{i}a Alpuente},
-  year = {2011},
-  volume = {6564},
+<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, <a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, and <a href="http://costa.ls.fi.upm.es/~german">Germ&aacute;n Puebla</a>.
+ Compositional CLP-Based Test Data Generation for Imperative
+  Languages.
+ In <em>LOPSTR 2010</em>, volume 6564 of <em>LNCS</em>, pages 99-116.
+  Springer, 2011.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('2011-CompTDG_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('2011-CompTDG_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://costa.ls.fi.upm.es/papers/costa/AlbertGRP10.pdf">PDF</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1007/978-3-642-20551-4_7">http</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="2011-CompTDG_bib" >
+<pre>@incollection{2011-CompTDG,
+  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and Miguel G\'{o}mez-Zamalloa and
+               Jos\'e Miguel Rojas and Germ\'{a}n Puebla},
+  title = {Compositional CLP-Based Test Data Generation for
+               Imperative Languages},
+  booktitle = {LOPSTR 2010},
+  series = {LNCS},
+  publisher = {Springer},
+  isbn = {},
   pages = {99--116},
-  isbn = {978-3-642-20550-7},
-  rank:core:class = {B},
-  rank:ms:position = {32/168},
-  rank:ms:category = {Programming Languages},
-  rank:acceptrate:curr = {13/26}
+  volume = {6564},
+  url = {http://dx.doi.org/10.1007/978-3-642-20551-4_7},
+  year = {2011}
 }
 
 </pre></div>
-<p>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="2010-JHSYS">10</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, Marina de&nbsp;la Cruz&nbsp;Echeand&iacute;a, and Alfonso&nbsp;Ortega de&nbsp;la
+  Puente.
+ Towards the Automatic Programming of H Systems: jHsys, a Java H
+  System Simulator.
+ In <em>Trends in PAAMS 2010</em>, volume&nbsp;71 of <em>AISC</em>, pages
+  387-394. Springer, 2010.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('2010-JHSYS_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('2010-JHSYS_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1007/978-3-642-12433-4_46">DOI</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="2010-JHSYS_bib" >
+<pre>@inproceedings{2010-JHSYS,
+  author = {Jos\'e Miguel Rojas and
+               Marina de la Cruz Echeand\'{\i}a and
+               Alfonso Ortega de la Puente},
+  title = {Towards the Automatic Programming of H Systems: jHsys, a
+               Java H System Simulator},
+  booktitle = {Trends in PAAMS 2010},
+  publisher = {Springer},
+  series = {AISC},
+  volume = {71},
+  isbn = {978-3-642-12432-7},
+  year = {2010},
+  pages = {387--394}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="2009-JNEPS">11</a>]
+</td>
+<td class="bibtexitem">
+Emilio del Rosal, <a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, Rafael N&uacute;&ntilde;ez, Carlos
+  Casta&ntilde;eda, and Alfonso&nbsp;Ortega de&nbsp;la Puente.
+ On the Solutions of NP-Complete Problems by Means of jNEP Run on
+  Computers.
+ In <em>ICAART 2009</em>, pages 605-612. INSTICC Press, 2009.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('2009-JNEPS_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('2009-JNEPS_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="2009-JNEPS_bib" >
+<pre>@inproceedings{2009-JNEPS,
+  author = {Emilio del Rosal and
+               Jos\'e Miguel Rojas and
+               Rafael N{\'u}{\~n}ez and
+               Carlos Casta{\~n}eda and
+               Alfonso Ortega de la Puente},
+  title = {On the Solutions of NP-Complete Problems by Means of jNEP
+               Run on Computers},
+  booktitle = {ICAART 2009},
+  publisher = {INSTICC Press},
+  year = {2009},
+  isbn = {978-989-8111-66-1},
+  pages = {605--612}
+}
+
+</pre></div>
+
 </td>
 </tr>
 </table>
@@ -456,172 +604,183 @@ Glass-box test data generation (TDG) is the process of
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="RojasP13">1</a>]
+[<a name="Mutation16_CodeDefenders">1</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.ls.fi.upm.es/~jmrojas">Jos&eacute; Miguel Rojas</a> and <a href="http://ti.arc.nasa.gov/profile/pcorina">Corina S. P&#x101;s&#x101;reanu</a>.
-<strong>Compositional Symbolic Execution through Program
-  Specialization.</strong>
- In <em>BYTECODE 2013, 8th Workshop on Bytecode Semantics,
-  Verification, Analysis and Transformation</em>, March 2013.
-[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('RojasP13_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
-<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('RojasP13_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
-<a href="http://costa.ls.fi.upm.es/papers/costa/RojasP13.pdf">PDF</a>&nbsp;]
-<div style="display: none" id="RojasP13_abs" >
-<blockquote><font size="-1">
- Scalability is a major challenge in symbolic
-                  execution.  The large number of paths that need to
-                  be explored and the large size of the constraints
-                  that must be carried often compromise the
-                  effectiveness of symbolic execution for software
-                  testing in practice.  Compositional symbolic
-                  execution aims to alleviate these scalability issues
-                  by executing the methods of a program separately,
-                  stowing their results in method summaries and using
-                  such summaries to incrementally execute the complete
-                  program. We present a novel compositional approach
-                  that leverages partial evaluation, a
-                  well-established technique that aims at
-                  automatically specializing a program with respect to
-                  some of its input.  We report on its design and
-                  implementation in Symbolic PathFinder and on
-                  preliminary promising evaluation results.
-</font></blockquote>
-</div>
-<div style="background: #FFFFEE; display: none" id="RojasP13_bib" >
-<pre>@inproceedings{RojasP13,
-  author = {Jos\'{e} Miguel Rojas and Corina S. P\u{a}s\u{a}reanu},
-  title = {{C}ompositional {S}ymbolic {E}xecution through {P}rogram {S}pecialization},
-  booktitle = {BYTECODE 2013, 8th Workshop on Bytecode Semantics, Verification,
-                  Analysis and Transformation},
-  year = {2013},
-  month = mar,
-  rank:custom:class = {none}
+<a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a> and <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a>.
+ Code Defenders: A Mutation Testing Game.
+ In <em>MUTATION 2016 (The 11th International Workshop on Mutation
+  Analysis)</em>. IEEE, 2016.
+ To appear.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('Mutation16_CodeDefenders_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('Mutation16_CodeDefenders_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="Mutation16_CodeDefenders_bib" >
+<pre>@inproceedings{Mutation16_CodeDefenders,
+  author = {Jos\'e Miguel Rojas and <a href="http://staffwww.dcs.shef.ac.uk/people/G.Fraser">Gordon Fraser</a>},
+  title = {Code Defenders: A Mutation Testing Game},
+  booktitle = {MUTATION 2016 (The 11th International Workshop on
+               Mutation Analysis)},
+  year = {2016},
+  publisher = {IEEE},
+  note = {To appear}
 }
 
 </pre></div>
-<p>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="2013-nasa">2</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a> and <a href="http://ti.arc.nasa.gov/profile/pcorina">Corina S. P&#x101;s&#x101;reanu</a>.
+ Compositional Symbolic Execution through Program
+  Specialization.
+ In <em>BYTECODE 2013</em>, 2013.
+ Peer-reviewed workshop (co-located with ETAPS) with no formal
+  proceedings.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('2013-nasa_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('2013-nasa_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="2013-nasa_bib" >
+<pre>@inproceedings{2013-nasa,
+  author = {Jos\'e Miguel Rojas and Corina S. P\u{a}s\u{a}reanu},
+  title = {{C}ompositional {S}ymbolic {E}xecution through {P}rogram {S}pecialization},
+  booktitle = {BYTECODE 2013},
+  year = 2013,
+  note = {Peer-reviewed workshop (co-located with ETAPS) with no formal proceedings.}
+}
+
+</pre></div>
+
 </td>
 </tr>
 </table>
 
-<h3> Books </h3>
+<h3> Book Chapters </h3>
 
 
 <table>
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="AlbertAGZR14">1</a>]
+[<a name="AlbertAGR14">1</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, <a href="http://costa.ls.fi.upm.es/~puri">Puri Arenas</a>, <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, and Jose&nbsp;Miguel Rojas.
-<strong>Test Case Generation by Symbolic Execution: Basic
-  Concepts, a CLP-Based Instance, and Actor-Based Concurrency.</strong>
- In Marco Bernardo, Ferruccio Damiani, <a href="http://www.cse.chalmers.se/~reiner">Reiner H&auml;hnle</a>, <a href="http://heim.ifi.uio.no/einarj">Einar Broch Johnsen</a>, and Ina Schaefer, editors, <em>Formal Methods for Executable
-  Software Models</em>, volume 8483 of <em>Lecture Notes in Computer Science</em>,
-  pages 263-309. Springer International Publishing, 2014.
-[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('AlbertAGZR14_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
-<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('AlbertAGZR14_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, <a href="http://costa.ls.fi.upm.es/~puri">Puri Arenas</a>, <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, and <a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>.
+ Test Case Generation by Symbolic Execution: Basic
+  Concepts, a CLP-Based Instance, and Actor-Based Concurrency.
+ In <em>SFM 2014, Advanced Lectures</em>, volume 8483 of <em>LNCS</em>,
+  pages 263-309. Springer, 2014.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('AlbertAGR14_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('AlbertAGR14_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-319-07317-0_7">DOI</a>&nbsp;| 
 <a href="http://costa.ls.fi.upm.es/papers/costa/AlbertAGZR14.pdf">PDF</a>&nbsp;]
-<div style="display: none" id="AlbertAGZR14_abs" >
-<blockquote><font size="-1">
-The focus of this tutorial is white-box test case generation
-  (tcg) based on symbolic execution.  Symbolic execution consists
-  in executing a program with the contents of its input arguments
-  being symbolic variables rather than concrete values. A symbolic
-  execution tree characterizes the set of execution paths explored
-  during the symbolic execution of a program. Test cases can be then
-  obtained from the successful branches of the tree. The tutorial is
-  split into three parts: (1) The first part overviews the basic
-  techniques used in tcg to ensure termination, handling
-  heap-manipulating programs, achieving compositionality in the
-  process and guiding tcg towards interesting test cases. (2) In
-  the second part, we focus on a particular implementation of the
-  tcg framework in constraint logic programming (CLP).  In essense,
-  the imperative object-oriented program under test is automatically
-  transformed into an equivalent executable CLP-translated
-  program. The main advantage of CLP-based tcg is that the standard
-  mechanism of CLP performs symbolic execution for free.  The PET
-  system is an open-source software that implements this approach. (3)
-  Finally, in the last part, we study the extension of tcg to
-  actor-based concurrent programs.
-
-</font></blockquote>
-</div>
-<div style="background: #FFFFEE; display: none" id="AlbertAGZR14_bib" >
-<pre>@incollection{AlbertAGZR14,
-  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and <a href="http://costa.ls.fi.upm.es/~puri">Puri Arenas</a> and Miguel G\'omez-Zamalloa and Jose Miguel Rojas},
-  booktitle = {Formal Methods for Executable Software Models},
-  title = {Test {C}ase {G}eneration by {S}ymbolic {E}xecution: {B}asic {C}oncepts, a {CLP}-{B}ased {I}nstance, and {A}ctor-{B}ased {C}oncurrency},
-  isbn = {978-3-319-07316-3},
+<div style="background: #FFFFEE; display: none" id="AlbertAGR14_bib" >
+<pre>@inproceedings{AlbertAGR14,
+  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and <a href="http://costa.ls.fi.upm.es/~puri">Puri Arenas</a> and Miguel
+               G{\'o}mez-Zamalloa and Jos\'e Miguel Rojas},
+  title = {Test {C}ase {G}eneration by {S}ymbolic {E}xecution:
+               {B}asic {C}oncepts, a {CLP}-{B}ased {I}nstance, and
+               {A}ctor-{B}ased {C}oncurrency},
+  booktitle = {SFM 2014, Advanced Lectures},
+  year = {2014},
+  pages = {263--309},
+  publisher = {Springer},
+  series = {LNCS},
   volume = {8483},
-  series = {Lecture Notes in Computer Science},
-  editor = {Marco Bernardo and Ferruccio Damiani and Reiner H\"ahnle and  <a href="http://heim.ifi.uio.no/einarj">Einar Broch Johnsen</a> and Ina Schaefer},
-  doi = {10.1007/978-3-319-07317-0_7},
-  publisher = {Springer International Publishing},
-  pages = {263-309},
-  year = {2014}
+  isbn = {978-3-319-07316-3}
 }
 
 </pre></div>
-<p>
+
 </td>
 </tr>
 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="FmcoTutorial12">2</a>]
+[<a name="AlbertAACFGGMPRRZ12">2</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, <a href="http://es.linkedin.com/pub/diego-esteban-alonso-blas/16/458/b77">Diego Esteban Alonso Blas</a>, <a href="http://costa.ls.fi.upm.es/~puri">Puri Arenas</a>, <a href="http://www.fdi.ucm.es/profesor/jcorreas/">Jes&uacute;s Correas</a>, Antonio
-  Flores-Montoya, <a href="http://costa.ls.fi.upm.es/~genaim">Samir Genaim</a>, <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, <a href="http://clip.dia.fi.upm.es/~anm">Abu Naser Masud</a>,
-  <a href="http://costa.ls.fi.upm.es/~german">Germ&aacute;n Puebla</a>, <a href="http://costa.ls.fi.upm.es/~jmrojas">Jos&eacute; Miguel Rojas</a>, <a href="http://costa.ls.fi.upm.es/~groman">Guillermo Rom&aacute;n-D&iacute;ez</a>, and <a href="http://costa.ls.fi.upm.es/~damiano">Damiano Zanardini</a>.
-<strong>Automatic Inference of Bounds on Resource Consumption.</strong>
- In <em>Formal Methods for Components and Objects - 11th
-  International Symposium, FMCO 2012, Bertinoro, Italy, September 24-28, 2012,
-  Revised Lectures</em>, volume 7866 of <em>Lecture Notes in Computer Science</em>,
-  pages 119-144. Springer, 2013.
-[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('FmcoTutorial12_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
-<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('FmcoTutorial12_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
-<a href="http://dx.doi.org/10.1007/978-3-642-40615-7_4">DOI</a>&nbsp;| 
-<a href="http://costa.ls.fi.upm.es/papers/costa/FmcoTutorial12.pdf">PDF</a>&nbsp;| 
-<a href="http://dx.doi.org/10.1007/978-3-642-40615-7_4">http</a>&nbsp;]
-<div style="display: none" id="FmcoTutorial12_abs" >
-<blockquote><font size="-1">
-In this tutorial paper, we overview the techniques that un-
-  derlie the automatic inference of resource consumption bounds. We first
-  explain the basic techniques on a Java-like sequential language. Then,
-  we describe the extensions that are required to apply our method on
-  concurrent ABS programs. Finally, we discuss some advanced issues in
-  resource analysis, including the inference of non-cumulative resources
-  and the treatment of shared mutable data.
-</font></blockquote>
-</div>
-<div style="background: #FFFFEE; display: none" id="FmcoTutorial12_bib" >
-<pre>@inproceedings{FmcoTutorial12,
-  title = {{A}utomatic {I}nference of {B}ounds on {R}esource {C}onsumption},
-  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and <a href="http://es.linkedin.com/pub/diego-esteban-alonso-blas/16/458/b77">Diego Esteban Alonso Blas</a> and <a href="http://costa.ls.fi.upm.es/~puri">Puri Arenas</a> and Jes\'us Correas and Antonio Flores-Montoya and <a href="http://costa.ls.fi.upm.es/~genaim">Samir Genaim</a> and Miguel G\'omez-Zamalloa and <a href="http://clip.dia.fi.upm.es/~anm">Abu Naser Masud</a> and Germ\'an Puebla and Jos\'e Miguel Rojas and Guillermo Rom\'an-D\'iez and <a href="http://costa.ls.fi.upm.es/~damiano">Damiano Zanardini</a>},
-  booktitle = {Formal Methods for Components and Objects - 11th International
-               Symposium, FMCO 2012, Bertinoro, Italy, September 24-28,
-               2012, Revised Lectures},
-  year = {2013},
+<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, <a href="http://es.linkedin.com/pub/diego-esteban-alonso-blas/16/458/b77">Diego Esteban Alonso Blas</a>, <a href="http://costa.ls.fi.upm.es/~puri">Puri Arenas</a>, <a href="http://www.fdi.ucm.es/profesor/jcorreas/">Jes&uacute;s Correas</a>,
+  Antonio Flores-Montoya, <a href="http://costa.ls.fi.upm.es/~genaim">Samir Genaim</a>, <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, <a href="http://clip.dia.fi.upm.es/~anm">Abu Naser Masud</a>, German Puebla, <a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, <a href="http://costa.ls.fi.upm.es/~groman">Guillermo Rom&aacute;n-D&iacute;ez</a>, and
+  <a href="http://costa.ls.fi.upm.es/~damiano">Damiano Zanardini</a>.
+ Automatic Inference of Bounds on Resource Consumption.
+ In <em>FMCO 2012, Revised Lectures</em>, volume 7866 of <em>LNCS</em>,
+  pages 119-144. Springer, 2012.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('AlbertAACFGGMPRRZ12_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('AlbertAACFGGMPRRZ12_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1007/978-3-642-40615-7_4">DOI</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="AlbertAACFGGMPRRZ12_bib" >
+<pre>@inproceedings{AlbertAACFGGMPRRZ12,
+  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and
+               <a href="http://es.linkedin.com/pub/diego-esteban-alonso-blas/16/458/b77">Diego Esteban Alonso Blas</a> and
+               <a href="http://costa.ls.fi.upm.es/~puri">Puri Arenas</a> and
+               Jes{\'u}s Correas and
+               Antonio Flores-Montoya and
+               <a href="http://costa.ls.fi.upm.es/~genaim">Samir Genaim</a> and
+               Miguel G{\'o}mez-Zamalloa and
+               <a href="http://clip.dia.fi.upm.es/~anm">Abu Naser Masud</a> and
+               German Puebla and
+               Jos\'e Miguel Rojas and
+               Guillermo Rom{\'a}n-D\'{\i}ez and
+               <a href="http://costa.ls.fi.upm.es/~damiano">Damiano Zanardini</a>},
+  title = {Automatic Inference of Bounds on Resource Consumption},
+  booktitle = {FMCO 2012, Revised Lectures},
+  year = {2012},
   pages = {119-144},
-  volume = {7866},
-  series = {Lecture Notes in Computer Science},
   publisher = {Springer},
-  doi = {http://dx.doi.org/10.1007/978-3-642-40615-7_4},
-  url = {http://dx.doi.org/10.1007/978-3-642-40615-7_4},
-  rank:custom:class = {none},
-  rank:ms:citedate = {11/12/2013},
-  rank:ms:category = {Software Engineering},
-  rank:ms:position = {133/285}
+  series = {LNCS},
+  volume = {7866},
+  isbn = {978-3-642-40614-0}
 }
 
 </pre></div>
-<p>
+
+</td>
+</tr>
+</table>
+
+<h3> Other Publications </h3>
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="alp12">1</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a>, Diego&nbsp;Esteban Alonso, <a href="http://costa.ls.fi.upm.es/~puri">Puri Arenas</a>, <a href="http://www.fdi.ucm.es/profesor/jcorreas/">Jes&uacute;s Correas</a>, Antonio
+  Flores-Montoya, <a href="http://costa.ls.fi.upm.es/~genaim">Samir Genaim</a>, <a href="http://costa.ls.fi.upm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, <a href="http://clip.dia.fi.upm.es/~anm">Abu Naser Masud</a>,
+  <a href="http://costa.ls.fi.upm.es/~german">Germ&aacute;n Puebla</a>, <a href="http://josemiguelrojas.org">Jos&eacute; Miguel Rojas</a>, <a href="http://costa.ls.fi.upm.es/~groman">Guillermo Rom&aacute;n-D&iacute;ez</a>, and <a href="http://costa.ls.fi.upm.es/~damiano">Damiano Zanardini</a>.
+ Resource Analysis in the COSTA System.
+ December 2012.
+ Newsletter.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('alp12_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('alp12_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://costa.ls.fi.upm.es/papers/costa/alp12.pdf">PDF</a>&nbsp;| 
+<a href="http://www.cs.nmsu.edu/ALP/2012/12/resource-analysis-in-the-costa-system/">http</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="alp12_bib" >
+<pre>@article{alp12,
+  title = {Resource {A}nalysis in the {COSTA} {S}ystem},
+  author = {<a href="http://costa.ls.fi.upm.es/~elvira">Elvira Albert</a> and Diego Esteban Alonso and <a href="http://costa.ls.fi.upm.es/~puri">Puri Arenas</a>
+               and Jes\'us Correas and Antonio Flores-Montoya and
+               <a href="http://costa.ls.fi.upm.es/~genaim">Samir Genaim</a> and Miguel G\'omez-Zamalloa and <a href="http://clip.dia.fi.upm.es/~anm">Abu Naser Masud</a> and Germ\'an Puebla and Jos\'e Miguel Rojas and
+               Guillermo Rom\'an-D\'iez and <a href="http://costa.ls.fi.upm.es/~damiano">Damiano Zanardini</a>},
+  booktitle = {ALP Newsletter},
+  url = {http://www.cs.nmsu.edu/ALP/2012/12/resource-analysis-in-the-costa-system/},
+  year = 2012,
+  month = dec,
+  rank:custom:class = {none},
+  note = {Newsletter}
+}
+
+</pre></div>
+
 </td>
 </tr>
 </table>
