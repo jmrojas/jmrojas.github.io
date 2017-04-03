@@ -1,0 +1,203 @@
+\documentclass[a4paper]{article}
+
+\usepackage[a4paper,left=25mm,top=20mm,right=25mm,bottom=15mm]{geometry}
+
+\usepackage[compact]{titlesec}
+\usepackage{paralist}
+
+\title{Research Statement\\{\Large Jos\'e Miguel Rojas}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+My main research goal is to develop techniques and tools that enable
+software engineers to be more productive and to create higher quality,
+well tested software. I am a firm advocate of applying automation to
+improve the way software is developed and tested, and believe there is
+plenty of work to be done before research outcome becomes truly
+relevant for software practitioners. This conviction has driven my
+work as a PhD student at the Technical University of Madrid (Spain)
+and as a Research Associate in Software Testing at the University of
+Sheffield (UK), and will continue to delineate my research interests
+in the future.
+
+\section{PhD Research}
+
+I obtained my PhD with honours from the Technical University of
+Madrid, Spain. The main goal of my PhD research was to improve the
+scalability of symbolic execution for automated test data generation
+to overcome well-known limitations (e.g., the state space explosion
+problem). During my PhD work
+\begin{inparaenum}[(1)]
+\item I proposed \emph{compositional symbolic execution} to overcome
+  the well-known inter-procedural path explosion problem, including a
+  compositional strategy based on program specialisation for the
+  state-of-the-art Symbolic Java PathFinder tool;
+\item I proposed to drive symbolic execution towards exploring only
+  parts of the program under test that comply with a pre-defined
+  \emph{resource consumption policy};
+\item I developed a \emph{guided symbolic execution} approach that
+  uses program abstractions and oracles to guide symbolic execution
+  towards the most ``interesting'' parts of a program; and
+\item I formulated an \emph{efficient heap solver} to efficiently
+  handle heap-related constraints and reference aliasing during
+  symbolic execution, which greatly outperforms the state-of-the-art
+  ``lazy initialization'' technique.
+\end{inparaenum}
+I published my PhD work at LOPSTR'10,'11,'12, BYTECODE'13 (ETAPS'13
+Workshop), and ICLP'13.
+
+% I implemented these four approaches in PET, a prototypical constraint
+% logic programming-based framework for symbolic execution and test
+% generation of Java bytecode programs. The experimental evaluations I
+% conducted confirmed the effectiveness of the proposed solutions to
+% improve the scalability of the tool.
+
+\section{Postdoctoral Research}
+
+In my PhD work I succeeded to improve the scalability of a constraint
+logic programming-based symbolic execution prototype
+framework. However, the applicability of this approach to arbitrary,
+real-world programs remained unclear. This observation naturally drew
+my interest towards a more practical and scalable approach to test
+data generation: search-based testing. I joined Dr. Gordon Fraser at
+The University of Sheffield in February 2014, initially to work on
+\emph{producing, measuring and analysing automated test generation
+  techniques}. During these three years I have greatly improved the
+volume and quality of my research outcome, reaching a much wider
+audience. My current research can be categorised in three areas:
+Search-based automated test generation, empirical studies in software
+engineering and gamification of software testing.
+
+\subsection{Search-based automated test generation}
+
+My contribution to search-based automated test generation involves
+extensions to the state-of-the-art EvoSuite test generation tool, and
+analysis of multiple aspects of the unit tests automatically generated
+by EvoSuite. We have extended EvoSuite to target a combination of
+multiple coverage criteria at the same time, including not only formal
+well-known criteria (e.g., branch coverage) but also criteria
+resulting from practical software testing experience (e.g., input and
+output diversity). This work was awarded the \textbf{Best Paper With
+  Industry-relevant Results Award} at the SSBSE'15 conference. We have
+also made novel contributions on the suitability of genetic algorithms
+for test generation for object-oriented programs (\textbf{Best Paper
+  Award} at GECCO'15) and on the fault-detection effectiveness of
+state-of-the-art unit test generation tools (\textbf{ACM SIGSOFT
+  Distinguished Paper Award} at ASE'15). In related work, we also
+improved the effectiveness of EvoSuite by using \emph{seeding}
+techniques to guide the search with available static and dynamic
+information (STVR journal paper), and by implementing a \emph{test
+  archive} solution to preserve sub-optimal individuals (EMSE journal
+paper).
+
+\subsection{Controlled human studies}
+
+The ultimate goal of any automated software testing technique is to
+impact the way in which practitioners develop and test their code. The
+validity of newly developed techniques must be justified with sound
+empirical evidence. Over the past three years I have lead the design
+and execution of four empirical studies with humans addressing (1) the
+effects of automatically generated unit tests during software
+development, (2) the influence of autotically generated unit tests on
+software maintenance tasks, (3) the value of synthesising descriptive
+names for automatically generated unit tests, and (4) the feasibility
+of gamifying software testing and eliciting effective tests in an
+online crowdsourcing scenario. A grand total of 243 developers
+(students and professionals) took part in these studies, and the
+results have been published or are currently under review in the most
+prestigious software engineering conferences (ISSTA and ICSE).
+
+
+%  We
+% conducted a large human study with 45 participants on the effects of
+% using automatically generated unit tests during software
+% development. To extend the external validity of this work, I
+% personally conducted further replications of this study which included
+% 45 more participants in three universities in Sheffield (UK), Madrid
+% (Spain) and Buenos Aires (Argentina).
+
+\subsection{Gamification of software testing}
+
+Software testing is often perceived as a dull, uninteresting activity
+within the software development process. Developers not only dislike
+testing their software, but they also often lack the skills to perform
+effective software testing in the first place, partly as a result of
+testing being evidently neglected in most computer science and
+software engineering curricula. This simple observation lead us to
+explore ways in which we could make software testing more enjoyable,
+both for students to learn at university and for developers to apply
+in practice. As a result, we devised a gamification approach to
+software testing which we called Code Defenders. Code Defenders
+gamifies the well-known mutation testing technique. In a recent paper
+to be presented at ICSE'17, we have shown that Code Defenders can lead
+developers to create more effective tests than those they would write
+without the game. Feedback from the players of the game also indicate
+that they enjoy testing software more when playing the game than when
+they test manually. We have also shown that Code Defenders has
+potential to be applied as an educational tool to improve the way
+students learn to code and test (to be presented at the software
+education track of ICSE'17 as well).
+
+\section{Funding support}
+
+I understand the importance of capturing funds to build a successful
+academic career and plan to actively seek funding as a Lecturer at
+UCL. I have so far independently secured funding for three
+undergraduate students research projects and have contributed to
+securing funding at a larger scale. I submitted three successful
+applications for undergraduate research funding from the University of
+Sheffield, securing GBP 3,160 for three undergraduate projects in the
+past two years. I also contributed in the writing of several
+successful grant applications lead by Dr. Gordon Fraser as Principal
+Investigator. The most important one is the EPSRC EP/N023978/1
+\emph{GReaTest: Growing Readable Software Tests} project (GBP
+516,859), where I am the named RA with funding secured from March 2016
+to February 2020. I also contributed to securing GBP 10,000 from the
+Royal Society and GBP 2,800 from the University of Sheffield's IIKE
+Fund (Impact, Innovation and Knowledge Exchange) to further evaluate
+and disseminate our work on software testing gamification; and GBP
+4,000 from the Santander Research Mobility Awards, which funded a
+research visit I made to the University of Buenos Aires in Argentina.
+
+\section{Research agenda}
+
+In the short and medium term, my goal is to continue my progression
+and consolidate myself as a researcher in search-based software
+testing and empirical software engineering. I strive to bridge the gap
+between automated software engineering research tools and software
+practitioners.
+
+Building on top of my recent work on gamification of software testing
+is one of my main priorities. I believe this is an area where I can
+make an immediate impact in the field, given the recent success of our
+Code Defenders approach. I plan to explore more applications of Code
+Defenders beyond education and crowdsourcing. For example, the
+approach could potentially be applied within software companies to
+promote in-house testing or as a recruitment tool. I also plan to
+explore other software engineering scenarios where gamification could
+be applied.
+
+My research agenda in search-based software testing (outlined in a
+recent position paper at SBST'17) involves addressing multiple open
+challenges: (1) use testability transformations to overcome the lack
+of search guidance in object-oriented testing, (2) devise search
+objectives that lead to generating fault-finding tests, (3) develop
+techniques to generate better oracles (machine learning has potential
+to be useful here), and (4) improve the readability of generated unit
+tests.
+
+I foresee that empirical studies will be an orthogonal research line
+in my career: Software engineering researchers inevitably need to
+validate their techniques and tools using actual developers. I
+envision myself as an established expert in empirical research with
+humans and hope this will enable me to connect and collaborate with
+other researchers at UCL, in order to broaden my expertise and impact
+in this area.
+% Other areas that I find interesting and plan to explore include
+% testing non-functional program properties such as security and privacy
+% and accessibility.
+
+\end{document}

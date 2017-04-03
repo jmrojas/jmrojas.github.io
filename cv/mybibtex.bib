@@ -1,29 +1,95 @@
-%% 2016 
+@string{lncs = "LNCS"}
+@string{ICSE = "Int. Conference on Software Engineering (ICSE)"}
+@string{STVR = "Software Testing, Verification and Reliability (STVR)"}
+@string{EMSE = "Empirical Software Engineering (EMSE)"}
+@string{ASE = "IEEE/ACM Int. Conference on Automated Software Engineering (ASE)"}
+@string{ISSTA = "ACM Int. Symposium on Software Testing and Analysis (ISSTA)"}
+@string{GECCO = "Genetic and Evolutionary Computation Conference (GECCO)"}
+@string{SBST = "Int. Workshop on Search-Based Software Testing (SBST)"}
+@string{SSBSE = "Int. Symposium on Search Based Software Engineering (SSBSE)"}
+@string{LOPSTR = "Int. Symposium on Logic-Based Program Synthesis and Transformation (LOPSTR)"}
+
+%% 2017
+
+@inproceedings{SBST2017_EvoSuite,
+  author    = {Gordon Fraser and Jos{\'e} Miguel Rojas and Jose Campos and Andrea Arcuri},
+  title	    = {{EvoSuite at the SBST 2017 Tool Competition}},
+  booktitle = SBST,
+  year	    = {2017},
+  note	    = "To appear"
+}
+
+@inproceedings{SBST2017_LocalOptima,
+  author    = {Jos{\'e} Miguel Rojas and Gordon Fraser},
+  title	    = {Is Search-based Test Generation Research Stuck in a Local Optimum?},
+  booktitle = SBST,
+  year	    = {2017},
+  note	    = "To appear"
+}
+
+@inproceedings{ICSE_SEET2017_CodeDefenders,
+  author    = {Benjamin Clegg and Jos{\'e} Miguel Rojas and Gordon
+               Fraser},
+  title	    = {Teaching Software Testing Concepts Using a Mutation
+               Testing Game},
+  booktitle = ICSE # "(SEET)",
+  year	    = {2017},
+  note	    = "To appear"
+}
+
+@inproceedings{ICSE2017_CodeDefenders,
+  author    = {Jos{\'e} Miguel Rojas and Thomas White and Benjamin Clegg and
+               Gordon Fraser},
+  title	    = {{C}ode {D}efenders: Crowdsourcing Effective Tests and
+               Subtle Mutants with a Mutation Testing Game},
+  booktitle = ICSE,
+  year	    = {2017},
+  note	    = "To appear"
+}
+
+%% 2016
+@inproceedings{PPIG16_TeachingTesting,
+  author    = {Jos{\'e} Miguel Rojas and Gordon Fraser},
+  title	    = {Teaching Software Testing with a Mutation Testing Game},
+  booktitle = {Psychology of Programming Interest Group 2016 (PPIG)},
+  year	    = {2016},
+  note	    = {No formal proceedings.}
+}
+
+@inproceedings{ECSEE16_MutationEducation,
+  author    = {Jos{\'e} Miguel Rojas and Gordon Fraser},
+  title	    = {Teaching Mutation Testing using Gamification},
+  booktitle = {European Conference of Software Engineering Education
+               (ECSEE)},
+  year	    = {2016},
+  publisher = {Shaker Verlag}
+}
 
 @inproceedings{Mutation16_CodeDefenders,
   author    = {Jos\'e Miguel Rojas and Gordon Fraser},
-  title	    = {Code Defenders: A Mutation Testing Game},
-  booktitle = {MUTATION 2016 (The 11th International Workshop on
-               Mutation Analysis)},
+  title	    = {{Code Defenders}: A Mutation Testing Game},
+  booktitle = {Int. Conference on Software Testing, Verification and
+               Validation Workshops (MUTATION ICSTW)},
+  pages	    = {162--167},
   year	    = {2016},
   publisher = {IEEE},
-  labels    = {workshop},
-  note	    = {To appear}
+  doi	    = {10.1109/ICSTW.2016.43},
+  labels    = {workshop}
 }
 
 @article{STVR_seeding,
-  author    = {Jos\'e Miguel Rojas and Gordon Fraser and Andrea Arcuri},
+  author    = {Jos\'e Miguel Rojas and Gordon Fraser and Andrea
+               Arcuri},
   title	    = {Seeding strategies in search-based unit test
                generation},
-  journal   = {STVR (Software Testing, Verification and Reliability)},
+  journal   = STVR,
   issn	    = {1099-1689},
+  volume    = {26},
+  number    = {5},
+  pages	    = {366--401},
+  year	    = {2016},
   url	    = {http://dx.doi.org/10.1002/stvr.1601},
   doi	    = {10.1002/stvr.1601},
-  pages	    = {n/a--n/a},
-  keywords  = {test case generation, search-based testing, testing
-               classes, search-based software engineering, JUnit,
-               Java},
-  year	    = {2016},
   labels    = {journal}
 }
 
@@ -32,9 +98,9 @@
   author    = {Jos\'e Miguel Rojas and Mattia Vivanti and Andrea Arcuri and Gordon Fraser},
   title	    = "A detailed investigation of the effectiveness of whole
                test suite generation",
-  journal   = "EMSE (Empirical Software Engineering)",
-  year	    = "2016",
-  pages	    = "1--42",
+  journal   = EMSE,
+  year	    = {2016},
+  pages	    = {1--42},
   abstract  = "A common application of search-based software testing
                is to generate test cases for all goals defined by a
                coverage criterion (e.g., lines, branches,
@@ -77,12 +143,12 @@
                and Gordon Fraser and Phil McMinn and Andrea Arcuri},
   title	    = {Do Automatically Generated Unit Tests Find Real Faults?
                An Empirical Study of Effectiveness and Challenges},
-  booktitle = {ASE 2015},
-  publisher = {{ACM}},
+  booktitle = ASE,
+  publisher = {ACM},
   pages	    = {201--211},
   year	    = {2015},
   labels    = {conf},
-  note	    = "ACM SIGSOFT Distinguished Paper Award"
+  note	    = "\textbf{ACM SIGSOFT Distinguished Paper Award}"
 }
 
 @inproceedings{ShamshiriRFM15,
@@ -90,14 +156,14 @@
                Fraser and Phil McMinn},
   title	    = {Random or Genetic Algorithm Search for Object-Oriented
                Test Suite Generation?},
-  booktitle = {GECCO 2015},
+  booktitle = GECCO,
   pages	    = {1367--1374},
   doi	    = {10.1145/2739480.2754696},
   publisher = {{ACM}},
   year	    = {2015},
   isbn	    = {978-1-4503-3472-3},
   labels    = {conf},
-  note      = "Best Paper Award (SBSE-SS Track)"
+  note      = "\textbf{Best Paper Award (SBSE-SS Track)}"
 }
 
 @inproceedings{RojasFA15,
@@ -106,7 +172,7 @@
   title	    = {Automated unit test generation during software
                development: a controlled experiment and think-aloud
                observations},
-  booktitle = {ISSTA 2015},
+  booktitle = ISSTA,
   pages	    = {338--349},
   doi	    = {10.1145/2771783.2771801},
   publisher = {{ACM}},
@@ -120,16 +186,16 @@
                Mattia Vivanti and Gordon Fraser and Andrea Arcuri},
   title	    = {Combining Multiple Coverage Criteria in Search-Based
                Unit Test Generation},
-  booktitle = {SSBSE 2015},
+  booktitle = SSBSE,
   pages	    = {93--108},
   doi	    = {10.1007/978-3-319-22183-0_7},
-  series    = {LNCS},
+  series    = lncs,
   volume    = {9275},
   publisher = {Springer},
   year	    = {2015},
   isbn	    = {978-3-319-22182-3},
   labels    = {conf},
-  note      = "Best Paper Award (Industry-relevant SBSE results)"
+  note      = "\textbf{Best Paper Award (Industry-relevant SBSE results)}"
 }
 
 %% 2014 
@@ -140,12 +206,13 @@
   title	    = {Test {C}ase {G}eneration by {S}ymbolic {E}xecution:
                {B}asic {C}oncepts, a {CLP}-{B}ased {I}nstance, and
                {A}ctor-{B}ased {C}oncurrency},
-  booktitle = {SFM 2014, Advanced Lectures},
+  bookTitle = "14th Int. School on Formal Methods for the Design of
+               Computer, Communication, and Software Systems (SFM
+               Advanced Lectures)",
   year	    = {2014},
   pages	    = {263--309},
   ee	    = {http://dx.doi.org/10.1007/978-3-319-07317-0_7},
-  publisher = {Springer},
-  series    = {LNCS},
+  publisher = {Springer International Publishing},
   volume    = {8483},
   isbn	    = {978-3-319-07316-3},
   labels    = {bookchap},
@@ -170,7 +237,7 @@
 @article{AlbertGGZRS13,
   author    = {Elvira Albert and Mar{\'i}a Garc{\'i}a de la Banda and Miguel G\'{o}mez-Zamalloa and Jos\'e Miguel Rojas and Peter Stuckey},
   title     = {{A} {CLP} {H}eap {S}olver for {T}est {C}ase {G}eneration},
-  journal   = {TPLP (Theory and Practice of Logic Programming), ICLP 2013 SI.},
+  journal   = {Theory and Practice of Logic Programming (TPLP) (ICLP 2013 SI.)},
   year      = {2013},
   publisher = {Cambridge U. Press},
   volume    = {13},
@@ -207,7 +274,7 @@
   booktitle = {BYTECODE 2013},
   year      = 2013,
   labels    = {workshop},
-  note      = {Peer-reviewed workshop (co-located with ETAPS) with no formal proceedings.}
+  note      = {Peer-reviewed workshop (co-located with ETAPS 2013) with no formal proceedings.}
 }
 
 @InProceedings{2013-guided,
@@ -217,7 +284,7 @@
 @InProceedings{RojasG-Z12,
   author    = {Jos\'{e} Miguel Rojas and Miguel G\'omez-Zamalloa},
   title     = {A {F}ramework for {G}uided {T}est {C}ase {G}eneration in {C}onstraint {L}ogic {P}rogramming},
-  booktitle = {LOPSTR 2012},
+  booktitle = LOPSTR,
   publisher = {Springer},
   series    = lncs,
   volume    = {7844},
@@ -264,11 +331,11 @@
                Guillermo Rom{\'a}n-D\'{\i}ez and
                Damiano Zanardini},
   title     = {Automatic Inference of Bounds on Resource Consumption},
-  booktitle = {FMCO 2012, Revised Lectures},
+  booktitle = {Int. Symposium on Formal Methods for Components and Objects (FMCO, Revised Lectures)},
   year      = {2012},
-  pages     = {119-144},
+  pages     = {119--144},
   publisher = {Springer},
-  series    = {LNCS},
+  series    = lncs,
   volume    = {7866},
   isbn      = {978-3-642-40614-0},
   ee        = {http://dx.doi.org/10.1007/978-3-642-40615-7_4},
@@ -279,9 +346,9 @@
   author    = {Elvira Albert and Bjarte M. {\O}stvold and Jos\'e Miguel Rojas},
   title	    = {{\sc jms2abs}: Automated Extraction of Abstract
                Behavioural Models from JMS Applications},
-  booktitle = {FMICS 2012},
+  booktitle = {Formal Methods for Industrial Critical Systems (FMICS)},
   publisher = {Springer},
-  series    = {LNCS},
+  series    = lncs,
   volume    = {7437},
   pages	    = {16--31},
   year	    = {2012}
@@ -292,8 +359,8 @@
   author    = {Elvira Albert and Miguel G\'{o}mez-Zamalloa and
                Jos\'e Miguel Rojas},
   title	    = {Resource-driven CLP-based Test Case Generation},
-  booktitle = {LOPSTR 2011},
-  series    = {LNCS},
+  booktitle = LOPSTR,
+  series    = lncs,
   volume    = {7225},
   pages	    = {25--41},
   publisher = {Springer},
@@ -308,9 +375,8 @@
                Samir Genaim and Miguel G\'omez-Zamalloa and Abu Naser
                Masud and Germ\'an Puebla and Jos\'e Miguel Rojas and
                Guillermo Rom\'an-D\'iez and Damiano Zanardini},
-  booktitle = {ALP Newsletter},
-  url	    =
-               {http://www.cs.nmsu.edu/ALP/2012/12/resource-analysis-in-the-costa-system/},
+  booktitle = {Association for Logic Programming (ALP) Newsletter},
+  url	    = {http://www.cs.nmsu.edu/ALP/2012/12/resource-analysis-in-the-costa-system/},
   year	    = 2012,
   month	    = dec,
   pdf	    = {http://costa.ls.fi.upm.es/papers/costa/alp12.pdf},
@@ -324,15 +390,12 @@
 % NEPS ON CLUSTERS
 
 @INPROCEEDINGS{2011-NEPSonClusters,
-  author    = {Carmen Navarrete and Marina de la Cruz and Eloy Anguiano and Alfonso Ortega and Jos\'e Miguel Rojas},
-  booktitle = {WI-IAT 2011},
+  author    = {Carmen Navarrete and Marina de la Cruz and Eloy
+               Anguiano and Alfonso Ortega and Jos\'e Miguel Rojas},
   title	    = {Parallel Simulation of {NEP}s on Clusters},
+  booktitle = {IEEE/WIC/ACM Int. Conferences on Web Intelligence and
+               Intelligent Agent Technology (WI-IAT)},
   pages	    = {171--174},
-  keywords  = {computer cluster;multicore desktop
-               computer;multithreaded Java simulator;networks of
-               evolutionary processors;parallel
-               simulation;multi-threading;multiprocessing
-               systems;parallel processing;},
   doi	    = {http://dx.doi.org/10.1109/WI-IAT.2011.131},
   labels    = {conf},
   publisher = {{IEEE} Computer Society},
@@ -345,8 +408,8 @@
                Jos\'e Miguel Rojas and Germ\'{a}n Puebla},
   title	    = {Compositional CLP-Based Test Data Generation for
                Imperative Languages},
-  booktitle = {LOPSTR 2010},
-  series    = {LNCS},
+  booktitle = LOPSTR,
+  series    = lncs,
   publisher = {Springer},
   isbn	    = {},
   pages	    = {99--116},
@@ -361,37 +424,34 @@
 
 % JHSYS
 @inproceedings{2010-JHSYS,
-  author    = {Jos\'e Miguel Rojas and
-               Marina de la Cruz Echeand\'{\i}a and
-               Alfonso Ortega de la Puente},
-  title     = {Towards the Automatic Programming of H Systems: jHsys, a
-               Java H System Simulator},
-  booktitle = {Trends in PAAMS 2010},
+  author    = {Jos\'e Miguel Rojas and Marina de la Cruz
+               Echeand\'{\i}a and Alfonso Ortega de la Puente},
+  title	    = {Towards the Automatic Programming of H Systems: jHsys,
+               a Java H System Simulator},
+  bookTitle = "Int. Conference on Practical Applications of Agents and
+               Multiagent Systems (PAAMS)",
   publisher = {Springer},
-  series    = {AISC},
-  volume    = {71},
-  isbn      = {978-3-642-12432-7},
-  year      = {2010},
-  pages     = {387--394},
+  isbn	    = {978-3-642-12432-7},
+  year	    = {2010},
+  pages	    = {387--394},
   labels    = {conf},
-  ee        = {http://dx.doi.org/10.1007/978-3-642-12433-4_46}
+  ee	    = {http://dx.doi.org/10.1007/978-3-642-12433-4_46}
 }
 
 %% 2009
 
 % JNEPS
 @inproceedings{2009-JNEPS,
-  author    = {Emilio del Rosal and
-               Jos\'e Miguel Rojas and
-               Rafael N{\'u}{\~n}ez and
-               Carlos Casta{\~n}eda and
-               Alfonso Ortega de la Puente},
-  title     = {On the Solutions of NP-Complete Problems by Means of jNEP
-               Run on Computers},
-  booktitle = {ICAART 2009},
+  author    = {Emilio del Rosal and Jos\'e Miguel Rojas and Rafael
+               N{\'u}{\~n}ez and Carlos Casta{\~n}eda and Alfonso
+               Ortega de la Puente},
+  title	    = {On the Solutions of NP-Complete Problems by Means of
+               jNEP Run on Computers},
+  booktitle = "International Conference on Agents and Artificial
+               Intelligence (ICAART)",
   publisher = {INSTICC Press},
-  year      = {2009},
-  isbn      = {978-989-8111-66-1},
-  pages     = {605--612},
+  year	    = {2009},
+  isbn	    = {978-989-8111-66-1},
+  pages	    = {605--612},
   labels    = {conf}
 }
