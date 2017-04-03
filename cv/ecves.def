@@ -10,7 +10,9 @@
 \def\ecv@mobilekey{\ecv@utf{M\'ovil}}
 \def\ecv@faxkey{\ecv@utf{Fax(es)}}
 \def\ecv@emailkey{\ecv@utf{Correo(s) electr\'onico(s)}}
-\def\ecv@nationalitykey{\ecv@utf{Nacionalidad}}
+\def\ecv@scholarkey{\ecv@utf{Perfil Google Scholar}}
+\def\ecv@dblpkey{\ecv@utf{Perfil DBLP}}\
+def\ecv@nationalitykey{\ecv@utf{Nacionalidad}}
 %\def\ecv@nationalitykey{\ecv@utf{Nacionalidad(es)}}
 \def\ecv@birthkey{\ecv@utf{Fecha de nacimiento}}
 \def\ecv@genderkey{\ecv@utf{Sexo}}
