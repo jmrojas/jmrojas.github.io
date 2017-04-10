@@ -19,7 +19,7 @@
 \def\ecv@pagekey{\ecv@utf{Page}}
 \def\ecv@cvofkey{\ecv@utf{Curriculum vit\ae\ of}}
 % Language table
-\def\ecv@mothertonguekey{\ecv@utf{Mother tongue(s)}}
+\def\ecv@mothertonguekey{\ecv@utf{Mother tongue}}
 \def\ecv@assesskey{\ecv@utf{Self-assessment}}
 \def\ecv@levelkey{\ecv@utf{European level}}
 \def\ecv@understandkey{\ecv@utf{Understanding}}
