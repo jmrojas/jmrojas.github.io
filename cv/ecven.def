@@ -3,7 +3,7 @@
 % Translation completed
 \ProvidesFile{ecven.def}[europecv English definitions]
 % Personal information
-\def\ecv@infosectionkey{\ecv@utf{Personal information}}
+\def\ecv@infosectionkey{\ecv@utf{Personal Information}}
 \def\ecv@namekey{\ecv@utf{Name}}
 \def\ecv@addresskey{\ecv@utf{Address}}
 \def\ecv@telkey{\ecv@utf{Telephone}}
