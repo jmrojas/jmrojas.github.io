@@ -751,7 +751,40 @@ violate it.}
   pdf	    = {http://costa.ls.fi.upm.es/papers/costa/alp12.pdf},
   labels    = {hats,doves,newsletter},
   rank:custom:class= {none},
-  note	    = {Newsletter}
+  note	    = {Newsletter},
+  abstract  = {Having information about the execution cost of
+               programs, i.e., the amount of resources that the
+               execution will require, is useful for many different
+               purposes, including program optimization, verification
+               and certification. Reasoning about execution cost is
+               difficult and error-prone. Therefore, it is widely
+               recognized that cost analysis, sometimes also referred
+               to as resource analysis or automatic complexity
+               analysis, is quite important. COSTA
+               (\url{http://costa.ls.fi.upm.es}) is a state-of-the-art
+               cost and termination analyzer which automates this
+               task. The system is able to infer upper and lower
+               bounds on the resource consumption of a large class of
+               programs. Given a program P, the analysis results allow
+               bounding the cost of executing P on any input data
+               $\overline{x}$ without having to actually run
+               P($\overline{x}$). The first successful proposal for
+               automatically computing the complexity of programs was
+               the seminal work of Wegbreit. Since then, a number of
+               cost analysis frameworks have been proposed, mostly in
+               the context of declarative programming languages
+               (functional programming and logic programming). Cost
+               analysis of imperative programming languages has
+               received significantly less attention. It is worth
+               mentioning the pioneering work of Adachi et al. To the
+               best of our knowledge, COSTA has been the first system
+               which automatically infers bounds on cost for a large
+               class of Java-like programs, getting meaningful
+               results. The system is implemented in Prolog (it runs
+               both on Ciao and SWI Prolog) and uses the Parma
+               Polyhedra Library for manipulating linear
+               constraints. More info on COSTA is available from its
+               website, where it can be used from a web interface.}
 }
 
 %% 2011
