@@ -3,7 +3,7 @@
 % Translation completed
 \ProvidesFile{ecven.def}[europecv English definitions]
 % Personal information
-\def\ecv@infosectionkey{\ecv@utf{Personal information}}
+\def\ecv@infosectionkey{\ecv@utf{Personal Information}}
 \def\ecv@namekey{\ecv@utf{Name}}
 \def\ecv@addresskey{\ecv@utf{Address}}
 \def\ecv@telkey{\ecv@utf{Telephone}}
@@ -13,11 +13,13 @@
 \def\ecv@nationalitykey{\ecv@utf{Nationality}}
 \def\ecv@birthkey{\ecv@utf{Date of birth}}
 \def\ecv@genderkey{\ecv@utf{Gender}}
+\def\ecv@scholarkey{\ecv@utf{Google Scholar Profile}}
+\def\ecv@dblpkey{\ecv@utf{DBLP Profile}}
 % Footer
 \def\ecv@pagekey{\ecv@utf{Page}}
 \def\ecv@cvofkey{\ecv@utf{Curriculum vit\ae\ of}}
 % Language table
-\def\ecv@mothertonguekey{\ecv@utf{Mother tongue(s)}}
+\def\ecv@mothertonguekey{\ecv@utf{Mother tongue}}
 \def\ecv@assesskey{\ecv@utf{Self-assessment}}
 \def\ecv@levelkey{\ecv@utf{European level}}
 \def\ecv@understandkey{\ecv@utf{Understanding}}

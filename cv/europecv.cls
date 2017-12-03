@@ -346,6 +346,8 @@
 \newcommand*{\ecvfax}[1]{\def\ecv@fax{#1}}
 \newcommand*{\ecvemail}[1]{\def\ecv@email{#1}}
 \newcommand*{\ecvhomepage}[1]{\def\ecv@homepage{#1}}
+\newcommand*{\ecvscholar}[1]{\def\ecv@scholar{#1}}
+\newcommand*{\ecvdblp}[1]{\def\ecv@dblp{#1}}
 \newcommand*{\ecvnationality}[1]{\def\ecv@nationality{#1}}
 \newcommand*{\ecvdateofbirth}[1]{\def\ecv@birth{#1}}
 \newcommand*{\ecvgender}[1]{\def\ecv@gender{#1}}
@@ -388,6 +390,15 @@
 {\large\par\textbf{\ecv@infosectionkey}} & \tabularnewline
 & \tabularnewline
 \ecv@namekey & \large\textbf{\ecv@name}\tabularnewline[5pt]
+\ifx\@empty\ecv@nationality\else
+\ecv@nationalitykey & \ecv@nationality \tabularnewline[5pt]
+\fi
+\ifx\@empty\ecv@birth\else
+\ecv@birthkey       & \ecv@birth \tabularnewline[5pt]
+\fi
+\ifx\@empty\ecv@gender\else
+\ecv@genderkey      & \ecv@gender \tabularnewline[#1]
+\fi
 \ifx\@empty\ecv@address\else
 \ecv@addresskey     &\ecv@address   \tabularnewline[5pt]
 \fi
@@ -402,14 +413,11 @@
 \ifx\@empty\ecv@email\else
 \ecv@emailkey       &\ecv@email \tabularnewline[5pt]
 \fi
-\ifx\@empty\ecv@nationality\else
-\ecv@nationalitykey & \ecv@nationality \tabularnewline[5pt]
+\ifx\@empty\ecv@scholar\else
+\ecv@scholarkey       &\ecv@scholar \tabularnewline[5pt]
 \fi
-\ifx\@empty\ecv@birth\else
-\ecv@birthkey       & \ecv@birth \tabularnewline[5pt]
-\fi
-\ifx\@empty\ecv@gender\else
-\ecv@genderkey      & \ecv@gender \tabularnewline[#1]
+\ifx\@empty\ecv@dblp\else
+\ecv@dblpkey       &\ecv@dblp \tabularnewline[5pt]
 \fi
 }
 

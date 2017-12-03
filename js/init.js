@@ -4,6 +4,40 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// ----------------------------------------------------------
+// A short snippet for detecting versions of IE in JavaScript
+// without resorting to user-agent sniffing
+// ----------------------------------------------------------
+// If you're not in IE (or IE version is less than 5) then:
+//     ie === undefined
+// If you're in IE (>=5) then you can determine which version:
+//     ie === 7; // IE7
+// Thus, to detect IE:
+//     if (ie) {}
+// And to detect the version:
+//     ie === 6 // IE6
+//     ie > 7 // IE8, IE9 ...
+//     ie < 9 // Anything less than IE9
+// ----------------------------------------------------------
+
+// UPDATE: Now using Live NodeList idea from @jdalton
+
+var ie = (function(){
+
+    var undef,
+        v = 3,
+        div = document.createElement('div'),
+        all = div.getElementsByTagName('i');
+
+    while (
+        div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
+        all[0]
+    );
+
+    return v > 4 ? v : undef;
+
+}());
+
 _5grid.ready(function() {
 
 	var	_bh = $('body, html'),
@@ -22,7 +56,7 @@ _5grid.ready(function() {
 		});
 
 	// Forms (IE <= 9 only)
-		if ($.browser.msie && $.browser.version <= 9)
+		if (ie && ie <= 9)
 			$('form').formerize();
 	
 });
@@ -42,7 +76,6 @@ _5grid.ready(function() {
 		// Init
 			var _form = jQuery(this), _document = jQuery(document), _window = jQuery(window), _fakes = new Array();
 			var _isTouch = !!('ontouchstart' in window), _eventType = (_isTouch ? 'click' : 'click');
-			var _isDegraded = (jQuery.browser.msie && jQuery.browser.version < 9);
 			// Attempt to use built-in browser placeholder support whenever possible
 				if (settings.usePlaceholders
 				&&	'placeholder' in (document.createElement('input')))

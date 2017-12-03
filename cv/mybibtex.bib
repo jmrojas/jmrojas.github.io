@@ -1,40 +1,290 @@
-%% 2016 
+@string{lncs = "LNCS"}
+@string{ICSE = "Int. Conference on Software Engineering (ICSE)"}
+@string{STVR = "Software Testing, Verification and Reliability (STVR)"}
+@string{EMSE = "Empirical Software Engineering (EMSE)"}
+@string{ASE = "IEEE/ACM Int. Conference on Automated Software Engineering (ASE)"}
+@string{ISSTA = "ACM Int. Symposium on Software Testing and Analysis (ISSTA)"}
+@string{GECCO = "Genetic and Evolutionary Computation Conference (GECCO)"}
+@string{SBST = "Int. Workshop on Search-Based Software Testing (SBST)"}
+@string{SSBSE = "Int. Symposium on Search Based Software Engineering (SSBSE)"}
+@string{LOPSTR = "Int. Symposium on Logic-Based Program Synthesis and Transformation (LOPSTR)"}
+
+%% 2017
+@inproceedings{ISSTA17_IDNaming,
+  author    = {Ermira Daka and Jos\'e Miguel Rojas and Gordon Fraser},
+  title	    = {Generating Unit Tests with Descriptive Names Or: Would
+               You Name Your Children Thing1 and Thing2?},
+  booktitle = ISSTA,
+  publisher = {ACM},
+  year	    = {2017},
+  labels    = {conf},
+  doi	    = {10.1145/3092703.3092727},
+  abstract  = {The name of a unit test helps developers to understand
+               the purpose and scenario of the test, and test names
+               support developers when navigating amongst sets of unit
+               tests. When unit tests are generated automatically,
+               however, they tend to be given non-descriptive names
+               such as ``test0'', which provide none of the benefits a
+               descriptive name can give a test. The underlying
+               challenge is that automatically generated tests
+               typically do not represent real scenarios and have no
+               clear purpose other than covering code, which makes
+               naming them difficult. In this paper, we present an
+               automated approach which generates descriptive names
+               for automatically generated unit tests by summarizing
+               API-level coverage goals. The tests are optimized to be
+               short, descriptive of the test, have a clear relation
+               to the covered code under test, and allow developers to
+               uniquely distinguish tests in a test suite. An
+               empirical evaluation with 47 participants shows that
+               developers agree with the synthesized names, and the
+               synthesized names are equally descriptive as manually
+               written names. Study participants were even more
+               accurate and faster at matching code and tests with
+               synthesized names compared to manually derived names.},
+  pages	    = {57--67},
+  doi	    = {10.1145/3092703.3092727}
+}
+
+@inproceedings{SBST2017_EvoSuite,
+  author    = {Gordon Fraser and Jos\'e Miguel Rojas and Jose Campos
+               and Andrea Arcuri},
+  title	    = {{EvoSuite at the SBST 2017 Tool Competition}},
+  booktitle = SBST,
+  year	    = {2017},
+  doi	    = {10.1109/SBST.2017..6},
+  pages	    = {39--42},
+  labels    = {workshop},
+  abstract  = {EvoSuite is a search-based tool that automatically
+generates unit tests for Java code. This paper summarises the results
+and experiences of EvoSuite's participation at the fifth unit testing
+competition at {SBST} 2017, where EvoSuite achieved the highest
+overall score.}
+}
+
+@inproceedings{SBST2017_LocalOptima,
+  author    = {Jos\'e Miguel Rojas and Gordon Fraser},
+  title	    = {Is Search-based Test Generation Research Stuck in a
+               Local Optimum?},
+  booktitle = SBST,
+  year	    = {2017},
+  doi	    = {10.1109/SBST.2017..4},
+  pages	    = {51--52},
+  labels    = {workshop},
+  abstract  = {Research in search-based unit test generation has seen
+               steady development in recent years. New techniques and
+               tools have been developed, and empirical evidence has
+               been collected on the wide-ranging capabilities of
+               search-based algorithms for unit test generation, and
+               for many related software engineering practices. But
+               why are developers not generating all their tests
+               automatically yet in practice? In this paper, we argue
+               that there may be deceiving local optima in the
+               research landscape on search-based unit test
+               generation, and we outline specific challenges and
+               opportunities to escape these local optima.}
+}
+
+@inproceedings{ICSE_SEET2017_CodeDefenders,
+  author    = {Benjamin Clegg and Jos\'e Miguel Rojas and Gordon
+               Fraser},
+  title	    = {Teaching Software Testing Concepts Using a Mutation
+               Testing Game},
+  booktitle = ICSE # "(SEET)",
+  year	    = {2017},
+  doi	    = {10.1109/ICSE-SEET.2017.1},
+  pages	    = {33--36},
+  labels    = {conf},
+  abstract  = {Software testing is a core aspect of software
+               development, but testing programs systematically is not
+               always a core aspect of software engineering
+               education. As a result, software developers often treat
+               testing as a liability, and overall software quality
+               suffers. One of the reasons for this is that standard
+               testing techniques are often perceived as boring and
+               difficult when compared to creative programming and
+               design activities, which dominate education.  To make
+               software testing education more enjoyable, we recently
+               introduced the \GAME game, in which players engage with
+               testing activities in a fun and competitive way.  In
+               this short paper, we explore the idea of using \GAME to
+               systematically teach software testing concepts. We
+               present a mapping of core developer testing concepts,
+               such as statement or branch coverage, to categories of
+               puzzles in the framework of the game.  As players
+               progress through levels of this game, they
+               incrementally learn and practice testing concepts. By
+               presenting software testing as an enjoyable activity,
+               we hope that learners will not only acquire better
+               testing skills, but will in the long term become better
+               software engineers.}
+}
+
+@inproceedings{ICSE2017_CodeDefenders,
+  author    = {Jos\'e Miguel Rojas and Thomas White and Benjamin
+               Clegg and Gordon Fraser},
+  title	    = {{C}ode {D}efenders: Crowdsourcing Effective Tests and
+               Subtle Mutants with a Mutation Testing Game},
+  booktitle = ICSE,
+  year	    = {2017},
+  doi	    = {10.1109/ICSE.2017.68},
+  pages	    = {677--688},
+  note	    = "\textbf{ACM Distinguished Paper Award}",
+  labels    = {conf},
+  abstract  = {Writing good software tests is difficult and not every
+               developer's favorite occupation. Mutation testing aims
+               to help by seeding artificial faults (mutants) that
+               good tests should identify, and test generation tools
+               help by providing automatically generated
+               tests. However, mutation tools tend to produce huge
+               numbers of mutants, many of which are trivial,
+               redundant, or semantically equivalent to the original
+               program; automated test generation tools tend to
+               produce tests that achieve good code coverage, but are
+               otherwise weak and have no clear purpose. In this
+               paper, we present an approach based on gamification and
+               crowdsourcing to produce better software tests and
+               mutants: The {{Code Defenders}} web-based game lets
+               teams of players compete over a program, where
+               attackers try to create subtle mutants, which the
+               defenders try to counter by writing strong
+               tests. Experiments in controlled and crowdsourced
+               scenarios reveal that writing tests as part of the game
+               is more enjoyable, and that playing {{Code Defenders}}
+               results in stronger test suites and mutants than those
+               produced by automated tools.}
+}
+
+%% 2016
+@inproceedings{PPIG16_TeachingTesting,
+  author    = {Jos\'e Miguel Rojas and Gordon Fraser},
+  title	    = {Teaching Software Testing with a Mutation Testing Game},
+  booktitle = {Psychology of Programming Interest Group 2016 (PPIG)},
+  year	    = {2016},
+  note	    = {No formal proceedings.},
+  labels    = {workshop},
+  abstract  = {Software testing is crucially important in a world
+               dominated by software. Software testing is also
+               inherently difficult and requires theoretical expertise
+               and practical experience. However, standard testing
+               techniques are often perceived as boring and difficult,
+               and thus do not feature as prominently in programming
+               education as they maybe should. In order to address
+               this problem, we aim to make testing education more
+               interesting with gamification. The {{Code Defenders}}
+               game uses gameplay elements to engage students in the
+               testing process in a competitive and fun way. Our hope
+               is that if students perceive writing tests as a fun
+               activity, they will later become better software
+               engineers, with better testing skills, and with more
+               inclination to apply thorough testing. In this
+               work-in-progress paper we describe our initial
+               experiences with {{Code Defenders}}, as well as open
+               challenges on the way to making testing education fun.}
+}
+
+@inproceedings{ECSEE16_MutationEducation,
+  author    = {Jos\'e Miguel Rojas and Gordon Fraser},
+  title	    = {Teaching Mutation Testing using Gamification},
+  booktitle = {European Conference of Software Engineering Education
+               (ECSEE)},
+  year	    = {2016},
+  publisher = {Shaker Verlag},
+  labels    = {conf},
+abstract  = {Software quality and testing are at the heart of
+software engineering, but they are not always at the heart of software
+engineering education. As a consequence, advanced techniques such as
+\emph{mutation testing} are often neglected and do not become part of
+the standard repertoire of a graduate software engineer. We propose
+the use of gamification to teach mutation testing and to strengthen
+testing skills. We introduce {{Code Defenders}}, a mutation testing
+game, which can assist educators in delivering complex mutation
+testing concepts and is intended to make the learning experience more
+enjoyable and fruitful for students.}
+}
 
 @inproceedings{Mutation16_CodeDefenders,
-  author    = { Jos{\'e} Miguel Rojas and Gordon Fraser},
-  title	    = {Code Defenders: A Mutation Testing Game},
-  booktitle = {MUTATION 2016 (The 11th International Workshop on Mutation
-               Analysis)},
+  author    = {Jos\'e Miguel Rojas and Gordon Fraser},
+  title	    = {{Code Defenders}: A Mutation Testing Game},
+  booktitle = {Int. Conference on Software Testing, Verification and
+               Validation Workshops (MUTATION ICSTW)},
+  pages	    = {162--167},
   year	    = {2016},
   publisher = {IEEE},
-  note	    = {To appear}
+  doi	    = {10.1109/ICSTW.2016.43},
+  labels    = {workshop},
+  abstract  = {Mutation testing is endorsed by software testing
+researchers for its unique capability of providing pragmatic estimates
+of a test suite's fault detection capability, and for guiding testers
+in improving their test suites. In practice, however, wide-spread
+adoption of mutation testing is hampered because any non-trivial
+program results in huge numbers of mutants, many of which are either
+trivial or equivalent, and thus useless. Trivial mutants reduce the
+motivation of developers in trusting and using the technique, while
+equivalent mutants are frustratingly difficult to handle. These
+problems are exacerbated by insufficient education on testing, which
+often means that mutation testing is not well understood in practice.
+These are examples of the types of problems that \emph{gamification}
+aims to overcome by making such tedious activities competitive and
+entertaining. In this paper, we introduce the first steps towards
+building {{Code Defenders}}, a mutation testing game where players
+take the role of an \emph{attacker}, who aims to create the most
+subtle non-equivalent mutants, or a \emph{defender}, who aims to
+create strong tests to kill these mutants. The benefits of such an
+approach are manifold: The game can serve an educational role by
+engaging learners in mutation testing activities in a fun way.
+Experienced players will produce strong test suites, capable of
+detecting even the most subtle bugs that other players can conceive.
+Equivalent mutants are handled by making them a special part of the
+gameplay, where points are at stake in duels between attackers and
+defenders.}
 }
 
 @article{STVR_seeding,
-  author    = {Rojas, Jos{\'e} Miguel and Fraser, Gordon and Arcuri,
-               Andrea},
+  author    = {Jos\'e Miguel Rojas and Gordon Fraser and Andrea
+               Arcuri},
   title	    = {Seeding strategies in search-based unit test
                generation},
-  journal   = {STVR (Software Testing, Verification and Reliability)},
+  journal   = STVR,
   issn	    = {1099-1689},
+  volume    = {26},
+  number    = {5},
+  pages	    = {366--401},
+  year	    = {2016},
   url	    = {http://dx.doi.org/10.1002/stvr.1601},
   doi	    = {10.1002/stvr.1601},
-  pages	    = {n/a--n/a},
-  keywords  = {test case generation, search-based testing, testing
-               classes, search-based software engineering, JUnit,
-               Java},
-  year	    = {2016},
+  labels    = {journal},
+  abstract  = {Search-based techniques have been applied successfully
+               to the task of generating unit tests for
+               object-oriented software.  However, as for any
+               meta-heuristic search, the efficiency heavily depends
+               on many factors; \emph{seeding}, which refers to the
+               use of previous related knowledge to help solve the
+               testing problem at hand, is one such factor that may
+               strongly influence this efficiency. This paper
+               investigates different seeding strategies for unit test
+               generation, in particular seeding of numerical and
+               string constants derived statically and dynamically,
+               seeding of type information, and seeding of previously
+               generated tests. To understand the effects of these
+               seeding strategies, the results of a large empirical
+               analysis carried out on a large collection of open
+               source projects from the SF110 corpus and the Apache
+               Commons repository are reported. These experiments show
+               with strong statistical confidence that, even for a
+               testing tool already able to achieve high coverage, the
+               use of appropriate seeding strategies can further
+               improve performance.}
 }
 
 
 @Article{emse16_effectiveness,
-  author    = "Rojas, Jos{\'e} Miguel and Vivanti, Mattia and Arcuri,
-               Andrea and Fraser, Gordon",
+  author    = {Jos\'e Miguel Rojas and Mattia Vivanti and Andrea Arcuri and Gordon Fraser},
   title	    = "A detailed investigation of the effectiveness of whole
                test suite generation",
-  journal   = "EMSE (Empirical Software Engineering)",
-  year	    = "2016",
-  pages	    = "1--42",
+  journal   = EMSE,
+  year	    = {2016},
+  pages	    = {1--42},
   abstract  = "A common application of search-based software testing
                is to generate test cases for all goals defined by a
                coverage criterion (e.g., lines, branches,
@@ -66,92 +316,267 @@
                test suite generation.",
   issn	    = "1573-7616",
   doi	    = "10.1007/s10664-015-9424-2",
-  url	    = "http://dx.doi.org/10.1007/s10664-015-9424-2"
+  url	    = "http://dx.doi.org/10.1007/s10664-015-9424-2",
+  labels    = {journal}
 }
 
 %% 2015
 
 @inproceedings{ShamshiriJRFMA2015,
-  author    = {Sina Shamshiri and Ren{\'e} Just and Jos{\'e} M. Rojas
+  author    = {Sina Shamshiri and Ren{\'e} Just and Jo{s\'e} Miguel Rojas
                and Gordon Fraser and Phil McMinn and Andrea Arcuri},
   title	    = {Do Automatically Generated Unit Tests Find Real Faults?
                An Empirical Study of Effectiveness and Challenges},
-  booktitle = {ASE 2015},
-  publisher = {{ACM}},
+  booktitle = ASE,
+  publisher = {ACM},
   pages	    = {201--211},
   year	    = {2015},
-  note	    = "ACM SIGSOFT Distinguished Paper Award"
+  labels    = {conf},
+  note	    = "\textbf{ACM SIGSOFT Distinguished Paper Award}",
+  abstract  = {Rather than tediously writing unit tests manually,
+tools can be used to generate them automatically --- sometimes even
+resulting in higher code coverage than manual testing. But how good
+are these tests at actually finding faults? To answer this question,
+we applied three state-of-the-art unit test generation tools for Java
+(Randoop, EvoSuite, and Agitar) to the 357 real faults in the
+Defects4J dataset and investigated how well the generated test suites
+perform at detecting these faults. Although the automatically
+generated test suites detected 55.7\% of the faults overall, only
+19.9\% of all the individual test suites detected a fault. By studying
+the effectiveness and problems of the individual tools and the tests
+they generate, we derive insights to support the development of
+automated unit test generators that achieve a higher fault detection
+rate. These insights include 1)~improving the obtained code coverage
+so that faulty statements are executed in the first instance,
+2)~improving the propagation of faulty program states to an observable
+output, coupled with the generation of more sensitive assertions, and
+3)~improving the simulation of the execution environment to detect
+faults that are dependent on external factors such as date and time.}
 }
 
 @inproceedings{ShamshiriRFM15,
-  author    = {Sina Shamshiri and Jos{\'{e}} Miguel Rojas and Gordon
+  author    = {Sina Shamshiri and Jos\'e Miguel Rojas and Gordon
                Fraser and Phil McMinn},
   title	    = {Random or Genetic Algorithm Search for Object-Oriented
                Test Suite Generation?},
-  booktitle = {GECCO 2015},
+  booktitle = GECCO,
   pages	    = {1367--1374},
   doi	    = {10.1145/2739480.2754696},
   publisher = {{ACM}},
   year	    = {2015},
   isbn	    = {978-1-4503-3472-3},
-  note      = "Best Paper Award (SBSE-SS Track)"
+  labels    = {conf},
+  note      = "\textbf{Best Paper Award (SBSE-SS Track)}",
+  abstract  = {Achieving high structural coverage is an important aim
+in software testing. Several search-based techniques have proved
+successful at automatically generating tests that achieve high
+coverage. However, despite the well-established arguments behind using
+evolutionary search algorithms (e.g., genetic algorithms) in
+preference to random search, it remains an open question whether the
+benefits can actually be observed in practice when generating unit
+test suites for object-oriented classes. In this paper, we report an
+empirical study on the effects of using a genetic algorithm (GA) to
+generate test suites over generating test suites incrementally with
+random search, by applying the EvoSuite unit test suite generator to
+1,000 classes randomly selected from the SF110 corpus of open source
+projects. Surprisingly, the results show little difference between the
+coverage achieved by test suites generated with evolutionary search
+compared to those generated using random search. A detailed analysis
+reveals that the genetic algorithm covers more branches of the type
+where standard fitness functions provide guidance. In practice,
+however, we observed that the vast majority of branches in the
+analyzed projects provide no such guidance. }
 }
 
 @inproceedings{RojasFA15,
-  author    = {Jos{\'{e}} Miguel Rojas and Gordon Fraser and Andrea
+  author    = {Jos\'e Miguel Rojas and Gordon Fraser and Andrea
                Arcuri},
   title	    = {Automated unit test generation during software
                development: a controlled experiment and think-aloud
                observations},
-  booktitle = {ISSTA 2015},
+  booktitle = ISSTA,
   pages	    = {338--349},
   doi	    = {10.1145/2771783.2771801},
   publisher = {{ACM}},
   year	    = {2015},
-  isbn	    = {978-1-4503-3620-8}
+  isbn	    = {978-1-4503-3620-8},
+  labels    = {conf},
+  abstract  = {Automated unit test generation tools can produce tests
+that are superior to manually written ones in terms of code coverage,
+but are these tests helpful to developers \emph{while they are writing
+code}? A developer would first need to know when and how to apply such
+a tool, and would then need to understand the resulting tests in order
+to provide test oracles and to diagnose and fix any faults that the
+tests reveal. Considering all this, does automatically generating unit
+tests provide any benefit over simply writing unit tests manually? We
+empirically investigated the effects of using an automated unit test
+generation tool (EvoSuite) during development. A controlled experiment
+with 41 students shows that using EvoSuite leads to an average branch
+coverage increase of +13\%, and 36\% less time is spent on testing
+compared to writing unit tests manually. However, there is no clear
+effect on the quality of the implementations, as it depends on how the
+test generation tool and the generated tests are used. In-depth
+analysis, using five think-aloud observations with professional
+programmers, confirms the necessity to increase the \emph{usability}
+of automated unit test generation tools, to \emph{integrate} them
+better during software development, and to \emph{educate} software
+developers on how to best use those tools.}
 }
 
 @inproceedings{RojasCVFA15,
-  author    = {Jos{\'{e}} Miguel Rojas and Jos{\'{e}} Campos and
+  author    = {Jos\'e Miguel Rojas and Jos{\'{e}} Campos and
                Mattia Vivanti and Gordon Fraser and Andrea Arcuri},
   title	    = {Combining Multiple Coverage Criteria in Search-Based
                Unit Test Generation},
-  booktitle = {SSBSE 2015},
+  booktitle = SSBSE,
   pages	    = {93--108},
   doi	    = {10.1007/978-3-319-22183-0_7},
-  series    = {LNCS},
+  series    = lncs,
   volume    = {9275},
   publisher = {Springer},
   year	    = {2015},
   isbn	    = {978-3-319-22182-3},
-  note      = "Best Paper Award (Industry-relevant SBSE results)"
+  labels    = {conf},
+  note      = "\textbf{Best Paper Award (Industry-relevant SBSE results)}",
+  abstract  = {Automated test generation techniques typically aim at
+maximising coverage of well-established structural criteria such as
+statement or branch coverage. In practice, generating tests only for
+one specific criterion may not be sufficient when testing object
+oriented classes, as standard structural coverage criteria do not
+fully capture the properties developers may desire of their unit test
+suites. For example, covering a large number of statements could be
+easily achieved by just calling the {\tt main} method of a class; yet,
+a good unit test suite would consist of smaller unit tests invoking
+individual methods, and checking return values and states with test
+assertions. There are several different properties that test suites
+should exhibit, and a search-based test generator could easily be
+extended with additional fitness functions to capture these
+properties. However, does search-based testing scale to combinations
+of multiple criteria, and what is the effect on the size and coverage
+of the resulting test suites? To answer these questions, we extended
+the EvoSuite unit test generation tool to support combinations of
+multiple test criteria, defined and implemented several different
+criteria, and applied combinations of criteria to a sample of 650 open
+source Java classes. Our experiments suggest that optimising for
+several criteria at the same time is feasible without increasing
+computational costs: When combining nine different criteria, we
+observed an average decrease of only 0.4\% for the constituent
+coverage criteria, while the test suites may grow up to 70\%.}
 }
 
 %% 2014 
 
 @inproceedings{AlbertAGR14,
-  author    = {Elvira Albert and
-               Puri Arenas and
-               Miguel G{\'o}mez-Zamalloa and
-               Jos{\'e} Miguel Rojas},
-  title     = {Test {C}ase {G}eneration by {S}ymbolic {E}xecution: {B}asic {C}oncepts,
-               a {CLP}-{B}ased {I}nstance, and {A}ctor-{B}ased {C}oncurrency},
-  booktitle = {SFM 2014, Advanced Lectures},
-  year      = {2014},
-  pages     = {263-309},
-  ee        = {http://dx.doi.org/10.1007/978-3-319-07317-0_7},
-  publisher = {Springer},
-  series    = {LNCS},
+  author    = {Elvira Albert and Puri Arenas and Miguel
+               G{\'o}mez-Zamalloa and Jos\'e Miguel Rojas},
+  title	    = {Test {C}ase {G}eneration by {S}ymbolic {E}xecution:
+               {B}asic {C}oncepts, a {CLP}-{B}ased {I}nstance, and
+               {A}ctor-{B}ased {C}oncurrency},
+  bookTitle = "14th Int. School on Formal Methods for the Design of
+               Computer, Communication, and Software Systems (SFM
+               Advanced Lectures)",
+  year	    = {2014},
+  pages	    = {263--309},
+  ee	    = {http://dx.doi.org/10.1007/978-3-319-07317-0_7},
+  publisher = {Springer International Publishing},
   volume    = {8483},
-  isbn      = {978-3-319-07316-3}
+  isbn	    = {978-3-319-07316-3},
+  labels    = {bookchap},
+  pdf	    = {http://costa.ls.fi.upm.es/papers/costa/AlbertAGZR14.pdf},
+  abstract  = {The focus of this tutorial is white-box test case
+generation (TCG) based on symbolic execution. Symbolic execution
+consists in executing a program with the contents of its input
+arguments being symbolic variables rather than concrete values. A
+symbolic execution tree characterizes the set of execution paths
+explored during the symbolic execution of a program. Test cases can be
+then obtained from the successful branches of the tree. The tutorial
+is split into three parts: (1) The first part overviews the basic
+techniques used in TCG to ensure termination, handling
+heap-manipulating programs, achieving compositionality in the process
+and guiding TCG towards interesting test cases. (2) In the second
+part, we focus on a particular implementation of the TCG framework in
+constraint logic programming (CLP). In essense, the imperative
+object-oriented program under test is automatically transformed into
+an equivalent executable CLP-translated program. The main advantage of
+CLP-based TCG is that the standard mechanism of CLP performs symbolic
+execution for free. The PET system is an open-source software that
+implements this approach. (3) Finally, in the last part, we study the
+extension of TCG to actor-based concurrent programs.}
 }
 
 %% 2013
 
+@phdthesis{JMRojasPhD,
+  author    = {Jos\'e Miguel Rojas},
+  title	    = {Test {C}ase {G}eneration in {O}bject-{O}riented
+               {P}rogramming},
+  url	    = {http://oa.upm.es/22751/},
+  school    = {{U}niversidad {P}olit\'ecnica de {M}adrid ({T}echnical
+               {U}niversity of {M}adrid)},
+  month	    = dec,
+  year	    = {2013},
+  labels    = {phdissert,vivac-ucm},
+  ee	    = {http://oa.upm.es/22751/},
+  abstract  = {Testing is nowadays the most used technique to validate
+software and assess its quality. It is integrated into all practical
+software development methodologies and plays a crucial role towards
+the success of any software project. From the smallest units of code
+to the most complex components and their integration into a software
+system and later deployment; all pieces of a software product must be
+tested thoroughly before a software product can be released. The main
+limitation of software testing is that it remains a mostly manual
+task, representing a large fraction of the total development cost. In
+this scenario, test automation is paramount to alleviate such high
+costs. Test case generation (TCG) is the process of automatically
+generating test inputs that achieve high coverage of the system under
+test. Among a wide variety of approaches to TCG, this thesis focuses
+on structural (white-box) TCG, where one of the most successful
+enabling techniques is symbolic execution. In symbolic execution, the
+program under test is executed with its input arguments being symbolic
+expressions rather than concrete values. This thesis relies on a
+previously developed constraint-based TCG framework for imperative
+object-oriented programs (e.g., Java), in which the imperative program
+under test is first translated into an equivalent constraint logic
+program, and then such a translated program is symbolically executed
+by relying on standard evaluation mechanisms of Constraint Logic
+Programming (CLP), extended with special treatment for dynamically
+allocated data structures. Improving the scalability and efficiency of
+symbolic execution constitutes a major challenge. It is well known
+that symbolic execution quickly becomes impractical due to the large
+number of paths that must be explored and the size of the constraints
+that must be handled. Moreover, symbolic execution-based TCG tends to
+produce an unnecessarily large number of test cases when applied to
+medium or large programs. The contributions of this dissertation can
+be summarized as follows. \begin{itemize} \item[(1)] A compositional
+approach to CLP-based TCG is developed which overcomes the
+inter-procedural path explosion by separately analyzing each component
+(method) in a program under test, stowing the results as method
+summaries and incrementally reusing them to obtain whole-program
+results. A similar compositional strategy that relies on program
+specialization is also developed for the state-of-the-art symbolic
+execution tool Symbolic PathFinder (SPF). \item[(2)] Resource-driven
+TCG is proposed as a methodology to use resource consumption
+information to drive symbolic execution towards those parts of the
+program under test that comply with a user-provided resource policy,
+avoiding the exploration of those parts of the program that violate
+such policy. \item[(3)] A generic methodology to guide symbolic
+execution towards the most interesting parts of a program is proposed,
+which uses abstractions as oracles to steer symbolic execution through
+those parts of the program under test that interest the
+programmer/tester most. \item[(4)] A new heap-constraint solver is
+proposed, which efficiently handles heap-related constraints and
+aliasing of references during symbolic execution and greatly
+outperforms the state-of-the-art standard technique known as lazy
+initialization. \item[(5)] All techniques above have been implemented
+in the PET system (and some of them in the SPF tool). Experimental
+evaluation has confirmed that they significantly help towards a more
+scalable and efficient symbolic execution and TCG. \end{itemize}}
+}
+
 @article{AlbertGGZRS13,
-  author    = {Elvira Albert and Mar{\'i}a Garc{\'i}a de la Banda and Miguel G\'{o}mez-Zamalloa and Jos\'{e} Miguel Rojas and Peter Stuckey},
+  author    = {Elvira Albert and Mar{\'i}a Garc{\'i}a de la Banda and Miguel G\'{o}mez-Zamalloa and Jos\'e Miguel Rojas and Peter Stuckey},
   title     = {{A} {CLP} {H}eap {S}olver for {T}est {C}ase {G}eneration},
-  journal   = {TPLP (Theory and Practice of Logic Programming), ICLP 2013 SI.},
+  journal   = {Theory and Practice of Logic Programming (TPLP) (ICLP 2013 SI.)},
   year      = {2013},
   publisher = {Cambridge U. Press},
   volume    = {13},
@@ -161,44 +586,76 @@
   pdf       = {http://costa.ls.fi.upm.es/papers/costa/AlbertGGZRS13.pdf},
   labels    = {journal,doves,vivac,prometidos,rank-a},
   abstract  = {One of the main challenges to software testing today is
-                  to efficiently handle heap-manipulating
-                  programs. These programs often build complex,
-                  dynamically allocated data structures during
-                  execution and, to ensure reliability, the testing
-                  process needs to consider all possible shapes these
-                  data structures can take.  This creates scalability
-                  issues since high (often exponential) numbers of
-                  shapes may be built due to the \emph{aliasing} of
-                  references. This paper presents a novel \emph{CLP
-                  heap solver} for the test case generation of
-                  heap-manipulating programs that is more scalable
-                  than previous proposals, thanks to the treatment of
-                  reference aliasing by means of \emph{disjunction},
-                  and to the use of advanced \emph{back-propagation}
-                  of heap related constraints.  In addition, the heap
-                  solver supports the use of \emph{heap assumptions}
-                  to avoid aliasing of data that, though legal, should
-                  not be provided as input.}
+to efficiently handle heap-manipulating programs. These programs often
+build complex, dynamically allocated data structures during execution
+and, to ensure reliability, the testing process needs to consider all
+possible shapes these data structures can take. This creates
+scalability issues since high (often exponential) numbers of shapes
+may be built due to the \emph{aliasing} of references. This paper
+presents a novel \emph{CLP heap solver} for the test case generation
+of heap-manipulating programs that is more scalable than previous
+proposals, thanks to the treatment of reference aliasing by means of
+\emph{disjunction}, and to the use of advanced \emph{back-propagation}
+of heap related constraints. In addition, the heap solver supports the
+use of \emph{heap assumptions} to avoid aliasing of data that, though
+legal, should not be provided as input.}
 }
 
 
 @InProceedings{2013-nasa,
-  author    = {Jos\'{e} Miguel Rojas and Corina S. P\u{a}s\u{a}reanu},
+  author    = {Jos\'e Miguel Rojas and Corina S. P\u{a}s\u{a}reanu},
   title =     {{C}ompositional {S}ymbolic {E}xecution through {P}rogram {S}pecialization},
   booktitle = {BYTECODE 2013},
   year      = 2013,
-  note      = {Peer-reviewed workshop (co-located with ETAPS) with no formal proceedings.}
+  labels    = {workshop},
+  note      = {Peer-reviewed workshop (co-located with ETAPS 2013) with no formal proceedings.},
+  abstract  = {Scalability is a major challenge in symbolic execution.
+The large number of paths that need to be explored and the large size
+of the constraints that must be carried often compromise the
+effectiveness of symbolic execution for software testing in practice.
+Compositional symbolic execution aims to alleviate these scalability
+issues by executing the methods of a program separately, stowing their
+results in method summaries and using such summaries to incrementally
+execute the complete program. We present a novel compositional
+approach that leverages partial evaluation, a well-established
+technique that aims at automatically specializing a program with
+respect to some of its input. We report on its design and
+implementation in Symbolic PathFinder and on preliminary promising
+evaluation results.}
 }
 
 @InProceedings{2013-guided,
+    crossref = {RojasG-Z12}
+ }
+
+@InProceedings{RojasG-Z12,
   author    = {Jos\'{e} Miguel Rojas and Miguel G\'omez-Zamalloa},
-  title     = {{A} {G}eneric {F}ramework for {G}uided {T}est {C}ase {G}eneration in {CLP}},
-  booktitle = {LOPSTR 2012},
+  title     = {A {F}ramework for {G}uided {T}est {C}ase {G}eneration in {C}onstraint {L}ogic {P}rogramming},
+  booktitle = LOPSTR,
   publisher = {Springer},
-  series    = {LNCS},
+  series    = lncs,
   volume    = {7844},
   pages     = {176--193},
-  year      = {2012}
+  year      = {2013},
+  url       = {http://dx.doi.org/10.1007/978-3-642-38197-3_12},
+  doi       = {10.1007/978-3-642-38197-3_12},
+  pdf       = {http://costa.ls.fi.upm.es/papers/costa/RojasG-Z12.pdf},
+  labels    = {conf,hats,doves,prometidos,vivac-ucm},
+  rank:core:class       = {B},
+  rank:ms:position      = {32/168},
+  rank:ms:category      = mscatpl, 
+  rank:acceptrate:curr  = {13/27},
+  abstract  = {It is well known that performing test case generation
+by symbolic execution on large programs becomes quickly impracticable
+due to the path explosion phenomenon. This issue is considered a major
+challenge in the software testing arena. Another common limitation in
+the field is that test case generation by symbolic execution tends to
+produce an unnecessarily large number of test cases even for medium
+size programs. In this paper we propose a constraint logic programming
+approach to devise a generic framework to guide symbolic execution and
+thus test case generation. We show how the framework can help
+alleviate these scalability drawbacks that most symbolic
+execution-based test generation approaches endure.},
 }
 
 %% 2012
@@ -213,44 +670,134 @@
                Miguel G{\'o}mez-Zamalloa and
                Abu Naser Masud and
                German Puebla and
-               Jos{\'e} Miguel Rojas and
+               Jos\'e Miguel Rojas and
                Guillermo Rom{\'a}n-D\'{\i}ez and
                Damiano Zanardini},
   title     = {Automatic Inference of Bounds on Resource Consumption},
-  booktitle = {FMCO 2012, Revised Lectures},
+  booktitle = {Int. Symposium on Formal Methods for Components and Objects (FMCO, Revised Lectures)},
   year      = {2012},
-  pages     = {119-144},
+  pages     = {119--144},
   publisher = {Springer},
-  series    = {LNCS},
+  series    = lncs,
   volume    = {7866},
   isbn      = {978-3-642-40614-0},
-  ee        = {http://dx.doi.org/10.1007/978-3-642-40615-7_4}
+  ee        = {http://dx.doi.org/10.1007/978-3-642-40615-7_4},
+  labels    = {bookchap,lncs,hats,doves,vivac,vivac-upm},
+  abstract  = {In this tutorial paper, we overview the techniques that
+underlie the automatic inference of resource consumption bounds. We
+first explain the basic techniques on a Java-like sequential language.
+Then, we describe the extensions that are required to apply our method
+on concurrent ABS programs. Finally, we discuss some advanced issues
+in resource analysis, including the inference of non-cumulative
+resources and the treatment of shared mutable data.}
 }
 
 @inproceedings{2012-jms2abs,
-  author    = {Albert, Elvira and {\O}stvold, Bjarte M. and Rojas,
-               Jos\'{e} Miguel},
+  author    = {Elvira Albert and Bjarte M. {\O}stvold and Jos\'e Miguel Rojas},
   title	    = {{\sc jms2abs}: Automated Extraction of Abstract
                Behavioural Models from JMS Applications},
-  booktitle = {FMICS 2012},
+  booktitle = {Formal Methods for Industrial Critical Systems (FMICS)},
   publisher = {Springer},
-  series    = {LNCS},
+  series    = lncs,
   volume    = {7437},
   pages	    = {16--31},
-  year	    = {2012}
+  year	    = {2012},
+  labels    = {conf},
+  abstract  = {Distributed systems are hard to program, understand and
+analyze. Two key sources of complexity are the many possible behaviors
+of a system, arising from the parallel execution of its distributed
+nodes, and the handling of asynchronous messages exchanged between
+nodes. We show how to systematically construct \emph{executable models} of
+publish/subscribe systems based on the Java Messaging Service (JMS).
+These models, written in the Abstract Behavioural Specification (ABS)
+language, capture the essentials of the messaging behavior of the
+original Java systems, and eliminate details not related to
+distribution and messages. We report on {\sc jms2abs}, a tool that
+automatically extracts ABS models from the \emph{bytecode} of JMS systems.
+Since the extracted models are formal and executable, they allow us to
+reason about the modeled JMS systems by means of tools built
+specifically for the modeling language. For example, we have succeeded
+to apply simulation, termination and resource analysis tools developed
+for ABS to, respectively, execute, prove termination and infer the
+resource consumption of the original JMS applications.}
 }
 
 % RESOURCE-AWARE TDG
 @inproceedings {2012-ResourceTDG,
-  author    = {Albert, Elvira and G\'{o}mez-Zamalloa, Miguel and
-               Rojas, Jos\'{e} Miguel},
+  author    = {Elvira Albert and Miguel G\'{o}mez-Zamalloa and
+               Jos\'e Miguel Rojas},
   title	    = {Resource-driven CLP-based Test Case Generation},
-  booktitle = {LOPSTR 2011},
-  series    = {LNCS},
+  booktitle = LOPSTR,
+  series    = lncs,
   volume    = {7225},
   pages	    = {25--41},
   publisher = {Springer},
-  year	    = {2012}
+  labels    = {conf,lncs,hats,doves,prometidos},
+  year	    = {2012},
+  abstract  = {Test Data Generation (TDG) aims at automatically
+obtaining test inputs which can then be used by a software testing
+tool to validate the functional behaviour of the program. In this
+paper, we propose \emph{resource-aware} TDG, whose purpose is to
+generate test cases (from which the test inputs are obtained) with
+associated resource consumptions. The framework is parametric w.r.t.
+the notion of resource (it can measure memory, steps, etc.) and allows
+using software testing to detect bugs related to non-functional
+aspects of the program. As a further step, we introduce
+\emph{resource-driven} TDG whose purpose is to guide the TDG process
+by taking resource consumption into account. Interestingly, given a
+\emph{resource policy}, TDG is guided to generate test cases that
+adhere to the policy and avoid the generation of test cases which
+violate it.}
+}
+
+@article{alp12,
+  title	    = {Resource {A}nalysis in the {COSTA} {S}ystem},
+  author    = {Elvira Albert and Diego Esteban Alonso and Puri Arenas
+               and Jes\'us Correas and Antonio Flores-Montoya and
+               Samir Genaim and Miguel G\'omez-Zamalloa and Abu Naser
+               Masud and Germ\'an Puebla and Jos\'e Miguel Rojas and
+               Guillermo Rom\'an-D\'iez and Damiano Zanardini},
+  booktitle = {Association for Logic Programming (ALP) Newsletter},
+  url	    = {http://www.cs.nmsu.edu/ALP/2012/12/resource-analysis-in-the-costa-system/},
+  year	    = 2012,
+  month	    = dec,
+  pdf	    = {http://costa.ls.fi.upm.es/papers/costa/alp12.pdf},
+  labels    = {hats,doves,newsletter},
+  rank:custom:class= {none},
+  note	    = {Newsletter},
+  abstract  = {Having information about the execution cost of
+               programs, i.e., the amount of resources that the
+               execution will require, is useful for many different
+               purposes, including program optimization, verification
+               and certification. Reasoning about execution cost is
+               difficult and error-prone. Therefore, it is widely
+               recognized that cost analysis, sometimes also referred
+               to as resource analysis or automatic complexity
+               analysis, is quite important. COSTA
+               (\url{http://costa.ls.fi.upm.es}) is a state-of-the-art
+               cost and termination analyzer which automates this
+               task. The system is able to infer upper and lower
+               bounds on the resource consumption of a large class of
+               programs. Given a program P, the analysis results allow
+               bounding the cost of executing P on any input data
+               $\overline{x}$ without having to actually run
+               P($\overline{x}$). The first successful proposal for
+               automatically computing the complexity of programs was
+               the seminal work of Wegbreit. Since then, a number of
+               cost analysis frameworks have been proposed, mostly in
+               the context of declarative programming languages
+               (functional programming and logic programming). Cost
+               analysis of imperative programming languages has
+               received significantly less attention. It is worth
+               mentioning the pioneering work of Adachi et al. To the
+               best of our knowledge, COSTA has been the first system
+               which automatically infers bounds on cost for a large
+               class of Java-like programs, getting meaningful
+               results. The system is implemented in Prolog (it runs
+               both on Ciao and SWI Prolog) and uses the Parma
+               Polyhedra Library for manipulating linear
+               constraints. More info on COSTA is available from its
+               website, where it can be used from a web interface.}
 }
 
 %% 2011
@@ -258,70 +805,112 @@
 % NEPS ON CLUSTERS
 
 @INPROCEEDINGS{2011-NEPSonClusters,
-  author    = {Navarrete, Carmen and de la Cruz, Marina and Anguiano,
-               Eloy and Ortega, Alfonso and Rojas, Jos\'{e} Miguel},
-  booktitle = {WI-IAT 2011},
+  author    = {Carmen Navarrete and Marina de la Cruz and Eloy
+               Anguiano and Alfonso Ortega and Jos\'e Miguel Rojas},
   title	    = {Parallel Simulation of {NEP}s on Clusters},
+  booktitle = {IEEE/WIC/ACM Int. Conferences on Web Intelligence and
+               Intelligent Agent Technology (WI-IAT)},
   pages	    = {171--174},
-  keywords  = {computer cluster;multicore desktop
-               computer;multithreaded Java simulator;networks of
-               evolutionary processors;parallel
-               simulation;multi-threading;multiprocessing
-               systems;parallel processing;},
   doi	    = {http://dx.doi.org/10.1109/WI-IAT.2011.131},
+  labels    = {conf},
   publisher = {{IEEE} Computer Society},
-  year	    = {2011}
+  year	    = {2011},
+  abstract  = {This paper compares two different approaches, followed
+by our research group, to efficiently run NEPs on parallel platforms,
+as general and transparent as possible. The vague results of jNEP (our
+multithreaded Java simulator for multicore desktop computers) suggests
+the use of massively parallel platforms (clusters of computers). The
+good results obtained show the scalability and viability of this last
+approach.}
 }
 
 % COMPOSITIONAL TDG
 @incollection {2011-CompTDG,
-  author    = {Albert, Elvira and G\'{o}mez-Zamalloa, Miguel and
-               Rojas, Jos\'{e} Miguel and Puebla, Germ\'{a}n},
+  author    = {Elvira Albert and Miguel G\'{o}mez-Zamalloa and
+               Jos\'e Miguel Rojas and Germ\'{a}n Puebla},
   title	    = {Compositional CLP-Based Test Data Generation for
                Imperative Languages},
-  booktitle = {LOPSTR 2010},
-  series    = {LNCS},
+  booktitle = LOPSTR,
+  series    = lncs,
   publisher = {Springer},
   isbn	    = {},
   pages	    = {99--116},
   volume    = {6564},
   url	    = {http://dx.doi.org/10.1007/978-3-642-20551-4_7},
-  year	    = {2011}
+  pdf       = {http://costa.ls.fi.upm.es/papers/costa/AlbertGRP10.pdf},
+  labels    = {conf,lncs,hats,doves,prometidos},
+  year	    = {2011},
+  abstract  = {Glass-box test data generation (TDG) is the process of
+automatically generating test input data for a program by considering
+its internal structure. This is generally accomplished by performing
+symbolic execution of the program where the contents of variables are
+expressions rather than concrete values. The main idea in CLP-based
+TDG is to translate imperative programs into equivalent CLP ones and
+then rely on the standard evaluation mechanism of CLP to symbolically
+execute the imperative program. Performing symbolic execution on large
+programs becomes quickly expensive due to the large number and the
+size of paths that need to be explored. In this paper, we propose
+\emph{compositional reasoning} in CLP-based TDG where large programs
+can be handled by testing parts (such as components, modules,
+libraries, methods, etc.) separately and then by composing the test
+cases obtained for these parts to get the required information on the
+whole program. Importantly, compositional reasoning also gives us a
+practical solution to handle native code, which may be unavailable or
+written in a different programming language. Namely, we can model the
+behavior of a native method by means of test cases and compositional
+reasoning is able to use them.}
 }
 
 %% 2010
 
 % JHSYS
 @inproceedings{2010-JHSYS,
-  author    = {Rojas, Jos{\'e} Miguel and
-               de la Cruz Echeand\'{\i}a, Marina and
-               Ortega de la Puente, Alfonso},
-  title     = {Towards the Automatic Programming of H Systems: jHsys, a
-               Java H System Simulator},
-  booktitle = {Trends in PAAMS 2010},
+  author    = {Jos\'e Miguel Rojas and Marina de la Cruz
+               Echeand\'{\i}a and Alfonso Ortega de la Puente},
+  title	    = {Towards the Automatic Programming of H Systems: jHsys,
+               a Java H System Simulator},
+  bookTitle = "Int. Conference on Practical Applications of Agents and
+               Multiagent Systems (PAAMS)",
   publisher = {Springer},
-  series    = {AISC},
-  volume    = {71},
-  isbn      = {978-3-642-12432-7},
-  year      = {2010},
-  pages     = {387--394},
-  ee        = {http://dx.doi.org/10.1007/978-3-642-12433-4_46}
+  isbn	    = {978-3-642-12432-7},
+  year	    = {2010},
+  pages	    = {387--394},
+  labels    = {conf},
+  ee	    = {http://dx.doi.org/10.1007/978-3-642-12433-4_46},
+  abstract  = {The main goal of this paper is to describe how we
+consider that splicing systems (a family of abstract bio-inspired
+computing devices) can be automatically programmed (designed) in the
+future. One of the necessary steps is to formally de- scribe the
+computer being programmed (splicing systems). Some of the authors of
+this paper have previously solved this problem. Another necessary step
+is to develop a simulator for H systems. We propose applying
+Christiansen Grammar Evolution (an evolutionary automatic programming
+algorithm developed by the authors) to complete the process. This
+technique includes a fitness function that the simulator requires.
+This paper is devoted to describe jHSys, a Java simulator for splicing
+(H) systems.}
 }
 
 %% 2009
 
 % JNEPS
 @inproceedings{2009-JNEPS,
-  author    = {del Rosal, Emilio and
-               Rojas, Jos{\'e} Miguel and
-               N{\'u}{\~n}ez, Rafael and
-               Casta{\~n}eda, Carlos and
-               Ortega de la Puente, Alfonso},
-  title     = {On the Solutions of NP-Complete Problems by Means of jNEP
-               Run on Computers},
-  booktitle = {ICAART 2009},
+  author    = {Emilio del Rosal and Jos\'e Miguel Rojas and Rafael
+               N{\'u}{\~n}ez and Carlos Casta{\~n}eda and Alfonso
+               Ortega de la Puente},
+  title	    = {On the Solutions of NP-Complete Problems by Means of
+               jNEP Run on Computers},
+  booktitle = "International Conference on Agents and Artificial
+               Intelligence (ICAART)",
   publisher = {INSTICC Press},
-  year      = {2009},
-  isbn      = {978-989-8111-66-1},
-  pages     = {605--612}
+  year	    = {2009},
+  isbn	    = {978-989-8111-66-1},
+  pages	    = {605--612},
+  labels    = {conf},
+  abstract  = {We have used jNEP (a JAVA simulator of a natural
+computing device named Networks of Evolutionary Processors) to solve
+some cases of well-known NP-complete problems. We have followed the
+most relevant papers in the literature. In this paper, we describe the
+difficulties found in this process and some conclusions about the
+design, the simulation and some useful tools for NEPs.}
 }

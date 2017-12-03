@@ -4,13 +4,15 @@
 \ProvidesFile{ecves.def}[europecv Spanish definitions]
 % Personal information
 \def\ecv@infosectionkey{\ecv@utf{Informaci\'on personal}}
-\def\ecv@namekey{\ecv@utf{Apellido(s) / Nombre(s)}}
+\def\ecv@namekey{\ecv@utf{Apellidos / Nombres}}
 \def\ecv@addresskey{\ecv@utf{Direcci\'on(es)}}
 \def\ecv@telkey{\ecv@utf{Tel\'efono(s)}}
 \def\ecv@mobilekey{\ecv@utf{M\'ovil}}
 \def\ecv@faxkey{\ecv@utf{Fax(es)}}
 \def\ecv@emailkey{\ecv@utf{Correo(s) electr\'onico(s)}}
-\def\ecv@nationalitykey{\ecv@utf{Nacionalidad}}
+\def\ecv@scholarkey{\ecv@utf{Perfil Google Scholar}}
+\def\ecv@dblpkey{\ecv@utf{Perfil DBLP}}\
+def\ecv@nationalitykey{\ecv@utf{Nacionalidad}}
 %\def\ecv@nationalitykey{\ecv@utf{Nacionalidad(es)}}
 \def\ecv@birthkey{\ecv@utf{Fecha de nacimiento}}
 \def\ecv@genderkey{\ecv@utf{Sexo}}
@@ -18,7 +20,7 @@
 \def\ecv@pagekey{\ecv@utf{P\'agina}}
 \def\ecv@cvofkey{\ecv@utf{Curriculum vit\ae\ de}}
 % Language table
-\def\ecv@mothertonguekey{\ecv@utf{Lengua(s) materna(s)}}
+\def\ecv@mothertonguekey{\ecv@utf{Lengua materna}}
 \def\ecv@assesskey{\ecv@utf{Auto evaluaci\'on}}
 \def\ecv@levelkey{\ecv@utf{Nivel europeo}}
 \def\ecv@understandkey{\ecv@utf{Comprender}}
