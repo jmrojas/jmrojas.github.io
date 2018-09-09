@@ -9,7 +9,7 @@
 [<a name="STVR_RandomVsSearch">1</a>]
 </td>
 <td class="bibtexitem">
-Sina Shamshiri, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, Luca Gazzola, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, Phil McMinn,
+Sina Shamshiri, Jos&eacute;&nbsp;Miguel Rojas, Luca Gazzola, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="http://mcminn.io">Phil McMinn</a>,
   Leonardo Mariani, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
  Random or Evolutionary Search for Object-Oriented Test Suite
   Generation?
@@ -26,7 +26,7 @@ An important aim in software testing is constructing a test suite with high stru
 </div>
 <div style="background: #FFFFEE; display: none" id="STVR_RandomVsSearch_bib" >
 <pre>@article{STVR_RandomVsSearch,
-  author = {Sina Shamshiri and Jos\'e Miguel Rojas and Luca Gazzola and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and Phil McMinn and Leonardo Mariani and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>},
+  author = {Sina Shamshiri and Jos\'e Miguel Rojas and Luca Gazzola and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and <a href="http://mcminn.io">Phil McMinn</a> and Leonardo Mariani and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>},
   title = {{Random or Evolutionary Search for Object-Oriented Test Suite Generation?}},
   journal = {Software Testing, Verification and Reliability (STVR)},
   year = {2018},
@@ -49,7 +49,7 @@ An important aim in software testing is constructing a test suite with high stru
 [<a name="STVR_seeding">2</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
+Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
  Seeding strategies in search-based unit test generation.
  <em>Software Testing, Verification and Reliability (STVR)</em>,
   26(5):366-401, 2016.
@@ -108,7 +108,7 @@ Search-based techniques have been applied successfully
 [<a name="emse16_effectiveness">3</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, Mattia Vivanti, <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
+Jos&eacute;&nbsp;Miguel Rojas, Mattia Vivanti, <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  A detailed investigation of the effectiveness of whole test suite
   generation.
  <em>Empirical Software Engineering (EMSE)</em>, pages 1-42, 2016.
@@ -174,7 +174,7 @@ A common application of search-based software testing
 </td>
 <td class="bibtexitem">
 <a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://www.csse.monash.edu.au/~mbanda">Mar&iacute;a Garc&iacute;a de la Banda</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>,
-  <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, and <a href="http://ww2.cs.mu.oz.au/~pjs">Peter J. Stuckey</a>.
+  Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://ww2.cs.mu.oz.au/~pjs">Peter J. Stuckey</a>.
  A CLP Heap Solver for Test Case Generation.
  <em>Theory and Practice of Logic Programming (TPLP) (ICLP 2013
   SI.)</em>, 13(4-5):721-735, 2013.
@@ -228,7 +228,7 @@ legal, should not be provided as input.
 [<a name="FraserGR18">1</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, Alessio Gambi, and <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>.
+<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, Alessio Gambi, and Jos&eacute;&nbsp;Miguel Rojas.
  A Preliminary Report on Gamifying a Software Testing Course with the
   Code Defenders Testing Game.
  In <em>European Conference of Software Engineering Education
@@ -261,7 +261,7 @@ legal, should not be provided as input.
 [<a name="ICST2018_Accessibility">2</a>]
 </td>
 <td class="bibtexitem">
-Yan&nbsp;Ge Marcelo Medeiros&nbsp;Eler, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a> and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
+Yan&nbsp;Ge Marcelo Medeiros&nbsp;Eler, Jos&eacute; Miguel&nbsp;Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  Automated Accessibility Testing of Mobile Apps.
  In <em>IEEE Int. Conference on Software Testing, Verification and
   Validation (ICST)</em>, pages 116-126. IEEE, 2018.
@@ -295,7 +295,7 @@ It is important to make mobile apps accessible, so as not to exclude users with 
 [<a name="ICST2018_Maintenance">3</a>]
 </td>
 <td class="bibtexitem">
-Sina Shamshiri, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, Juan&nbsp;Pablo Galeotti, Neil Walkinshaw, and
+Sina Shamshiri, Jos&eacute;&nbsp;Miguel Rojas, Juan&nbsp;Pablo Galeotti, <a href="http://neilwalkinshaw.github.io">Neil Walkinshaw</a>, and
   <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  How Do Automatically Generated Unit Tests Influence Software
   Maintenance?
@@ -311,7 +311,7 @@ Generating unit tests automatically saves time over writing tests manually and c
 </div>
 <div style="background: #FFFFEE; display: none" id="ICST2018_Maintenance_bib" >
 <pre>@incollection{ICST2018_Maintenance,
-  author = {Sina Shamshiri and Jos\'e Miguel Rojas and Juan Pablo Galeotti and Neil Walkinshaw and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>},
+  author = {Sina Shamshiri and Jos\'e Miguel Rojas and Juan Pablo Galeotti and <a href="http://neilwalkinshaw.github.io">Neil Walkinshaw</a> and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>},
   title = {How Do Automatically Generated Unit Tests Influence Software Maintenance?},
   booktitle = {IEEE Int. Conference on Software Testing, Verification and Validation (ICST)},
   year = {2018},
@@ -331,7 +331,7 @@ Generating unit tests automatically saves time over writing tests manually and c
 [<a name="ISSTA17_IDNaming">4</a>]
 </td>
 <td class="bibtexitem">
-Ermira Daka, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
+Ermira Daka, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  Generating Unit Tests with Descriptive Names Or: Would You Name Your
   Children Thing1 and Thing2?
  In <em>ACM Int. Symposium on Software Testing and Analysis (ISSTA)</em>,
@@ -390,7 +390,7 @@ The name of a unit test helps developers to understand
 [<a name="ICSE_SEET2017_CodeDefenders">5</a>]
 </td>
 <td class="bibtexitem">
-Benjamin Clegg, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
+Benjamin Clegg, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  Teaching Software Testing Concepts Using a Mutation Testing Game.
  In <em>Int. Conference on Software Engineering (ICSE)(SEET)</em>, pages
   33-36, 2017.
@@ -446,7 +446,7 @@ Software testing is a core aspect of software
 [<a name="ICSE2017_CodeDefenders">6</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, Thomas White, Benjamin Clegg, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
+Jos&eacute;&nbsp;Miguel Rojas, Thomas White, Benjamin Clegg, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  Code Defenders: Crowdsourcing Effective Tests and Subtle Mutants
   with a Mutation Testing Game.
  In <em>Int. Conference on Software Engineering (ICSE)</em>, pages
@@ -505,7 +505,7 @@ Writing good software tests is difficult and not every
 [<a name="ECSEE16_MutationEducation">7</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a> and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
+Jos&eacute;&nbsp;Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  Teaching Mutation Testing using Gamification.
  In <em>European Conference of Software Engineering Education
   (ECSEE)</em>. Shaker Verlag, 2016.
@@ -546,8 +546,7 @@ enjoyable and fruitful for students.
 [<a name="ShamshiriJRFMA2015">8</a>]
 </td>
 <td class="bibtexitem">
-Sina Shamshiri, Ren&eacute; Just, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, Phil
-  McMinn, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
+Sina Shamshiri, Ren&eacute; Just, Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="http://mcminn.io">Phil McMinn</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
  Do Automatically Generated Unit Tests Find Real Faults? An Empirical
   Study of Effectiveness and Challenges.
  In <em>IEEE/ACM Int. Conference on Automated Software Engineering
@@ -581,7 +580,7 @@ faults that are dependent on external factors such as date and time.
 <div style="background: #FFFFEE; display: none" id="ShamshiriJRFMA2015_bib" >
 <pre>@inproceedings{ShamshiriJRFMA2015,
   author = {Sina Shamshiri and Ren{\'e} Just and Jo{s\'e} Miguel Rojas
-               and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and Phil McMinn and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>},
+               and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and <a href="http://mcminn.io">Phil McMinn</a> and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>},
   title = {Do Automatically Generated Unit Tests Find Real Faults?
                An Empirical Study of Effectiveness and Challenges},
   booktitle = {IEEE/ACM Int. Conference on Automated Software Engineering (ASE)},
@@ -602,7 +601,7 @@ faults that are dependent on external factors such as date and time.
 [<a name="ShamshiriRFM15">9</a>]
 </td>
 <td class="bibtexitem">
-Sina Shamshiri, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and Phil McMinn.
+Sina Shamshiri, Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and <a href="http://mcminn.io">Phil McMinn</a>.
  Random or Genetic Algorithm Search for Object-Oriented Test Suite
   Generation?
  In <em>Genetic and Evolutionary Computation Conference (GECCO)</em>,
@@ -636,7 +635,7 @@ analyzed projects provide no such guidance.
 </div>
 <div style="background: #FFFFEE; display: none" id="ShamshiriRFM15_bib" >
 <pre>@inproceedings{ShamshiriRFM15,
-  author = {Sina Shamshiri and Jos\'e Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and Phil McMinn},
+  author = {Sina Shamshiri and Jos\'e Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and <a href="http://mcminn.io">Phil McMinn</a>},
   title = {Random or Genetic Algorithm Search for Object-Oriented
                Test Suite Generation?},
   booktitle = {Genetic and Evolutionary Computation Conference (GECCO)},
@@ -659,7 +658,7 @@ analyzed projects provide no such guidance.
 [<a name="RojasFA15">10</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
+Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
  Automated unit test generation during software development: a
   controlled experiment and think-aloud observations.
  In <em>ACM Int. Symposium on Software Testing and Analysis (ISSTA)</em>,
@@ -716,7 +715,7 @@ developers on how to best use those tools.
 [<a name="RojasCVFA15">11</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io"><a href="http://jose.github.io">Jos&eacute; Campos</a>, Mattia Vivanti, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and
+<a href="http://jose.github.io">Jos&eacute; Campos</a>, Mattia Vivanti, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and
   <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
  Combining Multiple Coverage Criteria in Search-Based Unit Test
   Generation.
@@ -782,7 +781,7 @@ coverage criteria, while the test suites may grow up to 70%.
 [<a name="RojasG-Z12">12</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a> and <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>.
+Jos&eacute;&nbsp;Miguel Rojas and <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>.
  A Framework for Guided Test Case Generation in Constraint
   Logic Programming.
  In <em>Int. Symposium on Logic-Based Program Synthesis and
@@ -837,7 +836,7 @@ execution-based test generation approaches endure.
 [<a name="2013-guided">13</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a> and <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>.
+Jos&eacute;&nbsp;Miguel Rojas and <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>.
  A Framework for Guided Test Case Generation in Constraint
   Logic Programming.
  In <em>Int. Symposium on Logic-Based Program Synthesis and
@@ -860,7 +859,7 @@ execution-based test generation approaches endure.
 [<a name="2012-jms2abs">14</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://www.nr.no/~bjarte/">Bjarte M. &Oslash;stvold</a>, and <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>.
+<a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://www.nr.no/~bjarte/">Bjarte M. &Oslash;stvold</a>, and Jos&eacute;&nbsp;Miguel Rojas.
  jms2abs: Automated Extraction of Abstract Behavioural Models
   from JMS Applications.
  In <em>Formal Methods for Industrial Critical Systems (FMICS)</em>,
@@ -912,7 +911,7 @@ resource consumption of the original JMS applications.
 [<a name="2012-ResourceTDG">15</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, and <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>.
+<a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, and Jos&eacute;&nbsp;Miguel Rojas.
  Resource-driven CLP-based Test Case Generation.
  In <em>Int. Symposium on Logic-Based Program Synthesis and
   Transformation (LOPSTR)</em>, volume 7225 of <em>LNCS</em>, pages 25-41. Springer,
@@ -962,7 +961,7 @@ violate it.
 </td>
 <td class="bibtexitem">
 Carmen Navarrete, Marina de&nbsp;la Cruz, Eloy Anguiano, Alfonso Ortega, and
-  <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>.
+  Jos&eacute;&nbsp;Miguel Rojas.
  Parallel Simulation of NEPs on Clusters.
  In <em>IEEE/WIC/ACM Int. Conferences on Web Intelligence and
   Intelligent Agent Technology (WI-IAT)</em>, pages 171-174. IEEE Computer
@@ -1005,7 +1004,7 @@ approach.
 [<a name="2011-CompTDG">17</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, and <a href="http://costa.fdi.ucm.es/~german">Germ&aacute;n Puebla</a>.
+<a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://costa.fdi.ucm.es/~german">Germ&aacute;n Puebla</a>.
  Compositional CLP-Based Test Data Generation for Imperative
   Languages.
  In <em>Int. Symposium on Logic-Based Program Synthesis and
@@ -1065,7 +1064,7 @@ reasoning is able to use them.
 [<a name="2010-JHSYS">18</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, Marina de&nbsp;la Cruz&nbsp;Echeand&iacute;a, and Alfonso&nbsp;Ortega de&nbsp;la
+Jos&eacute;&nbsp;Miguel Rojas, Marina de&nbsp;la Cruz&nbsp;Echeand&iacute;a, and Alfonso&nbsp;Ortega de&nbsp;la
   Puente.
  Towards the Automatic Programming of H Systems: jHsys, a Java H
   System Simulator.
@@ -1115,7 +1114,7 @@ This paper is devoted to describe jHSys, a Java simulator for splicing
 [<a name="2009-JNEPS">19</a>]
 </td>
 <td class="bibtexitem">
-Emilio del Rosal, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, Rafael N&uacute;&ntilde;ez, Carlos
+Emilio del Rosal, Jos&eacute;&nbsp;Miguel Rojas, Rafael N&uacute;&ntilde;ez, Carlos
   Casta&ntilde;eda, and Alfonso&nbsp;Ortega de&nbsp;la Puente.
  On the Solutions of NP-Complete Problems by Means of jNEP Run on
   Computers.
@@ -1164,7 +1163,7 @@ design, the simulation and some useful tools for NEPs.
 [<a name="FraserRA18">1</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
+<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
  EvoSuite at the SBST 2018 tool competition.
  In <em>Int. Workshop on Search-Based Software Testing (SBST)</em>, pages
   34-37. ACM, 2018.
@@ -1195,7 +1194,7 @@ design, the simulation and some useful tools for NEPs.
 [<a name="SBST2017_EvoSuite">2</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="http://jmrojas.github.io"><a href="http://jose.github.io">Jos&eacute; Campos</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
+<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="http://jose.github.io">Jos&eacute; Campos</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
  EvoSuite at the SBST 2017 Tool Competition.
  In <em>Int. Workshop on Search-Based Software Testing (SBST)</em>, pages
   39-42, 2017.
@@ -1233,7 +1232,7 @@ overall score.
 [<a name="SBST2017_LocalOptima">3</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a> and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
+Jos&eacute;&nbsp;Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  Is Search-based Test Generation Research Stuck in a Local Optimum?
  In <em>Int. Workshop on Search-Based Software Testing (SBST)</em>, pages
   51-52, 2017.
@@ -1278,7 +1277,7 @@ Research in search-based unit test generation has seen
 [<a name="PPIG16_TeachingTesting">4</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a> and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
+Jos&eacute;&nbsp;Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  Teaching Software Testing with a Mutation Testing Game.
  In <em>Psychology of Programming Interest Group 2016 (PPIG)</em>, 2016.
  No formal proceedings.
@@ -1326,7 +1325,7 @@ Software testing is crucially important in a world
 [<a name="Mutation16_CodeDefenders">5</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a> and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
+Jos&eacute;&nbsp;Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  Code Defenders: A Mutation Testing Game.
  In <em>Int. Conference on Software Testing, Verification and
   Validation Workshops (MUTATION ICSTW)</em>, pages 162-167. IEEE, 2016.
@@ -1385,7 +1384,7 @@ defenders.
 [<a name="2013-nasa">6</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a> and <a href="http://ti.arc.nasa.gov/profile/pcorina">Corina S. P&#x101;s&#x101;reanu</a>.
+Jos&eacute;&nbsp;Miguel Rojas and <a href="http://ti.arc.nasa.gov/profile/pcorina">Corina S. P&#x101;s&#x101;reanu</a>.
  Compositional Symbolic Execution through Program
   Specialization.
  In <em>BYTECODE 2013</em>, 2013.
@@ -1435,7 +1434,7 @@ evaluation results.
 [<a name="hse2018_testing">1</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>.
+<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and Jos&eacute;&nbsp;Miguel Rojas.
  Software Testing.
  In Sungdeok Cha, Richard&nbsp;N. Taylor, and Kyo&nbsp;C. Kang, editors, <em>
   Handbook of Software Engineering</em>. Springer International Publishing, 2018.
@@ -1463,7 +1462,7 @@ evaluation results.
 [<a name="AlbertAGR14">2</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://costa.fdi.ucm.es/~puri">Puri Arenas</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, and <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>.
+<a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://costa.fdi.ucm.es/~puri">Puri Arenas</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, and Jos&eacute;&nbsp;Miguel Rojas.
  Test Case Generation by Symbolic Execution: Basic
   Concepts, a CLP-Based Instance, and Actor-Based Concurrency.
  In <em>14th Int. School on Formal Methods for the Design of
@@ -1525,7 +1524,7 @@ extension of TCG to actor-based concurrent programs.
 </td>
 <td class="bibtexitem">
 <a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://es.linkedin.com/pub/diego-esteban-alonso-blas/16/458/b77">Diego Esteban Alonso Blas</a>, <a href="http://costa.fdi.ucm.es/~puri">Puri Arenas</a>, <a href="http://www.fdi.ucm.es/profesor/jcorreas/">Jes&uacute;s Correas</a>,
-  Antonio Flores-Montoya, <a href="http://costa.fdi.ucm.es/~genaim">Samir Genaim</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, <a href="http://clip.dia.fi.upm.es/~anm">Abu Naser Masud</a>, German Puebla, <a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>, <a href="http://costa.fdi.ucm.es/~groman">Guillermo Rom&aacute;n-D&iacute;ez</a>, and
+  Antonio Flores-Montoya, <a href="http://costa.fdi.ucm.es/~genaim">Samir Genaim</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, <a href="http://clip.dia.fi.upm.es/~anm">Abu Naser Masud</a>, German Puebla, Jos&eacute;&nbsp;Miguel Rojas, <a href="http://costa.fdi.ucm.es/~groman">Guillermo Rom&aacute;n-D&iacute;ez</a>, and
   <a href="http://costa.fdi.ucm.es/~damiano">Damiano Zanardini</a>.
  Automatic Inference of Bounds on Resource Consumption.
  In <em>Int. Symposium on Formal Methods for Components and Objects
@@ -1585,7 +1584,7 @@ resources and the treatment of shared mutable data.
 [<a name="JMRojasPhD">1</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://jmrojas.github.io">Jos&eacute; Miguel Rojas</a>.
+Jos&eacute;&nbsp;Miguel Rojas.
  <em>Test Case Generation in Object-Oriented Programming</em>.
  PhD thesis, Universidad Polit&eacute;cnica de Madrid (Technical
   University of Madrid), December 2013.
