@@ -4,12 +4,37 @@
 @string{EMSE = "Empirical Software Engineering (EMSE)"}
 @string{ASE = "IEEE/ACM Int. Conference on Automated Software Engineering (ASE)"}
 @string{ISSTA = "ACM Int. Symposium on Software Testing and Analysis (ISSTA)"}
+@string{ICST = "IEEE Int. Conference on Software Testing, Verification and Validation (ICST)"}
 @string{GECCO = "Genetic and Evolutionary Computation Conference (GECCO)"}
 @string{SBST = "Int. Workshop on Search-Based Software Testing (SBST)"}
 @string{SSBSE = "Int. Symposium on Search Based Software Engineering (SSBSE)"}
 @string{LOPSTR = "Int. Symposium on Logic-Based Program Synthesis and Transformation (LOPSTR)"}
 
 %% 2018
+@inproceedings{FraserGR18,
+  author    = {Gordon Fraser and Alessio Gambi and Jos\'e Miguel Rojas},
+  title     = {A Preliminary Report on Gamifying a Software Testing Course with the
+               {Code Defenders} Testing Game},
+  booktitle = {European Conference of Software Engineering Education (ECSEE)},
+  pages     = {50--54},
+  year      = {2018},
+  labels    = {conf},
+  url       = {http://doi.acm.org/10.1145/3209087.3209103},
+  doi       = {10.1145/3209087.3209103},
+  publisher = {{ACM}}
+}
+
+@inproceedings{FraserRA18,
+  author    = {Gordon Fraser and Jos\'e Miguel Rojas and Andrea Arcuri},
+  title     = {{EvoSuite} at the {SBST} 2018 tool competition},
+  booktitle = SBST,
+  pages     = {34--37},
+  year      = {2018},
+  labels    = {workshop},
+  url       = {http://doi.acm.org/10.1145/3194718.3194729},
+  doi       = {10.1145/3194718.3194729},
+  publisher = {ACM}
+}
 
 @article{STVR_RandomVsSearch,
   author    = {Sina Shamshiri and Jos\'e Miguel Rojas and Luca Gazzola and Gordon Fraser and Phil McMinn and Leonardo Mariani and Andrea Arcuri},
@@ -17,26 +42,38 @@
   journal   = STVR,
   year	    = {2018},
   labels    = {journal},
-  note      = "To appear"
+  volume    = {28},
+  number    = {4},
+  pages     = {e1660},
+  doi       = {10.1002/stvr.1660},
+  url       = {https://onlinelibrary.wiley.com/doi/abs/10.1002/stvr.1660},
+  publisher = {Wiley Online Library},
+  abstract  = {An important aim in software testing is constructing a test suite with high structural code coverage, that is, ensuring that most if not all of the code under test have been executed by the test cases comprising the test suite. Several search-based techniques have proved successful at automatically generating tests that achieve high coverage. However, despite the well-established arguments behind using evolutionary search algorithms (eg, genetic algorithms) in preference to random search, it remains an open question whether the benefits can actually be observed in practice when generating unit test suites for object-oriented classes. In this paper, we report an empirical study on the effects of using evolutionary algorithms (including a genetic algorithm and chemical reaction optimization) to generate test suites, compared with generating test suites incrementally with random search. We apply the EVOSUITE unit test suite generator to 1000 classes randomly selected from the SF110 corpus of open-source projects. Surprisingly, the results show that the difference is much smaller than one might expect: While evolutionary search covers more branches of the type where standard fitness functions provide guidance, we observed that, in practice, the vast majority of branches do not provide any guidance to the search. These results suggest that, although evolutionary algorithms are more effective at covering complex branches, a random search may suffice to achieve high coverage of most object-oriented classes.}
 }
 
 
 @incollection{ICST2018_Accessibility,
   author    = {Marcelo Medeiros Eler, Jos\'e Miguel Rojas, Yan Ge and Gordon Fraser},
   title	    = "Automated Accessibility Testing of Mobile Apps",
-  booktitle = "IEEE Int. Conference on Software Testing, Verification and Validation (ICST)",
+  booktitle = ICST,
   year	    = {2018},
+  pages     = {116--126},
+  labels    = {conf},
   publisher = "IEEE",
-  note	    = "To appear"
+  doi       = {10.1109/ICST.2018.00021},
+  abstract  = {It is important to make mobile apps accessible, so as not to exclude users with common disabilities such as blindness, low vision, or color blindness. Even when developers are aware of these accessibility needs, the lack of tool support makes the development and assessment of accessible apps challenging. Some accessibility properties can be checked statically, but user interface widgets are often created dynamically and are not amenable to static checking. Some accessibility checking frameworks analyze accessibility properties at runtime, but have to rely on existing thorough test suites. In this paper, we introduce the idea of using automated test generation to explore the accessibility of mobile apps. We present the MATE tool (Mobile Accessibility Testing), which automatically explores apps while applying different checks for accessibility issues related to visual impairment. For each issue, MATE generates a detailed report that supports the developer in fixing the issue. Experiments on a sample of 73 apps demonstrate that MATE detects more basic accessibility problems than static analysis, and many additional types of accessibility problems that cannot be detected statically at all. Comparison with existing accessibility testing frameworks demonstrates that the independence of an existing test suite leads to the identification of many more accessibility problems. Even when enabling Android's assistive features like contrast enhancement, MATE can still find many accessibility issues.}
 }
 
 @incollection{ICST2018_Maintenance,
   author    = {Sina Shamshiri and Jos\'e Miguel Rojas and Juan Pablo Galeotti and Neil Walkinshaw and Gordon Fraser},
   title	    = "How Do Automatically Generated Unit Tests Influence Software Maintenance?",
-  booktitle = "IEEE Int. Conference on Software Testing, Verification and Validation (ICST)",
+  booktitle = ICST,
   year	    = {2018},
+  pages     = {250--261},
+  labels    = {conf},
   publisher = "IEEE",
-  note	    = "To appear"
+  doi       = {10.1109/ICST.2018.00033},
+  abstract  = {Generating unit tests automatically saves time over writing tests manually and can lead to higher code coverage. However, automatically generated tests are usually not based on realistic scenarios, and are therefore generally considered to be less readable. This places a question mark over their practical value: Every time a test fails, a developer has to decide whether this failure has revealed a regression fault in the program under test, or whether the test itself needs to be updated. Does the fact that automatically generated tests are harder to read outweigh the time-savings gained by their automated generation, and render them more of a hindrance than a help for software maintenance? In order to answer this question, we performed an empirical study in which participants were presented with an automatically generated or manually written failing test, and were asked to identify and fix the cause of the failure. Our experiment and two replications resulted in a total of 150 data points based on 75 participants. Whilst maintenance activities take longer when working with automatically generated tests, we found developers to be equally effective with manually written and automatically generated tests. This has implications on how automated test generation is best used in practice, and it indicates a need for research into the generation of more realistic tests.}
 }
 
 
