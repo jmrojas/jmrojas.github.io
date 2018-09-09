@@ -1436,7 +1436,35 @@ evaluation results.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="AlbertAGR14">1</a>]
+[<a name="hse2018_testing">1</a>]
+</td>
+<td class="bibtexitem">
+Gordon Fraser and Jos&eacute; Miguel Rojas.
+ Software Testing.
+ In Sungdeok Cha, Richard&nbsp;N. Taylor, and Kyo&nbsp;C. Kang, editors, <em>
+  Handbook of Software Engineering</em>. Springer International Publishing, 2018.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('hse2018_testing_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('hse2018_testing_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://jmrojas.github.io/papers/2018_HSE_Testing_chapter.pdf">PDF</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="hse2018_testing_bib" >
+<pre>@incollection{hse2018_testing,
+  author = {Gordon Fraser and Jos\'e Miguel Rojas},
+  title = {Software Testing},
+  editor = {Sungdeok Cha and Richard N. Taylor and Kyo C. Kang},
+  booktitle = {Handbook of Software Engineering},
+  publisher = {Springer International Publishing},
+  year = 2018
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="AlbertAGR14">2</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://costa.fdi.ucm.es/~puri">Puri Arenas</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, and Jos&eacute; Miguel Rojas.
