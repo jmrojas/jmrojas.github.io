@@ -3,7 +3,7 @@
 ;; installed packages.
 (package-initialize)
 
-(load-file "~/Custom-files/Config/emacs-common.el")
+(load-file "~/Systems/jmrojas.github.io/scripts/emacs/emacs-common.el")
 
 ;; dracula theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
