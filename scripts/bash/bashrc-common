@@ -1,0 +1,40 @@
+export MACHINE=`/bin/hostname`
+export PATH=$HOME/bin:$HOME/Custom-files/Config/bin:$PATH
+export GS_OPTIONS="-sPAPERSIZE=a4"
+
+alias cp='cp -i'
+alias rm='rm -i'
+alias ls='ls -F'
+alias du='du -k'
+alias mv='mv -i'
+
+#  export MYJAVA=$HOME/Systems/java
+export PATH=$PATH:$HOME/Systems/CiaoDE/ciaopp/command_line
+export CLASSPATH=$HOME/Systems/costa-extra/Test_Programs:$HOME/Systems/costa-extra/Experiments:$HOME/Systems/costa-extra/Test_Programs/net/datastructures/net-datastructures-3-0.jar:$CLASSPATH
+
+#termination competition class paths
+#
+#export TCBASE=$HOME/Systems/costa-extra/Termination_Competition
+#export CLASSPATH=$CLASSPATH:$TCBASE
+#export CLASSPATH=$CLASSPATH:$TCBASE/tpdb_JBC/Aprove_09
+#export CLASSPATH=$CLASSPATH:$TCBASE/tpdb_JBC/AProVE_10
+#export CLASSPATH=$CLASSPATH:$TCBASE/tpdb_JBC/Costa_Julia_09
+#export CLASSPATH=$CLASSPATH:$TCBASE/tpdb_JBC/Costa_Julia_09-recursive
+#export CLASSPATH=$CLASSPATH:$TCBASE/tpdb_JBC/Julia_10_Iterative
+#export CLASSPATH=$CLASSPATH:$TCBASE/tpdb_JBC/Julia_10_Recursive
+#export CLASSPATH=$CLASSPATH:$TCBASE/costa_tc_examples
+
+
+export TEXINPUTS=$TEXINPUTS:~/Custom-files/Config/Texinputs:~/Systems/mybibtex2html/tex
+export BIBINPUTS=$BIBINPUTS:~/Custom-files/Config/biblio:~/bibtex
+export BSTINPUTS=$BSTINPUTS:~/Custom-files/Config/bibtexstyles:~/Systems/mybibtex2html/tex
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib/ppl
+
+# kpdf is no longer available in Ubuntu 8.10, for backwards compatibility
+alias kpdf=okular
+
+export DVIVIEWER=evince
+export PDFVIEWER=okular
+
+# for easily loading the abs interpreter for Maude
+export MAUDE_LIB=/usr/local/maude:$HOME/Projects/EU/HATS/HATS-global/Tools/ABS/trunk/frontend/src/abs/backend/maude

@@ -1148,3 +1148,22 @@ and suppress =<RET> tuples."
 
 ;(require 'php-mode)
 
+; Leicester's directories
+; TODO: FIX
+(defun leicestermount ()
+  "mounts Leicester's directories."
+  (interactive)
+  (message "Mounting Leicester's directories...")
+  (insert-string "sudo mkdir -p /Volumes/leicester/resources/CO3095;")
+  (newline)
+  (insert-string "sudo mkdir -p /Volumes/leicester/CO-Modules18-19;")
+  (newline)
+  (insert-string "sudo mkdir -p /Volumes/leicester/texmf;")
+  (newline)
+  (insert-string "sudo sshfs -o allow_other,defer_permissions,reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 jmrs3@nyx.mcs.le.ac.uk:/var/cscampus/teaching/resources/CO3095 /Volumes/leicester/resources/CO3095;")
+  (newline)
+  (insert-string "sudo sshfs -o allow_other,defer_permissions,reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 jmrs3@nyx.mcs.le.ac.uk:/MCS-Local/Data/ModuleForms/CO-Modules18-19/ /Volumes/leicester/CO-Modules18-19;")
+  (newline)
+  (insert-string "sudo sshfs -o allow_other,defer_permissions,reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 jmrs3@nyx.mcs.le.ac.uk:/MCS-Local/TeX/teTeX-local/texmf/ /Volumes/leicester/texmf")
+  (newline)
+)
