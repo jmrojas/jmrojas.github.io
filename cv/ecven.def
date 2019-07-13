@@ -9,7 +9,7 @@
 \def\ecv@telkey{\ecv@utf{Telephone}}
 \def\ecv@mobilekey{\ecv@utf{Mobile}}
 \def\ecv@faxkey{\ecv@utf{Fax(es)}}
-\def\ecv@emailkey{\ecv@utf{Emails}}
+\def\ecv@emailkey{\ecv@utf{Email Addresses}}
 \def\ecv@nationalitykey{\ecv@utf{Nationality}}
 \def\ecv@birthkey{\ecv@utf{Date of birth}}
 \def\ecv@genderkey{\ecv@utf{Gender}}
