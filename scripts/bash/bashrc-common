@@ -38,3 +38,10 @@ export PDFVIEWER=okular
 
 # for easily loading the abs interpreter for Maude
 export MAUDE_LIB=/usr/local/maude:$HOME/Projects/EU/HATS/HATS-global/Tools/ABS/trunk/frontend/src/abs/backend/maude
+
+function clean_meld() {
+
+    echo "Cleaning up Meld rubbish..."
+    rm -rf ~/.local/share/meld ~/Library/Preferences/org.gnome.meld.plist ~/Library/Saved\ Application\ State/org.gnome.meld.savedState
+    echo "Done."
+}
