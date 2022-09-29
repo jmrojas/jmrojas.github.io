@@ -13,6 +13,7 @@
 \def\ecv@nationalitykey{\ecv@utf{Nationality}}
 \def\ecv@birthkey{\ecv@utf{Date of birth}}
 \def\ecv@genderkey{\ecv@utf{Gender}}
+\def\ecv@homepagekey{\ecv@utf{Homepage}}
 \def\ecv@scholarkey{\ecv@utf{Google Scholar Profile}}
 \def\ecv@dblpkey{\ecv@utf{DBLP Profile}}
 % Footer

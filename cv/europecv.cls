@@ -304,8 +304,9 @@
 
 % Page number
 \def\ecv@lfoot{%
-  \footnotesize\textrm{\ecv@page~-~\ecv@cvofkey}\\
-  \textrm{\ecv@footername}
+  %\footnotesize\textrm{\ecv@page~~-~\ecv@cvofkey}\\
+  \footnotesize\textrm{\ecv@page}%\\
+  %\textrm{\ecv@footername}
 }
 
 % Right Footnote to be shown on every page
@@ -412,6 +413,9 @@
 \fi
 \ifx\@empty\ecv@email\else
 \ecv@emailkey       &\ecv@email \tabularnewline[5pt]
+\fi
+\ifx\@empty\ecv@homepage\else
+\ecv@homepagekey       &\ecv@homepage \tabularnewline[5pt]
 \fi
 \ifx\@empty\ecv@scholar\else
 \ecv@scholarkey       &\ecv@scholar \tabularnewline[5pt]

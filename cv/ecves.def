@@ -3,22 +3,22 @@
 % Translation completed on 2006/01/11
 \ProvidesFile{ecves.def}[europecv Spanish definitions]
 % Personal information
-\def\ecv@infosectionkey{\ecv@utf{Informaci\'on personal}}
+\def\ecv@infosectionkey{\ecv@utf{Informaci\'on Personal}}
 \def\ecv@namekey{\ecv@utf{Apellidos / Nombres}}
 \def\ecv@addresskey{\ecv@utf{Direcci\'on(es)}}
 \def\ecv@telkey{\ecv@utf{Tel\'efono(s)}}
 \def\ecv@mobilekey{\ecv@utf{M\'ovil}}
 \def\ecv@faxkey{\ecv@utf{Fax(es)}}
-\def\ecv@emailkey{\ecv@utf{Correos electr\'onicos}}
+\def\ecv@emailkey{\ecv@utf{Correo Electr\'onico}}
+\def\ecv@homepagekey{\ecv@utf{Sitio Web}}
 \def\ecv@scholarkey{\ecv@utf{Perfil Google Scholar}}
 \def\ecv@dblpkey{\ecv@utf{Perfil DBLP}}
-\def\ecv@nationalitykey{\ecv@utf{Nacionalidad}}
-%\def\ecv@nationalitykey{\ecv@utf{Nacionalidad(es)}}
+\def\ecv@nationalitykey{\ecv@utf{Nacionalidades}}
 \def\ecv@birthkey{\ecv@utf{Fecha de nacimiento}}
 \def\ecv@genderkey{\ecv@utf{Sexo}}
 % Footer
 \def\ecv@pagekey{\ecv@utf{P\'agina}}
-\def\ecv@cvofkey{\ecv@utf{Curriculum vit\ae\ de}}
+\def\ecv@cvofkey{\ecv@utf{CV de}}
 % Language table
 \def\ecv@mothertonguekey{\ecv@utf{Lengua materna}}
 \def\ecv@assesskey{\ecv@utf{Auto evaluaci\'on}}
