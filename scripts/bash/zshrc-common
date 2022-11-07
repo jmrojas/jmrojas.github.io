@@ -11,16 +11,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh" ] && \. "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "${HOMEBREW_PREFIX}/opt/nvm/etc/bash_completion.d/nvm" ] && \. "${HOMEBREW_PREFIX}/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-# BitBucket App Password
-export BB_PASSWORD="PeHvMeg7JbEHnnWDvcMs"
-export BBPSWD="FedZQdt94QXFPDGWJEvK"
-
-# Github Personal Access Token
-export GITHUBPAT="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"
-export GITHUBPAT="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"
-export GH_PERSONAL_ACCESS_TOKEN="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"
-export GH_PAT_OFFICE="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"
-
 # iTerm2 shell intergration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
