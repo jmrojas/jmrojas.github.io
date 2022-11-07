@@ -34,3 +34,5 @@ function clean_meld {
     rm -rf ~/.local/share/meld ~/Library/Preferences/org.gnome.meld.plist ~/Library/Saved\ Application\ State/org.gnome.meld.savedState
     echo "Done."
 }
+
+export PATH="/usr/local/sbin:$PATH"
