@@ -40,4 +40,5 @@ alias jplag="java -jar /Users/jmr/systems/JPlag/cli/target/jplag-4.0.0-SNAPSHOT-
 export PATH="$PATH:/Users/jmr/systems/defects4j/framework/bin"
 
 # IntelliJ IDEA launcher
+export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 function idea() { open -na "IntelliJ IDEA.app" --args "$@"; }
