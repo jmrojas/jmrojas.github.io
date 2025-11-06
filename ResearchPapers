@@ -9,7 +9,7 @@
 [<a name="GuRS25_XRTesting">1</a>]
 </td>
 <td class="bibtexitem">
-Ruizhen Gu, Jos&eacute;&nbsp;Miguel Rojas, and Donghwan Shin.
+<a href="https://ruizhengu.github.io">Ruizhen Gu</a>, Jos&eacute;&nbsp;Miguel Rojas, and <a href="https://www.dshin.info">Donghwan Shin</a>.
  Software Testing for Extended Reality Applications: A Systematic
   Mapping Study.
  <em>Automated Software Engineering (ASE)</em>, 32(2), 2025.
@@ -18,9 +18,9 @@ Ruizhen Gu, Jos&eacute;&nbsp;Miguel Rojas, and Donghwan Shin.
 <a href="http://dx.doi.org/10.1007/s10515-025-00523-7">DOI</a>&nbsp;]
 <div style="background: #FFFFEE; display: none" id="GuRS25_XRTesting_bib" >
 <pre>@article{GuRS25_XRTesting,
-  author = {Ruizhen Gu and
+  author = {<a href="https://ruizhengu.github.io">Ruizhen Gu</a> and
                   Jos{\'e} Miguel Rojas and
-                  Donghwan Shin},
+                  <a href="https://www.dshin.info">Donghwan Shin</a>},
   title = {Software Testing for Extended Reality Applications: {A} Systematic Mapping Study},
   journal = {Automated Software Engineering (ASE)},
   number = {2},
@@ -41,7 +41,7 @@ Ruizhen Gu, Jos&eacute;&nbsp;Miguel Rojas, and Donghwan Shin.
 [<a name="STVR_RandomVsSearch">2</a>]
 </td>
 <td class="bibtexitem">
-Sina Shamshiri, Jos&eacute;&nbsp;Miguel Rojas, Luca Gazzola, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="http://mcminn.io">Phil McMinn</a>,
+<a href="https://www.linkedin.com/in/sinas">Sina Shamshiri</a>, Jos&eacute;&nbsp;Miguel Rojas, Luca Gazzola, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="https://philmcminn.com.io">Phil McMinn</a>,
   Leonardo Mariani, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
  Random or Evolutionary Search for Object-Oriented Test Suite
   Generation?
@@ -58,7 +58,7 @@ An important aim in software testing is constructing a test suite with high stru
 </div>
 <div style="background: #FFFFEE; display: none" id="STVR_RandomVsSearch_bib" >
 <pre>@article{STVR_RandomVsSearch,
-  author = {Sina Shamshiri and Jos\'e Miguel Rojas and Luca Gazzola and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and <a href="http://mcminn.io">Phil McMinn</a> and Leonardo Mariani and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>},
+  author = {<a href="https://www.linkedin.com/in/sinas">Sina Shamshiri</a> and Jos\'e Miguel Rojas and Luca Gazzola and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and <a href="https://philmcminn.com.io">Phil McMinn</a> and Leonardo Mariani and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>},
   title = {{Random or Evolutionary Search for Object-Oriented Test Suite Generation?}},
   journal = {Software Testing, Verification and Reliability (STVR)},
   year = {2018},
@@ -259,7 +259,7 @@ legal, should not be provided as input.
 [<a name="GuRS25">1</a>]
 </td>
 <td class="bibtexitem">
-Ruizhen Gu, Jos&eacute;&nbsp;Miguel Rojas, and Donghwan Shin.
+<a href="https://ruizhengu.github.io">Ruizhen Gu</a>, Jos&eacute;&nbsp;Miguel Rojas, and <a href="https://www.dshin.info">Donghwan Shin</a>.
  Can test generation and program repair inform automated assessment of
   programming projects?
  In <em>IEEE International Conference on Software Testing,
@@ -289,7 +289,7 @@ Ruizhen Gu, Jos&eacute;&nbsp;Miguel Rojas, and Donghwan Shin.
 [<a name="RoslanRM24_PrivateKeepOut">2</a>]
 </td>
 <td class="bibtexitem">
-Muhammad&nbsp;Firhard Roslan, José&nbsp;Miguel Rojas, and <a href="http://mcminn.io">Phil McMinn</a>.
+<a href="https://firhard.github.io">Firhard Roslan</a>, José&nbsp;Miguel Rojas, and <a href="https://philmcminn.com.io">Phil McMinn</a>.
  Private-Keep Out? Understanding How Developers Account for Code
   Visibility in Unit Testing.
  In <em>2024 IEEE International Conference on Software Maintenance
@@ -320,7 +320,7 @@ Muhammad&nbsp;Firhard Roslan, José&nbsp;Miguel Rojas, and <a href="http://mcmin
 [<a name="RoslanRM24_Viscount">3</a>]
 </td>
 <td class="bibtexitem">
-Muhammad&nbsp;Firhard Roslan, José&nbsp;Miguel Rojas, and <a href="http://mcminn.io">Phil McMinn</a>.
+<a href="https://firhard.github.io">Firhard Roslan</a>, José&nbsp;Miguel Rojas, and <a href="https://philmcminn.com.io">Phil McMinn</a>.
  Viscount: A Direct Method Call Coverage Tool for Java.
  In <em>2024 IEEE International Conference on Software Maintenance
   and Evolution (ICSME)</em>, pages 908-912, 2024.
@@ -350,8 +350,7 @@ Muhammad&nbsp;Firhard Roslan, José&nbsp;Miguel Rojas, and <a href="http://mcmin
 [<a name="Walkinshaw0RH24">4</a>]
 </td>
 <td class="bibtexitem">
-<a href="http://neilwalkinshaw.github.io">Neil Walkinshaw</a>, Michael Foster, Jos&eacute;&nbsp;Miguel Rojas, and Robert&nbsp;M.
-  Hierons.
+<a href="https://neilwalkinshaw.github.io">Neil Walkinshaw</a>, <a href="https://jmafoster1.github.io">Michael Foster</a>, Jos&eacute;&nbsp;Miguel Rojas, and <a href="https://robhierons.github.io">Rob Hierons</a>.
  Bounding Random Test Set Size with Computational Learning Theory.
  <em>Proc. ACM Softw. Eng.</em>, 1(FSE):2538-2560, 2024.
 [&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('Walkinshaw0RH24_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
@@ -360,10 +359,10 @@ Muhammad&nbsp;Firhard Roslan, José&nbsp;Miguel Rojas, and <a href="http://mcmin
 <a href="https://doi.org/10.1145/3660819">http</a>&nbsp;]
 <div style="background: #FFFFEE; display: none" id="Walkinshaw0RH24_bib" >
 <pre>@article{Walkinshaw0RH24,
-  author = {<a href="http://neilwalkinshaw.github.io">Neil Walkinshaw</a> and
-                  Michael Foster and
-                  Jos{\'{e}} Miguel Rojas and
-                  Robert M. Hierons},
+  author = {<a href="https://neilwalkinshaw.github.io">Neil Walkinshaw</a> and
+                  <a href="https://jmafoster1.github.io">Michael Foster</a> and
+                  Jos{\'e} Miguel Rojas and
+                  <a href="https://robhierons.github.io">Rob Hierons</a>},
   title = {Bounding Random Test Set Size with Computational Learning Theory},
   journal = {Proc. {ACM} Softw. Eng.},
   volume = {1},
@@ -385,7 +384,7 @@ Muhammad&nbsp;Firhard Roslan, José&nbsp;Miguel Rojas, and <a href="http://mcmin
 [<a name="RoslanRM22">5</a>]
 </td>
 <td class="bibtexitem">
-Muhammad&nbsp;Firhard Roslan, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://mcminn.io">Phil McMinn</a>.
+<a href="https://firhard.github.io">Firhard Roslan</a>, Jos&eacute;&nbsp;Miguel Rojas, and <a href="https://philmcminn.com.io">Phil McMinn</a>.
  An Empirical Comparison of EvoSuite and DSpot for Improving
   Developer-Written Test Suites with Respect to Mutation Score.
  In <em>14th International Symposium on Search-Based Software
@@ -396,9 +395,9 @@ Muhammad&nbsp;Firhard Roslan, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http:/
 <a href="https://doi.org/10.1007/978-3-031-21251-2\_2">http</a>&nbsp;]
 <div style="background: #FFFFEE; display: none" id="RoslanRM22_bib" >
 <pre>@inproceedings{RoslanRM22,
-  author = {Muhammad Firhard Roslan and
+  author = {<a href="https://firhard.github.io">Firhard Roslan</a> and
                   Jos{\'{e}} Miguel Rojas and
-                  <a href="http://mcminn.io">Phil McMinn</a>},
+                  <a href="https://philmcminn.com.io">Phil McMinn</a>},
   title = {An Empirical Comparison of EvoSuite and DSpot for Improving Developer-Written
                   Test Suites with Respect to Mutation Score},
   booktitle = {14th International Symposium on Search-Based Software Engineering,
@@ -422,7 +421,7 @@ Muhammad&nbsp;Firhard Roslan, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http:/
 [<a name="ArcuschinGCR22">6</a>]
 </td>
 <td class="bibtexitem">
-Iv&aacute;n&nbsp;Arcuschin Moreno, Juan&nbsp;Pablo Galeotti, Christian Ciccaroni, and
+<a href="https://iarcuschin.com">Iv&aacute;n Arcuschin Moreno</a>, <a href="https://lafhis.dc.uba.ar/~jgaleotti">Juan Pablo Galeotti</a>, Christian Ciccaroni, and
   Jos&eacute;&nbsp;Miguel Rojas.
  On the feasibility and challenges of synthesizing executable
   Espresso tests.
@@ -435,7 +434,7 @@ Iv&aacute;n&nbsp;Arcuschin Moreno, Juan&nbsp;Pablo Galeotti, Christian Ciccaroni
 <div style="background: #FFFFEE; display: none" id="ArcuschinGCR22_bib" >
 <pre>@inproceedings{ArcuschinGCR22,
   author = {Iv{\'{a}}n Arcuschin Moreno and
-               Juan Pablo Galeotti and
+               <a href="https://lafhis.dc.uba.ar/~jgaleotti">Juan Pablo Galeotti</a> and
                Christian Ciccaroni and
                Jos{\'{e}} Miguel Rojas},
   title = {On the feasibility and challenges of synthesizing executable {Espresso}
@@ -562,7 +561,7 @@ It is important to make mobile apps accessible, so as not to exclude users with 
 [<a name="ICST2018_Maintenance">10</a>]
 </td>
 <td class="bibtexitem">
-Sina Shamshiri, Jos&eacute;&nbsp;Miguel Rojas, Juan&nbsp;Pablo Galeotti, <a href="http://neilwalkinshaw.github.io">Neil Walkinshaw</a>, and
+<a href="https://www.linkedin.com/in/sinas">Sina Shamshiri</a>, Jos&eacute;&nbsp;Miguel Rojas, <a href="https://lafhis.dc.uba.ar/~jgaleotti">Juan Pablo Galeotti</a>, <a href="https://neilwalkinshaw.github.io">Neil Walkinshaw</a>, and
   <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  How Do Automatically Generated Unit Tests Influence Software
   Maintenance?
@@ -578,7 +577,7 @@ Generating unit tests automatically saves time over writing tests manually and c
 </div>
 <div style="background: #FFFFEE; display: none" id="ICST2018_Maintenance_bib" >
 <pre>@incollection{ICST2018_Maintenance,
-  author = {Sina Shamshiri and Jos\'e Miguel Rojas and Juan Pablo Galeotti and <a href="http://neilwalkinshaw.github.io">Neil Walkinshaw</a> and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>},
+  author = {<a href="https://www.linkedin.com/in/sinas">Sina Shamshiri</a> and Jos\'e Miguel Rojas and <a href="https://lafhis.dc.uba.ar/~jgaleotti">Juan Pablo Galeotti</a> and <a href="https://neilwalkinshaw.github.io">Neil Walkinshaw</a> and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>},
   title = {How Do Automatically Generated Unit Tests Influence Software Maintenance?},
   booktitle = {IEEE Int. Conference on Software Testing, Verification and Validation (ICST)},
   year = {2018},
@@ -813,7 +812,7 @@ enjoyable and fruitful for students.
 [<a name="ShamshiriJRFMA2015">15</a>]
 </td>
 <td class="bibtexitem">
-Sina Shamshiri, Ren&eacute; Just, Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="http://mcminn.io">Phil McMinn</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
+<a href="https://www.linkedin.com/in/sinas">Sina Shamshiri</a>, Ren&eacute; Just, Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="https://philmcminn.com.io">Phil McMinn</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
  Do Automatically Generated Unit Tests Find Real Faults? An Empirical
   Study of Effectiveness and Challenges.
  In <em>IEEE/ACM Int. Conference on Automated Software Engineering
@@ -846,8 +845,8 @@ faults that are dependent on external factors such as date and time.
 </div>
 <div style="background: #FFFFEE; display: none" id="ShamshiriJRFMA2015_bib" >
 <pre>@inproceedings{ShamshiriJRFMA2015,
-  author = {Sina Shamshiri and Ren{\'e} Just and Jo{s\'e} Miguel Rojas
-               and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and <a href="http://mcminn.io">Phil McMinn</a> and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>},
+  author = {<a href="https://www.linkedin.com/in/sinas">Sina Shamshiri</a> and Ren{\'e} Just and Jo{s\'e} Miguel Rojas
+               and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and <a href="https://philmcminn.com.io">Phil McMinn</a> and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>},
   title = {Do Automatically Generated Unit Tests Find Real Faults?
                An Empirical Study of Effectiveness and Challenges},
   booktitle = {IEEE/ACM Int. Conference on Automated Software Engineering (ASE)},
@@ -868,7 +867,7 @@ faults that are dependent on external factors such as date and time.
 [<a name="ShamshiriRFM15">16</a>]
 </td>
 <td class="bibtexitem">
-Sina Shamshiri, Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and <a href="http://mcminn.io">Phil McMinn</a>.
+<a href="https://www.linkedin.com/in/sinas">Sina Shamshiri</a>, Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and <a href="https://philmcminn.com.io">Phil McMinn</a>.
  Random or Genetic Algorithm Search for Object-Oriented Test Suite
   Generation?
  In <em>Genetic and Evolutionary Computation Conference (GECCO)</em>,
@@ -902,7 +901,7 @@ analyzed projects provide no such guidance.
 </div>
 <div style="background: #FFFFEE; display: none" id="ShamshiriRFM15_bib" >
 <pre>@inproceedings{ShamshiriRFM15,
-  author = {Sina Shamshiri and Jos\'e Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and <a href="http://mcminn.io">Phil McMinn</a>},
+  author = {<a href="https://www.linkedin.com/in/sinas">Sina Shamshiri</a> and Jos\'e Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and <a href="https://philmcminn.com.io">Phil McMinn</a>},
   title = {Random or Genetic Algorithm Search for Object-Oriented
                Test Suite Generation?},
   booktitle = {Genetic and Evolutionary Computation Conference (GECCO)},
@@ -1461,7 +1460,7 @@ Yining Qiao and Jos&eacute;&nbsp;Miguel Rojas.
 [<a name="GuR23">2</a>]
 </td>
 <td class="bibtexitem">
-Ruizhen Gu and Jos&eacute;&nbsp;Miguel Rojas.
+<a href="https://ruizhengu.github.io">Ruizhen Gu</a> and Jos&eacute;&nbsp;Miguel Rojas.
  An Empirical Study on the Adoption of Scripted GUI Testing for
   Android Apps.
  In <em>38th IEEE/ACM International Conference on Automated
@@ -1471,7 +1470,7 @@ Ruizhen Gu and Jos&eacute;&nbsp;Miguel Rojas.
 <a href="https://doi.org/10.1109/ASEW60602.2023.00030">http</a>&nbsp;]
 <div style="background: #FFFFEE; display: none" id="GuR23_bib" >
 <pre>@inproceedings{GuR23,
-  author = {Ruizhen Gu and Jos{\'{e}} Miguel Rojas},
+  author = {<a href="https://ruizhengu.github.io">Ruizhen Gu</a> and Jos{\'e} Miguel Rojas},
   title = {An Empirical Study on the Adoption of Scripted {GUI} Testing for Android
                   Apps},
   booktitle = {38th {IEEE/ACM} International Conference on Automated Software Engineering,
