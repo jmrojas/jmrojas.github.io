@@ -6,7 +6,39 @@
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="STVR_RandomVsSearch">1</a>]
+[<a name="GuRS25_XRTesting">1</a>]
+</td>
+<td class="bibtexitem">
+Ruizhen Gu, Jos&eacute;&nbsp;Miguel Rojas, and Donghwan Shin.
+ Software Testing for Extended Reality Applications: A Systematic
+  Mapping Study.
+ <em>Automated Software Engineering (ASE)</em>, 32(2), 2025.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('GuRS25_XRTesting_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('GuRS25_XRTesting_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1007/s10515-025-00523-7">DOI</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="GuRS25_XRTesting_bib" >
+<pre>@article{GuRS25_XRTesting,
+  author = {Ruizhen Gu and
+                  Jos{\'e} Miguel Rojas and
+                  Donghwan Shin},
+  title = {Software Testing for Extended Reality Applications: {A} Systematic Mapping Study},
+  journal = {Automated Software Engineering (ASE)},
+  number = {2},
+  volume = {32},
+  year = {2025},
+  doi = {10.1007/s10515-025-00523-7},
+  isbn = {1573-7535}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="STVR_RandomVsSearch">2</a>]
 </td>
 <td class="bibtexitem">
 Sina Shamshiri, Jos&eacute;&nbsp;Miguel Rojas, Luca Gazzola, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="http://mcminn.io">Phil McMinn</a>,
@@ -46,7 +78,7 @@ An important aim in software testing is constructing a test suite with high stru
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="STVR_seeding">2</a>]
+[<a name="STVR_seeding">3</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
@@ -105,7 +137,7 @@ Search-based techniques have been applied successfully
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="emse16_effectiveness">3</a>]
+[<a name="emse16_effectiveness">4</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas, Mattia Vivanti, <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
@@ -170,7 +202,7 @@ A common application of search-based software testing
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="AlbertGGZRS13">4</a>]
+[<a name="AlbertGGZRS13">5</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://www.csse.monash.edu.au/~mbanda">Mar&iacute;a Garc&iacute;a de la Banda</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>,
@@ -217,7 +249,6 @@ legal, should not be provided as input.
 </td>
 </tr>
 </table>
-
 <h3> International Conferences </h3>
 
 
@@ -225,7 +256,241 @@ legal, should not be provided as input.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="FraserGR18">1</a>]
+[<a name="GuRS25">1</a>]
+</td>
+<td class="bibtexitem">
+Ruizhen Gu, Jos&eacute;&nbsp;Miguel Rojas, and Donghwan Shin.
+ Can test generation and program repair inform automated assessment of
+  programming projects?
+ In <em>IEEE International Conference on Software Testing,
+  Verification and Validation (ICST)</em>, pages 699-710. IEEE, 2025.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('GuRS25_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('GuRS25_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1109/ICST62969.2025.10988955">DOI</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="GuRS25_bib" >
+<pre>@inproceedings{GuRS25,
+  author = {Gu, Ruizhen and Rojas, Jos{\'e} Miguel and Shin, Donghwan},
+  title = {Can test generation and program repair inform automated assessment of programming projects?},
+  booktitle = {{IEEE} International Conference on Software Testing, Verification and Validation (ICST)},
+  year = {2025},
+  pages = {699--710},
+  publisher = {IEEE},
+  doi = {10.1109/ICST62969.2025.10988955}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="RoslanRM24_PrivateKeepOut">2</a>]
+</td>
+<td class="bibtexitem">
+Muhammad&nbsp;Firhard Roslan, José&nbsp;Miguel Rojas, and <a href="http://mcminn.io">Phil McMinn</a>.
+ Private-Keep Out? Understanding How Developers Account for Code
+  Visibility in Unit Testing.
+ In <em>2024 IEEE International Conference on Software Maintenance
+  and Evolution (ICSME)</em>, pages 312-324, 2024.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('RoslanRM24_PrivateKeepOut_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('RoslanRM24_PrivateKeepOut_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1109/ICSME58944.2024.00037">DOI</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="RoslanRM24_PrivateKeepOut_bib" >
+<pre>@inproceedings{RoslanRM24_PrivateKeepOut,
+  author = {Roslan, Muhammad Firhard and Rojas, José Miguel and McMinn, Phil},
+  booktitle = {2024 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+  title = {Private-Keep Out? Understanding How Developers Account for Code Visibility in Unit Testing},
+  year = {2024},
+  volume = {},
+  number = {},
+  pages = {312-324},
+  doi = {10.1109/ICSME58944.2024.00037}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="RoslanRM24_Viscount">3</a>]
+</td>
+<td class="bibtexitem">
+Muhammad&nbsp;Firhard Roslan, José&nbsp;Miguel Rojas, and <a href="http://mcminn.io">Phil McMinn</a>.
+ Viscount: A Direct Method Call Coverage Tool for Java.
+ In <em>2024 IEEE International Conference on Software Maintenance
+  and Evolution (ICSME)</em>, pages 908-912, 2024.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('RoslanRM24_Viscount_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('RoslanRM24_Viscount_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1109/ICSME58944.2024.00101">DOI</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="RoslanRM24_Viscount_bib" >
+<pre>@inproceedings{RoslanRM24_Viscount,
+  author = {Roslan, Muhammad Firhard and Rojas, José Miguel and McMinn, Phil},
+  booktitle = {2024 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+  title = {Viscount: A Direct Method Call Coverage Tool for Java},
+  year = {2024},
+  volume = {},
+  number = {},
+  pages = {908-912},
+  doi = {10.1109/ICSME58944.2024.00101}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Walkinshaw0RH24">4</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://neilwalkinshaw.github.io">Neil Walkinshaw</a>, Michael Foster, Jos&eacute;&nbsp;Miguel Rojas, and Robert&nbsp;M.
+  Hierons.
+ Bounding Random Test Set Size with Computational Learning Theory.
+ <em>Proc. ACM Softw. Eng.</em>, 1(FSE):2538-2560, 2024.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('Walkinshaw0RH24_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('Walkinshaw0RH24_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1145/3660819">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.1145/3660819">http</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="Walkinshaw0RH24_bib" >
+<pre>@article{Walkinshaw0RH24,
+  author = {<a href="http://neilwalkinshaw.github.io">Neil Walkinshaw</a> and
+                  Michael Foster and
+                  Jos{\'{e}} Miguel Rojas and
+                  Robert M. Hierons},
+  title = {Bounding Random Test Set Size with Computational Learning Theory},
+  journal = {Proc. {ACM} Softw. Eng.},
+  volume = {1},
+  number = {{FSE}},
+  pages = {2538--2560},
+  year = {2024},
+  url = {https://doi.org/10.1145/3660819},
+  doi = {10.1145/3660819}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="RoslanRM22">5</a>]
+</td>
+<td class="bibtexitem">
+Muhammad&nbsp;Firhard Roslan, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://mcminn.io">Phil McMinn</a>.
+ An Empirical Comparison of EvoSuite and DSpot for Improving
+  Developer-Written Test Suites with Respect to Mutation Score.
+ In <em>14th International Symposium on Search-Based Software
+  Engineering, SSBSE 2022</em>, volume 13711 of <em>LNCS</em>, pages 19-34.
+  Springer, 2022.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('RoslanRM22_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('RoslanRM22_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="https://doi.org/10.1007/978-3-031-21251-2\_2">http</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="RoslanRM22_bib" >
+<pre>@inproceedings{RoslanRM22,
+  author = {Muhammad Firhard Roslan and
+                  Jos{\'{e}} Miguel Rojas and
+                  <a href="http://mcminn.io">Phil McMinn</a>},
+  title = {An Empirical Comparison of EvoSuite and DSpot for Improving Developer-Written
+                  Test Suites with Respect to Mutation Score},
+  booktitle = {14th International Symposium on Search-Based Software Engineering,
+                  {SSBSE} 2022},
+  series = {LNCS},
+  volume = {13711},
+  pages = {19--34},
+  publisher = {Springer},
+  year = {2022},
+  url = {https://doi.org/10.1007/978-3-031-21251-2\_2}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="ArcuschinGCR22">6</a>]
+</td>
+<td class="bibtexitem">
+Iv&aacute;n&nbsp;Arcuschin Moreno, Juan&nbsp;Pablo Galeotti, Christian Ciccaroni, and
+  Jos&eacute;&nbsp;Miguel Rojas.
+ On the feasibility and challenges of synthesizing executable
+  Espresso tests.
+ In <em>IEEE/ACM International Conference on Automation of Software
+  Test, AST@ICSE 2022</em>, pages 92-102. ACM/IEEE, 2022.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('ArcuschinGCR22_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('ArcuschinGCR22_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1145/3524481.3527234">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.1145/3524481.3527234">http</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="ArcuschinGCR22_bib" >
+<pre>@inproceedings{ArcuschinGCR22,
+  author = {Iv{\'{a}}n Arcuschin Moreno and
+               Juan Pablo Galeotti and
+               Christian Ciccaroni and
+               Jos{\'{e}} Miguel Rojas},
+  title = {On the feasibility and challenges of synthesizing executable {Espresso}
+               tests},
+  booktitle = {{IEEE/ACM} International Conference on Automation of Software Test,
+               AST@ICSE 2022},
+  pages = {92--102},
+  publisher = {{ACM/IEEE}},
+  year = {2022},
+  url = {https://doi.org/10.1145/3524481.3527234},
+  doi = {10.1145/3524481.3527234}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="FraserGKR19">7</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, Alessio Gambi, Marvin Kreis, and Jos&eacute;&nbsp;Miguel Rojas.
+ Gamifying a Software Testing Course with Code Defenders.
+ In <em>ACM Technical Symposium on Computer Science Education,
+  (SIGCSE)</em>, pages 571-577. ACM, 2019.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('FraserGKR19_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('FraserGKR19_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="https://doi.org/10.1145/3287324.3287471">http</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="FraserGKR19_bib" >
+<pre>@inproceedings{FraserGKR19,
+  author = {<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and
+               Alessio Gambi and
+               Marvin Kreis and
+               Jos{\'{e}} Miguel Rojas},
+  title = {{Gamifying a Software Testing Course with Code Defenders}},
+  booktitle = {{ACM} Technical Symposium on Computer Science
+               Education, ({SIGCSE})},
+  pages = {571--577},
+  year = {2019},
+  url = {https://doi.org/10.1145/3287324.3287471},
+  publisher = {{ACM}}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="FraserGR18">8</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, Alessio Gambi, and Jos&eacute;&nbsp;Miguel Rojas.
@@ -258,13 +523,14 @@ legal, should not be provided as input.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="ICST2018_Accessibility">2</a>]
+[<a name="ICST2018_Accessibility">9</a>]
 </td>
 <td class="bibtexitem">
 Yan&nbsp;Ge Marcelo Medeiros&nbsp;Eler, Jos&eacute; Miguel&nbsp;Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
  Automated Accessibility Testing of Mobile Apps.
  In <em>IEEE Int. Conference on Software Testing, Verification and
   Validation (ICST)</em>, pages 116-126. IEEE, 2018.
+ <b>Facebook Testing and Verification Research Award 2018</b>.
 [&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('ICST2018_Accessibility_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
 <a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('ICST2018_Accessibility_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/ICST.2018.00021">DOI</a>&nbsp;]
@@ -281,6 +547,7 @@ It is important to make mobile apps accessible, so as not to exclude users with 
   year = {2018},
   pages = {116--126},
   publisher = {IEEE},
+  note = {\textbf{Facebook Testing and Verification Research Award 2018}},
   doi = {10.1109/ICST.2018.00021}
 }
 
@@ -292,7 +559,7 @@ It is important to make mobile apps accessible, so as not to exclude users with 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="ICST2018_Maintenance">3</a>]
+[<a name="ICST2018_Maintenance">10</a>]
 </td>
 <td class="bibtexitem">
 Sina Shamshiri, Jos&eacute;&nbsp;Miguel Rojas, Juan&nbsp;Pablo Galeotti, <a href="http://neilwalkinshaw.github.io">Neil Walkinshaw</a>, and
@@ -328,7 +595,7 @@ Generating unit tests automatically saves time over writing tests manually and c
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="ISSTA17_IDNaming">4</a>]
+[<a name="ISSTA17_IDNaming">11</a>]
 </td>
 <td class="bibtexitem">
 Ermira Daka, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
@@ -387,7 +654,7 @@ The name of a unit test helps developers to understand
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="ICSE_SEET2017_CodeDefenders">5</a>]
+[<a name="ICSE_SEET2017_CodeDefenders">12</a>]
 </td>
 <td class="bibtexitem">
 Benjamin Clegg, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
@@ -443,7 +710,7 @@ Software testing is a core aspect of software
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="ICSE2017_CodeDefenders">6</a>]
+[<a name="ICSE2017_CodeDefenders">13</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas, Thomas White, Benjamin Clegg, and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
@@ -502,7 +769,7 @@ Writing good software tests is difficult and not every
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="ECSEE16_MutationEducation">7</a>]
+[<a name="ECSEE16_MutationEducation">14</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
@@ -543,7 +810,7 @@ enjoyable and fruitful for students.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="ShamshiriJRFMA2015">8</a>]
+[<a name="ShamshiriJRFMA2015">15</a>]
 </td>
 <td class="bibtexitem">
 Sina Shamshiri, Ren&eacute; Just, Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="http://mcminn.io">Phil McMinn</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
@@ -598,7 +865,7 @@ faults that are dependent on external factors such as date and time.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="ShamshiriRFM15">9</a>]
+[<a name="ShamshiriRFM15">16</a>]
 </td>
 <td class="bibtexitem">
 Sina Shamshiri, Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and <a href="http://mcminn.io">Phil McMinn</a>.
@@ -655,7 +922,7 @@ analyzed projects provide no such guidance.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="RojasFA15">10</a>]
+[<a name="RojasFA15">17</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
@@ -712,7 +979,7 @@ developers on how to best use those tools.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="RojasCVFA15">11</a>]
+[<a name="RojasCVFA15">18</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://jose.github.io">Jos&eacute; Campos</a>, Mattia Vivanti, <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, and
@@ -778,7 +1045,7 @@ coverage criteria, while the test suites may grow up to 70%.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="RojasG-Z12">12</a>]
+[<a name="RojasG-Z12">19</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas and <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>.
@@ -833,14 +1100,14 @@ execution-based test generation approaches endure.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="2013-guided">13</a>]
+[<a name="2013-guided">20</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas and <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>.
  A Framework for Guided Test Case Generation in Constraint
   Logic Programming.
  In <em>Int. Symposium on Logic-Based Program Synthesis and
-  Transformation (LOPSTR)</em> [<a href="#RojasG-Z12">12</a>], pages 176-193.
+  Transformation (LOPSTR)</em> [<a href="#RojasG-Z12">19</a>], pages 176-193.
 [&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('2013-guided_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
 <a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('2013-guided_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;]
 <div style="background: #FFFFEE; display: none" id="2013-guided_bib" >
@@ -856,7 +1123,7 @@ Jos&eacute;&nbsp;Miguel Rojas and <a href="http://costa.fdi.ucm.es/~mzamalloa">M
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="2012-jms2abs">14</a>]
+[<a name="2012-jms2abs">21</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://www.nr.no/~bjarte/">Bjarte M. &Oslash;stvold</a>, and Jos&eacute;&nbsp;Miguel Rojas.
@@ -908,7 +1175,7 @@ resource consumption of the original JMS applications.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="2012-ResourceTDG">15</a>]
+[<a name="2012-ResourceTDG">22</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, and Jos&eacute;&nbsp;Miguel Rojas.
@@ -957,7 +1224,7 @@ violate it.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="2011-NEPSonClusters">16</a>]
+[<a name="2011-NEPSonClusters">23</a>]
 </td>
 <td class="bibtexitem">
 Carmen Navarrete, Marina de&nbsp;la Cruz, Eloy Anguiano, Alfonso Ortega, and
@@ -1001,7 +1268,7 @@ approach.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="2011-CompTDG">17</a>]
+[<a name="2011-CompTDG">24</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://costa.fdi.ucm.es/~elvira">Elvira Albert</a>, <a href="http://costa.fdi.ucm.es/~mzamalloa">Miguel G&oacute;mez-Zamalloa</a>, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://costa.fdi.ucm.es/~german">Germ&aacute;n Puebla</a>.
@@ -1061,7 +1328,7 @@ reasoning is able to use them.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="2010-JHSYS">18</a>]
+[<a name="2010-JHSYS">25</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas, Marina de&nbsp;la Cruz&nbsp;Echeand&iacute;a, and Alfonso&nbsp;Ortega de&nbsp;la
@@ -1111,7 +1378,7 @@ This paper is devoted to describe jHSys, a Java simulator for splicing
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="2009-JNEPS">19</a>]
+[<a name="2009-JNEPS">26</a>]
 </td>
 <td class="bibtexitem">
 Emilio del Rosal, Jos&eacute;&nbsp;Miguel Rojas, Rafael N&uacute;&ntilde;ez, Carlos
@@ -1152,15 +1419,119 @@ design, the simulation and some useful tools for NEPs.
 </td>
 </tr>
 </table>
-
-<h3> Publication in Workshops </h3>
+<h3> Workshops </h3>
 
 
 <table>
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="FraserRA18">1</a>]
+[<a name="QiaoR24_DisplayNames">1</a>]
+</td>
+<td class="bibtexitem">
+Yining Qiao and Jos&eacute;&nbsp;Miguel Rojas.
+ What’s in a Display Name? An Empirical Study on the Use of Display
+  Names in Open-Source JUnit Tests.
+ In <em>Proceedings of the Third ACM/IEEE International Workshop on
+  NL-Based Software Engineering</em>, NLBSE '24, page 17–24. ACM, 2024.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('QiaoR24_DisplayNames_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('QiaoR24_DisplayNames_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1145/3643787.3648037">DOI</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="QiaoR24_DisplayNames_bib" >
+<pre>@inproceedings{QiaoR24_DisplayNames,
+  author = {Qiao, Yining and Rojas, Jos\'{e} Miguel},
+  title = {What’s in a Display Name? An Empirical Study on the Use of Display Names in Open-Source JUnit Tests},
+  year = {2024},
+  isbn = {9798400705762},
+  publisher = {ACM},
+  doi = {10.1145/3643787.3648037},
+  booktitle = {Proceedings of the Third ACM/IEEE International Workshop on NL-Based Software Engineering},
+  pages = {17–24},
+  series = {NLBSE '24}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="GuR23">2</a>]
+</td>
+<td class="bibtexitem">
+Ruizhen Gu and Jos&eacute;&nbsp;Miguel Rojas.
+ An Empirical Study on the Adoption of Scripted GUI Testing for
+  Android Apps.
+ In <em>38th IEEE/ACM International Conference on Automated
+  Software Engineering, ASE 2023 - Workshops</em>, pages 179-182. IEEE, 2023.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('GuR23_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('GuR23_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="https://doi.org/10.1109/ASEW60602.2023.00030">http</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="GuR23_bib" >
+<pre>@inproceedings{GuR23,
+  author = {Ruizhen Gu and Jos{\'{e}} Miguel Rojas},
+  title = {An Empirical Study on the Adoption of Scripted {GUI} Testing for Android
+                  Apps},
+  booktitle = {38th {IEEE/ACM} International Conference on Automated Software Engineering,
+                  {ASE} 2023 - Workshops},
+  pages = {179--182},
+  publisher = {{IEEE}},
+  year = {2023},
+  url = {https://doi.org/10.1109/ASEW60602.2023.00030}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="FraserGR20">3</a>]
+</td>
+<td class="bibtexitem">
+<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, Alessio Gambi, and Jos&eacute;&nbsp;Miguel Rojas.
+ Teaching Software Testing with the Code Defenders Testing Game:
+  Experiences and Improvements.
+ In <em>13th IEEE International Conference on Software Testing,
+  Verification and Validation Workshops, ICSTW 2020, Porto, Portugal, October
+  24-28, 2020</em>, pages 461-464. IEEE, 2020.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('FraserGR20_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('FraserGR20_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1109/ICSTW50294.2020.00082">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.1109/ICSTW50294.2020.00082">http</a>&nbsp;]
+<div style="background: #FFFFEE; display: none" id="FraserGR20_bib" >
+<pre>@inproceedings{FraserGR20,
+  author = {<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and
+               Alessio Gambi and
+               Jos{\'{e}} Miguel Rojas},
+  title = {Teaching Software Testing with the Code Defenders Testing Game: Experiences
+               and Improvements},
+  booktitle = {13th {IEEE} International Conference on Software Testing, Verification
+               and Validation Workshops, {ICSTW} 2020, Porto, Portugal, October 24-28,
+               2020},
+  pages = {461--464},
+  publisher = {{IEEE}},
+  year = {2020},
+  url = {https://doi.org/10.1109/ICSTW50294.2020.00082},
+  doi = {10.1109/ICSTW50294.2020.00082},
+  timestamp = {Mon, 23 Nov 2020 12:33:08 +0100},
+  biburl = {https://dblp.org/rec/conf/icst/FraserGR20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+</pre></div>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="FraserRA18">4</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, Jos&eacute;&nbsp;Miguel Rojas, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
@@ -1191,7 +1562,7 @@ design, the simulation and some useful tools for NEPs.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="SBST2017_EvoSuite">2</a>]
+[<a name="SBST2017_EvoSuite">5</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>, <a href="http://jose.github.io">Jos&eacute; Campos</a>, and <a href="http://sites.google.com/site/arcuri82">Andrea Arcuri</a>.
@@ -1229,7 +1600,7 @@ overall score.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="SBST2017_LocalOptima">3</a>]
+[<a name="SBST2017_LocalOptima">6</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
@@ -1274,7 +1645,7 @@ Research in search-based unit test generation has seen
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="PPIG16_TeachingTesting">4</a>]
+[<a name="PPIG16_TeachingTesting">7</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
@@ -1322,7 +1693,7 @@ Software testing is crucially important in a world
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Mutation16_CodeDefenders">5</a>]
+[<a name="Mutation16_CodeDefenders">8</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas and <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a>.
@@ -1381,7 +1752,7 @@ defenders.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="2013-nasa">6</a>]
+[<a name="2013-nasa">9</a>]
 </td>
 <td class="bibtexitem">
 Jos&eacute;&nbsp;Miguel Rojas and <a href="http://ti.arc.nasa.gov/profile/pcorina">Corina S. P&#x101;s&#x101;reanu</a>.
@@ -1423,7 +1794,6 @@ evaluation results.
 </td>
 </tr>
 </table>
-
 <h3> Book Chapters </h3>
 
 
@@ -1431,24 +1801,26 @@ evaluation results.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hse2018_testing">1</a>]
+[<a name="hse2019_testing">1</a>]
 </td>
 <td class="bibtexitem">
 <a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and Jos&eacute;&nbsp;Miguel Rojas.
  Software Testing.
  In Sungdeok Cha, Richard&nbsp;N. Taylor, and Kyo&nbsp;C. Kang, editors, <em>
-  Handbook of Software Engineering</em>. Springer International Publishing, 2018.
-[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('hse2018_testing_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
-<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('hse2018_testing_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
+  Handbook of Software Engineering</em>, pages 123-192. Springer International
+  Publishing, 2019.
+[&nbsp;<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='bibtex'?'hide bibtex':'bibtex';var x=document.getElementById('hse2019_testing_bib');x.style.display=x.style.display=='none'?'':'none'">bibtex</a>&nbsp;| 
+<a href="javascript:return false" onclick="javascript:this.innerHTML=this.innerHTML=='abstract'?'hide abstract':'abstract';var x=document.getElementById('hse2019_testing_abs');x.style.display=x.style.display=='none'?'':'none'">abstract</a>&nbsp;| 
 <a href="http://jmrojas.github.io/papers/2018_HSE_Testing_chapter.pdf">PDF</a>&nbsp;]
-<div style="background: #FFFFEE; display: none" id="hse2018_testing_bib" >
-<pre>@incollection{hse2018_testing,
+<div style="background: #FFFFEE; display: none" id="hse2019_testing_bib" >
+<pre>@incollection{hse2019_testing,
   author = {<a href="http://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii">Gordon Fraser</a> and Jos\'e Miguel Rojas},
   title = {Software Testing},
   editor = {Sungdeok Cha and Richard N. Taylor and Kyo C. Kang},
   booktitle = {Handbook of Software Engineering},
   publisher = {Springer International Publishing},
-  year = 2018
+  pages = {123--192},
+  year = 2019
 }
 
 </pre></div>
@@ -1573,7 +1945,6 @@ resources and the treatment of shared mutable data.
 </td>
 </tr>
 </table>
-
 <h3> PhD Thesis </h3>
 
 
