@@ -1,7 +1,0 @@
-<head>
-    
-  <title>jHSys Web interface</title>
-  <meta http-equiv="pragma" content="no-cache" />
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
