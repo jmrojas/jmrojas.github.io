@@ -8,3 +8,19 @@
 *.fls
 *.log
 *.synctex.gz
+
+# Jekyll
+_site
+.bundle
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+assets/libs/
+assets/rendercv/rendercv_output/*.typ
+node_modules/
+vendor
