@@ -1,0 +1,44 @@
+HOMEBREW_PREFIX=$(brew --prefix)
+
+export PATH="${HOME}/.pyenv/shims:${PATH}"
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh" ] && \. "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "${HOMEBREW_PREFIX}/opt/nvm/etc/bash_completion.d/nvm" ] && \. "${HOMEBREW_PREFIX}/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# iTerm2 shell intergration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
+# Gradeer
+export ANT_EXECUTABLE="$(brew --prefix)/bin/ant"
+export GRADEER_PMD_LOCATION="/Users/jmr/systems/pmd-bin-6.49.0"
+
+
+# Ruby & Jekyll
+source "$(brew --prefix)/opt/chruby/share/chruby/chruby.sh"
+source "$(brew --prefix)/opt/chruby/share/chruby/auto.sh"
+chruby ruby-3.1.2
+# export PATH="${HOMEBREW_PREFIX}/opt/ruby/bin:$PATH"
+export PATH="${HOMEBREW_PREFIX}/lib/ruby/gems/3.1.0/bin:$PATH"
+export LDFLAGS="-L${HOMEBREW_PREFIX}/opt/ruby/lib"
+export CPPFLAGS="-I${HOMEBREW_PREFIX}/opt/ruby/include"
+export PKG_CONFIG_PATH="${HOMEBREW_PREFIX}/opt/ruby/lib/pkgconfig"
+
+function clean_meld {
+    echo "Cleaning up Meld rubbish..."
+    rm -rf ~/.local/share/meld ~/Library/Preferences/org.gnome.meld.plist ~/Library/Saved\ Application\ State/org.gnome.meld.savedState
+    echo "Done."
+}
+
+export PATH="/usr/local/sbin:$PATH"
+alias jplag="java -jar /Users/jmr/systems/JPlag/cli/target/jplag-4.0.0-SNAPSHOT-jar-with-dependencies.jar"
+export PATH="$PATH:/Users/jmr/systems/defects4j/framework/bin"
+
+# IntelliJ IDEA launcher
+export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
+function idea() { open -na "IntelliJ IDEA.app" --args "$@"; }
