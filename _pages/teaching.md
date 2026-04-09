@@ -2,9 +2,9 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Courses taught at the University of Sheffield and the University of Leicester.
+description: Courses taught at the University of Sheffield and previously at the University of Leicester.
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
 ## University of Sheffield

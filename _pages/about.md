@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Lecturer in Software Testing, <a href='https://sheffield.ac.uk/cs'>School of Computer Science, University of Sheffield</a>.
+subtitle: 
 
 profile:
   align: right
