@@ -1,11 +1,12 @@
-# this file contains the social media links and usernames of the author
-# the socials will be displayed in the order they are defined here
-# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-cv_pdf: /cv/cv-jmrojas-en.pdf # path to your CV PDF file
-email: # leave blank
+# Social media links and usernames.
+# Displayed in the order defined here.
+# See: https://github.com/george-gca/jekyll-socials
+cv_pdf: /cv/cv-jmrojas-en.pdf
 github_username: jmrojas
 linkedin_username: josemiguelrojas
-twitter_username: jmrs84
-scholar_userid: # leave blank - add your Google Scholar ID if desired
-orcid_id: # leave blank - add your ORCID if desired
-rss_icon: false # set to true to show RSS icon
+x_username: jmrs84
+rss_icon: false
+email: j.rojas@sheffield.ac.uk
+scholar_userid: NeuqUtcAAAAJ
+orcid_id: 0000-0002-0079-5355
+work_url: https://sheffield.ac.uk/cs/people/academic/jose-miguel-rojas
