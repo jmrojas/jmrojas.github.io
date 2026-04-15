@@ -16,7 +16,7 @@ import yaml
 
 # ── Configuration ────────────────────────────────────────────────────────────
 # Set S2_AUTHOR_ID here or via the environment variable of the same name.
-S2_AUTHOR_ID = os.environ.get("S2_AUTHOR_ID", "")
+S2_AUTHOR_ID = os.environ.get("S2_AUTHOR_ID", "2303408035")
 
 # Fallback: search by name + institution if no ID is configured.
 AUTHOR_NAME = "Jose Miguel Rojas"
