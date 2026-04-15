@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Fetch Google Scholar citation counts and write to _data/citations.yml."""
+"""Fetch Google Scholar citation counts and write to _data/citations.yml.
+
+Uses a single author-level fill to avoid one HTTP request per publication.
+"""
 
 import datetime
 import sys
@@ -16,6 +19,8 @@ def main():
 
     try:
         author = scholarly.search_author_id(SCHOLAR_ID)
+        # Filling the 'publications' section returns num_citations for every
+        # paper without a separate request per publication.
         author = scholarly.fill(author, sections=["publications"])
     except Exception as exc:
         print(f"Error fetching author profile: {exc}", file=sys.stderr)
@@ -23,22 +28,18 @@ def main():
 
     papers = {}
     publications = author.get("publications", [])
-    print(f"Found {len(publications)} publications, fetching citation counts...")
+    print(f"Found {len(publications)} publications.")
 
     for pub in publications:
         pub_id = pub.get("author_pub_id", "")
         if not pub_id:
             continue
-        try:
-            filled = scholarly.fill(pub)
-            bib = filled.get("bib", {})
-            papers[pub_id] = {
-                "citations": filled.get("num_citations", 0),
-                "title": bib.get("title", ""),
-                "year": str(bib.get("pub_year", "Unknown Year")),
-            }
-        except Exception as exc:
-            print(f"Warning: skipping {pub_id}: {exc}", file=sys.stderr)
+        bib = pub.get("bib", {})
+        papers[pub_id] = {
+            "citations": pub.get("num_citations", 0),
+            "title": bib.get("title", ""),
+            "year": str(bib.get("pub_year", "Unknown Year")),
+        }
 
     data = {
         "metadata": {"last_updated": datetime.date.today().isoformat()},
