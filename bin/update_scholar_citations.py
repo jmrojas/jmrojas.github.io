@@ -1,45 +1,87 @@
 #!/usr/bin/env python3
-"""Fetch Google Scholar citation counts and write to _data/citations.yml.
+"""Fetch citation counts from Semantic Scholar and write to _data/citations.yml.
 
-Uses a single author-level fill to avoid one HTTP request per publication.
+Uses the Semantic Scholar public API (no key required, no CI blocking).
+Find your author ID at semanticscholar.org — it's the number in the URL:
+  https://www.semanticscholar.org/author/<name>/<ID>
 """
 
 import datetime
+import os
 import sys
+import time
 
+import requests
 import yaml
-from scholarly import scholarly
 
-SCHOLAR_ID = "NeuqUtcAAAAJ"
+# ── Configuration ────────────────────────────────────────────────────────────
+# Set S2_AUTHOR_ID here or via the environment variable of the same name.
+S2_AUTHOR_ID = os.environ.get("S2_AUTHOR_ID", "")
+
+# Fallback: search by name + institution if no ID is configured.
+AUTHOR_NAME = "Jose Miguel Rojas"
+AUTHOR_INSTITUTION = "Sheffield"
+
 OUTPUT_FILE = "_data/citations.yml"
+S2_API = "https://api.semanticscholar.org/graph/v1"
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+def find_author_id() -> str:
+    query = f"{AUTHOR_NAME} {AUTHOR_INSTITUTION}".strip()
+    print(f"Searching Semantic Scholar for: {query!r}")
+    resp = requests.get(
+        f"{S2_API}/author/search",
+        params={"query": query, "fields": "name,affiliations,paperCount"},
+        timeout=30,
+    )
+    resp.raise_for_status()
+    authors = resp.json().get("data", [])
+    if not authors:
+        print(f"No author found for '{query}'", file=sys.stderr)
+        sys.exit(1)
+    author = authors[0]
+    print(f"Found: {author['name']} (ID: {author['authorId']}, "
+          f"{author.get('paperCount', '?')} papers)")
+    return author["authorId"]
+
+
+def get_papers(author_id: str) -> dict:
+    papers = {}
+    params = {
+        "fields": "title,year,citationCount",
+        "limit": 100,
+    }
+    url = f"{S2_API}/author/{author_id}/papers"
+
+    while True:
+        resp = requests.get(url, params=params, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+
+        for paper in data.get("data", []):
+            paper_id = paper["paperId"]
+            papers[paper_id] = {
+                "citations": paper.get("citationCount", 0),
+                "title": paper.get("title", ""),
+                "year": str(paper.get("year") or "Unknown Year"),
+            }
+
+        cursor = data.get("nextCursor")
+        if not cursor:
+            break
+        params["token"] = cursor
+        time.sleep(0.3)  # stay well within the rate limit
+
+    return papers
 
 
 def main():
-    print(f"Fetching publications for Scholar ID: {SCHOLAR_ID}")
+    author_id = S2_AUTHOR_ID or find_author_id()
+    print(f"Fetching papers for author ID: {author_id}")
 
-    try:
-        author = scholarly.search_author_id(SCHOLAR_ID)
-        # Filling the 'publications' section returns num_citations for every
-        # paper without a separate request per publication.
-        author = scholarly.fill(author, sections=["publications"])
-    except Exception as exc:
-        print(f"Error fetching author profile: {exc}", file=sys.stderr)
-        sys.exit(1)
-
-    papers = {}
-    publications = author.get("publications", [])
-    print(f"Found {len(publications)} publications.")
-
-    for pub in publications:
-        pub_id = pub.get("author_pub_id", "")
-        if not pub_id:
-            continue
-        bib = pub.get("bib", {})
-        papers[pub_id] = {
-            "citations": pub.get("num_citations", 0),
-            "title": bib.get("title", ""),
-            "year": str(bib.get("pub_year", "Unknown Year")),
-        }
+    papers = get_papers(author_id)
+    print(f"Retrieved {len(papers)} papers.")
 
     data = {
         "metadata": {"last_updated": datetime.date.today().isoformat()},
@@ -49,7 +91,7 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as fh:
         yaml.dump(data, fh, default_flow_style=False, allow_unicode=True)
 
-    print(f"Written {len(papers)} entries to {OUTPUT_FILE}")
+    print(f"Written to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
