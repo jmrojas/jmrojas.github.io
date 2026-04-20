@@ -1,3 +1,45 @@
 metadata:
-  last_updated: '2026-04-15'
-papers: {}
+  last_updated: '2026-04-20'
+papers:
+  13955b6ec278225ccf2d1c1254f11be4e7bba7dd:
+    citations: 0
+    title: What’s in a Display Name? An Empirical Study on the Use of Display Names
+      in Open-Source JUnit Tests
+    year: '2024'
+  1fb914e295f52146f05679e6fc90809c6edbfd1a:
+    citations: 0
+    title: Can Test Generation and Program Repair Inform Automated Assessment of Programming
+      Projects?
+    year: '2025'
+  2e2106b1efb188ca9e10e9be69b7b30e357a7e16:
+    citations: 1
+    title: On the Promises and Challenges of AI-Powered XR Glasses as Embodied Software
+    year: '2025'
+  40e0a188a5c4564522a18cb67e508b1f5f8455cf:
+    citations: 0
+    title: Automated Testing of Prevalent 3D User Interactions in Virtual Reality
+      Applications
+    year: '2026'
+  45928b4fe9deeeb72f272f1fa11284058d807ea0:
+    citations: 5
+    title: An Empirical Study on the Adoption of Scripted GUI Testing for Android
+      Apps
+    year: '2023'
+  97fe57b3d744084d9e24973aec1164f1d5346781:
+    citations: 1
+    title: Bounding Random Test Set Size with Computational Learning Theory
+    year: '2024'
+  d688b4e2e224f8f0d84cf2335af7f36e28a6174f:
+    citations: 9
+    title: 'Software testing for extended reality applications: a systematic mapping
+      study'
+    year: '2025'
+  db16f33a8dda59a1857e94db7fcbc522309849bc:
+    citations: 2
+    title: 'XRintTest: An Automated Framework for User Interaction Testing in Extended
+      Reality Applications'
+    year: '2025'
+  dbaab08595e1a235c269fa2f08d08eee1f0d1056:
+    citations: 2
+    title: A Test Automation Framework for User Interaction in Extended Reality Applications
+    year: '2025'
