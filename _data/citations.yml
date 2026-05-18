@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-11'
+  last_updated: '2026-05-18'
 papers:
   13955b6ec278225ccf2d1c1254f11be4e7bba7dd:
     citations: 0
@@ -30,16 +30,16 @@ papers:
     title: Bounding Random Test Set Size with Computational Learning Theory
     year: '2024'
   d688b4e2e224f8f0d84cf2335af7f36e28a6174f:
-    citations: 10
+    citations: 11
     title: 'Software testing for extended reality applications: a systematic mapping
       study'
     year: '2025'
   db16f33a8dda59a1857e94db7fcbc522309849bc:
-    citations: 2
+    citations: 3
     title: 'XRintTest: An Automated Framework for User Interaction Testing in Extended
       Reality Applications'
     year: '2025'
   dbaab08595e1a235c269fa2f08d08eee1f0d1056:
-    citations: 2
+    citations: 3
     title: A Test Automation Framework for User Interaction in Extended Reality Applications
     year: '2025'
