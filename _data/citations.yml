@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-18'
+  last_updated: '2026-05-25'
 papers:
   13955b6ec278225ccf2d1c1254f11be4e7bba7dd:
     citations: 0
@@ -7,7 +7,7 @@ papers:
       in Open-Source JUnit Tests
     year: '2024'
   1fb914e295f52146f05679e6fc90809c6edbfd1a:
-    citations: 0
+    citations: 1
     title: Can Test Generation and Program Repair Inform Automated Assessment of Programming
       Projects?
     year: '2025'
