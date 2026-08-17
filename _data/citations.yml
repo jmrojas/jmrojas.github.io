@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-10'
+  last_updated: '2026-08-17'
 papers:
   13955b6ec278225ccf2d1c1254f11be4e7bba7dd:
     citations: 0
@@ -17,8 +17,8 @@ papers:
     year: '2025'
   40e0a188a5c4564522a18cb67e508b1f5f8455cf:
     citations: 0
-    title: Automated Testing of Prevalent 3D User Interactions in Virtual Reality
-      Applications
+    title: Automated testing of prevalent 3D user interactions in virtual reality
+      applications
     year: '2026'
   45928b4fe9deeeb72f272f1fa11284058d807ea0:
     citations: 5
