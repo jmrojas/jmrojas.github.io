@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-08-17'
+  last_updated: '2026-08-24'
 papers:
   13955b6ec278225ccf2d1c1254f11be4e7bba7dd:
-    citations: 0
+    citations: 1
     title: What’s in a Display Name? An Empirical Study on the Use of Display Names
       in Open-Source JUnit Tests
     year: '2024'
