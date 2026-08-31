@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-24'
+  last_updated: '2026-08-31'
 papers:
   13955b6ec278225ccf2d1c1254f11be4e7bba7dd:
     citations: 1
@@ -16,7 +16,7 @@ papers:
     title: On the Promises and Challenges of AI-Powered XR Glasses as Embodied Software
     year: '2025'
   40e0a188a5c4564522a18cb67e508b1f5f8455cf:
-    citations: 0
+    citations: 1
     title: Automated testing of prevalent 3D user interactions in virtual reality
       applications
     year: '2026'
@@ -30,7 +30,7 @@ papers:
     title: Bounding Random Test Set Size with Computational Learning Theory
     year: '2024'
   d688b4e2e224f8f0d84cf2335af7f36e28a6174f:
-    citations: 14
+    citations: 15
     title: 'Software testing for extended reality applications: a systematic mapping
       study'
     year: '2025'
