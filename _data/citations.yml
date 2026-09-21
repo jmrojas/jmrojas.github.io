@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-09-14'
+  last_updated: '2026-09-21'
 papers:
   13955b6ec278225ccf2d1c1254f11be4e7bba7dd:
     citations: 1
@@ -12,7 +12,7 @@ papers:
       Projects?
     year: '2025'
   2e2106b1efb188ca9e10e9be69b7b30e357a7e16:
-    citations: 1
+    citations: 2
     title: On the Promises and Challenges of AI-Powered XR Glasses as Embodied Software
     year: '2025'
   40e0a188a5c4564522a18cb67e508b1f5f8455cf:
@@ -26,7 +26,7 @@ papers:
       Apps
     year: '2023'
   97fe57b3d744084d9e24973aec1164f1d5346781:
-    citations: 1
+    citations: 2
     title: Bounding Random Test Set Size with Computational Learning Theory
     year: '2024'
   d688b4e2e224f8f0d84cf2335af7f36e28a6174f:
