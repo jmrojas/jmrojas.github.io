@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-09-28'
+  last_updated: '2026-10-05'
 papers:
   13955b6ec278225ccf2d1c1254f11be4e7bba7dd:
     citations: 1
@@ -21,7 +21,7 @@ papers:
       applications
     year: '2026'
   45928b4fe9deeeb72f272f1fa11284058d807ea0:
-    citations: 5
+    citations: 6
     title: An Empirical Study on the Adoption of Scripted GUI Testing for Android
       Apps
     year: '2023'
