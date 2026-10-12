@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-10-05'
+  last_updated: '2026-10-12'
 papers:
   13955b6ec278225ccf2d1c1254f11be4e7bba7dd:
     citations: 1
@@ -21,7 +21,7 @@ papers:
       applications
     year: '2026'
   45928b4fe9deeeb72f272f1fa11284058d807ea0:
-    citations: 6
+    citations: 7
     title: An Empirical Study on the Adoption of Scripted GUI Testing for Android
       Apps
     year: '2023'
@@ -30,7 +30,7 @@ papers:
     title: Bounding Random Test Set Size with Computational Learning Theory
     year: '2024'
   d688b4e2e224f8f0d84cf2335af7f36e28a6174f:
-    citations: 15
+    citations: 16
     title: 'Software testing for extended reality applications: a systematic mapping
       study'
     year: '2025'
